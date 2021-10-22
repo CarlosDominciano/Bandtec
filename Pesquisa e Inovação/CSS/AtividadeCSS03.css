@@ -1,0 +1,40 @@
+body {
+
+    background-color: #777777;
+}
+
+#div_um {
+
+    background-color: white;
+    height: 500px;
+    width: 50vw;
+    border: dotted black 10px;
+    display: flex;
+    align-items: center;
+    list-style: disc;
+}
+
+#div_dois {
+
+    background-color: yellow;
+    height: 50px;
+    width: 30%;
+}
+
+#div_tres {
+
+    background-color: rgb(255, 166, 0);
+    height: 100px;
+    width: 30%;
+}
+
+#div_quatro {
+
+    background-color: rgb(41, 192, 41);
+    color: white;
+    font-size: 30px;
+    padding: 50px 50px;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+

@@ -1,0 +1,25 @@
+#div_um {
+
+    background-color: rgb(179, 102, 179);
+    width: 100vw;
+    height: 250px;
+    display: flex;
+    align-items: center;
+
+}
+
+#div_dois {
+
+    background-color: #ee3bd0;
+    height: 100%;
+    width: 250px;
+    border: dotted red 20px;
+}
+
+#div_tres {
+
+    background-color: #00ff80;
+    width: 30%;
+    height: 88%;
+
+}
