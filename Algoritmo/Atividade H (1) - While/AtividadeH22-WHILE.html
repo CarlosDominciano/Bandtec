@@ -49,6 +49,9 @@
         var numSorteados = Number(ipt_um.value);
         var divisivel = Number(ipt_dois.value);
         var cont = 1;
+        var med = 0;
+        var maximo = 0;
+        var minimo = 101;
         var random = 0;
 
         if (numSorteados < 11 || numSorteados > 49) {
@@ -62,6 +65,8 @@
             media.innerHTML = "";
             parteUm.style.display = "none";
             parteDois.style.display = "block";
+
+
             while (cont <= numSorteados) {
                 random = (Math.random()*99 + 1).toFixed();
                 if (random % divisivel == 0){
@@ -69,6 +74,18 @@
                 } else {
                     sorteio.innerHTML += ` - ${random} <br>`;
                 }
+                if (random >= maximo) {
+                    maximo = random;
+                    maior.innerHTML = `O maior número sorteado foi: ${maximo}`;
+                }
+
+                if (random <= minimo) {
+                    minimo = random;
+                    menor.innerHTML = `O menor número sorteado foi: ${minimo}`;
+                }
+
+                med += random;
+                media.innerHTML = `A média de todos os números sorteados é:${(med / numSorteados).toFixed(2)}`
             cont++;
             }    
         }      
