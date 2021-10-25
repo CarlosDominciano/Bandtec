@@ -5,27 +5,83 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        #parteUm {
+            display: block;
+        }
+        #parteDois {
+            display: none;
+        }
+    </style>
 </head>
 <body>
-    
+    <p id="parteUm">
+        Números a serem sorteados: <input type="text" placeholder="Entre 11 e 49" id="ipt_um"> <br>
+        Insira um número para saber se é divisivel: <input type="text" placeholder="Entre 1 e 10" id="ipt_dois"><br>
+        <button onclick="calcular()">Sortear</button>
+    </p> 
+
+    <p id="parteDois">
+
+        <span id="sorteio">
+
+        </span><br><br>
+
+        <span id="maior">
+
+        </span><br><br>
+
+        <span id="menor">
+
+        </span><br><br>
+
+        <span id="media">
+
+        </span>
+
+        <button onclick="voltar()">Voltar</button>
+    </p>
 </body>
 </html>
 
-22. O objetivo deste programa é sortear números inteiros e identificar se esse número sorteado é divisível pelo parâmetro informado usuário.
+<script>
+    function calcular() {
+        var numSorteados = Number(ipt_um.value);
+        var divisivel = Number(ipt_dois.value);
+        var cont = 1;
+        var random = 0;
 
- Parte - 1
+        if (numSorteados < 11 || numSorteados > 49) {
+            alert("Insira os números sorteados dentro do limite!")
+        } else if (divisivel < 1 || divisivel > 10) {
+            alert("Insira o número divisivel dentro do limite!")
+        } else {
+            sorteio.innerHTML = "";
+            maior.innerHTML = "";
+            menor.innerHTML = "";
+            media.innerHTML = "";
+            parteUm.style.display = "none";
+            parteDois.style.display = "block";
+            while (cont <= numSorteados) {
+                random = (Math.random()*99 + 1).toFixed();
+                if (random % divisivel == 0){
+                    sorteio.innerHTML += `<span style="color:red">-  ${random} </span> <br>`;
+                } else {
+                    sorteio.innerHTML += ` - ${random} <br>`;
+                }
+            cont++;
+            }    
+        }      
+    }
+    function voltar() {
+        parteUm.style.display = "block";
+        parteDois.style.display = "none";
+        ipt_um.value = "";
+        ipt_dois.value = "";
+    }
+</script>
 
-Tenha uma tela inicial com:
-
-a.      Campo para o usuário informar a quantidade de números que serão sorteados.
- Este número tem que ser maior que 10 e menor que 50, caso contrário emitir mensagem explicativa.
-
-b.      Campo para o usuário informar qual a divisibilidade ele quer encontrar.
- Este número tem que estar entre 1 e 10, caso contrário emitir mensagem explicativa.
-
-c.       Um botão “Sortear”, que quando clicado vai para a Parte – 2, se não houve erros nos itens a. e b.
-
- 
+<!--
 
 Parte – 2
 
