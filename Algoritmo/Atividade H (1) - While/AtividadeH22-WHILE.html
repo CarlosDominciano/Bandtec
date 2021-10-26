@@ -25,15 +25,15 @@
 
         <span id="sorteio">
 
-        </span><br><br>
+        </span> <br>
 
         <span id="maior">
 
-        </span><br><br>
+        </span>
 
         <span id="menor">
 
-        </span><br><br>
+        </span>
 
         <span id="media">
 
@@ -68,24 +68,26 @@
 
 
             while (cont <= numSorteados) {
-                random = (Math.random()*99 + 1).toFixed();
+                random = Number((Math.random()*99 + 1).toFixed());
                 if (random % divisivel == 0){
-                    sorteio.innerHTML += `<span style="color:red">-  ${random} </span> <br>`;
+                    sorteio.innerHTML += `<span style="color:red"> ♬  ${random} </span> <br>`;
                 } else {
-                    sorteio.innerHTML += ` - ${random} <br>`;
+                    sorteio.innerHTML += ` ♰ ${random} <br>`;
                 }
-                if (random >= maximo) {
+                if (random > maximo) {
                     maximo = random;
-                    maior.innerHTML = `O maior número sorteado foi: ${maximo}`;
+                    maior.innerHTML = `✯ O maior número sorteado foi: ${maximo} <br><br>`;
                 }
 
-                if (random <= minimo) {
+                if (random < minimo) {
                     minimo = random;
-                    menor.innerHTML = `O menor número sorteado foi: ${minimo}`;
+                    menor.innerHTML = `✯ O menor número sorteado foi: ${minimo} <br><br>`;
                 }
 
-                med += random;
-                media.innerHTML = `A média de todos os números sorteados é:${(med / numSorteados).toFixed(2)}`
+                med = med + random;
+                if (cont == numSorteados) {
+                    media.innerHTML = `✯ A média de todos os números sorteados é: ${(med / numSorteados).toFixed()} <br><br>`;
+                }
             cont++;
             }    
         }      
@@ -97,26 +99,3 @@
         ipt_dois.value = "";
     }
 </script>
-
-<!--
-
-Parte – 2
-
-·         Sumir com todos os elementos da Parte -1.
-
-·         Sortear números aleatórios inteiros entre 1 e 100. Tantos quantos foram solicitados no item a.
-
-·         Mostrar na tela os números sorteados, sendo que se for divisível pelo número informado no item b.
- mostrar esse número em vermelho.
-
-·         Ao final mostrar:
-
-                 O maior número sorteado foi: 999
-
-                 O menor número sorteado foi: 999
-
-                 A média de todos os números sorteados é: 99,99
-
-·         Ao final de tudo, tenha um botão “Voltar” que quando clicado volta para Parte – 1 com todos os campos limpos,
- como se estivesse dado um F5.
-
