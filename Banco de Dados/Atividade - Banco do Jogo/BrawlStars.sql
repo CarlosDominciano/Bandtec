@@ -10,7 +10,7 @@ create table Personagens (
 idPersonagem int not null primary key auto_increment,
 nomePersonagem varchar (45),
 espacoMunicao decimal (1,0),
-qntdProjeteis decimal (2,0),
+projeteisPorAtaque decimal (2,0),
 raridade varchar (20),
 ataque decimal (1),
 defesa decimal (1),
@@ -21,7 +21,14 @@ check (qntdProjeteis >= 1 and qntdProjeteis <= 20)
 );
 
 insert into Personagens value 
-(null, "Shelly", 3, 5, "Caminho dos Troféus", 
+(null, "Shelly", 3, 5, "Caminho dos Troféus", 4, 3, 2, "SuperBala"),
+(null, "Rosa", 3, 3, "Raro", 3, 5, 1, "Fertilizante"),
+(null, "Darryl", 3, 10, "Super-Raro", 3, 4, 2, "Roda pião"),
+(null, "Edgar", 3, 2, "Épico", 5, 3, 1, "Salto em Altura"),
+(null, "Sprou", 3, 1, "Mítico", 3, 2, 4, "Sebe"),
+(null, "Leon", 3, 4, "Lendário", 4, 3, 2, "SuperBala"),
+(null, "Shelly", 3, 5, "Caminho dos Troféus", 4, 3, 2, "SuperBala"),
+
 
 create table Nível (
 idNivel int not null primary key auto_increment,
