@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palavras Cruzadas</title>
+    <link rel="stylesheet" href="./AtividadePalavrasCruzadas.css">
+</head>
+<body>
+    <center>
+        <h1>Palavras Cruzadas</h1>
+    </center>
+    <!--Primeira caixa contendo as perguntas-->
+    <div class="box">
+        <div class="dicas">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum minus est perspiciatis molestiae iure dolor, nam, repellat blanditiis modi, rem culpa sequi in necessitatibus nulla non fugit optio quas quibusdam.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum minus est perspiciatis molestiae iure dolor, nam, repellat blanditiis modi, rem culpa sequi in necessitatibus nulla non fugit optio quas quibusdam.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum minus est perspiciatis molestiae iure dolor, nam, repellat blanditiis modi, rem culpa sequi in necessitatibus nulla non fugit optio quas quibusdam.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum minus est perspiciatis molestiae iure dolor, nam, repellat blanditiis modi, rem culpa sequi in necessitatibus nulla non fugit optio quas quibusdam.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum minus est perspiciatis molestiae iure dolor, nam, repellat blanditiis modi, rem culpa sequi in necessitatibus nulla non fugit optio quas quibusdam.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum minus est perspiciatis molestiae iure dolor, nam, repellat blanditiis modi, rem culpa sequi in necessitatibus nulla non fugit optio quas quibusdam.</p>
+        </div>
+    </div>
+
+    <!--Segunda caixa contendo os inputs-->
+    <div class="jogo">
+        <div id="inputs" class="palavras">
+            
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    //While para gerar os inputs automaticamente com style único
+    var cont = 1;
+    while (cont < 392) {
+        if (cont == 3 || cont == 26 || cont == 72 || cont == 95 || cont == 118 || cont == 141 ||
+        cont == 211 || cont == 213 || cont == 217 || cont == 224 || cont == 164 || cont == 186 ||
+        cont == 187 || cont == 188 || cont == 189 || cont == 190 || cont == 191 || cont == 192 || cont == 193 ||
+        cont == 194 || cont == 195 || cont == 196 || cont == 197 || cont == 198 || cont == 199 || cont == 200 ||
+        cont == 201 || cont == 229 || cont == 234 || cont == 235 || cont == 236 || cont == 257 || cont == 280 ||
+        cont == 240 || cont == 263 || cont == 286 || cont == 309 || cont == 310 || cont == 311 || cont == 332 ||
+        cont == 168 || cont == 378 || cont == 47 || cont == 48 || cont == 49 || cont == 334 || cont == 357 ||
+        cont == 40 || cont == 63 || cont == 86 || cont == 109 || cont == 110 || cont == 131 || cont == 132 ||
+        cont == 155 || cont == 178 || cont == 247 || cont == 270 || cont == 290 || cont == 291 || cont == 292 ||
+        cont == 293 || cont == 294 || cont == 295 || cont == 296 || cont == 297 || cont == 298 || cont == 299 ||
+        cont == 313 || cont == 336 || cont == 160 || cont == 183 || cont == 206 || cont == 252 || cont == 229 ||
+        cont == 321 || cont == 275 || cont == 355 || cont == 316 || cont == 267 || cont == 244) {
+            inputs.innerHTML += `<input type="text" style="background-color: white; color: black; border: 2px solid #303030;"
+             id="ipt_${cont}" class="cx${cont}" class="prontos">`;
+        } else {
+        inputs.innerHTML += `<input disabled style="background-color: transparent; color: transparent;  border: 2px solid transparent;" type="text" id="ipt_${cont}" class="cx${cont}" class="prontos">`;
+        }
+        cont++;
+    }
+    // comando para fazer com que os campos de "espaço" no jogo fiquem imutaveis
+            document.getElementById('ipt_95').readOnly = true;
+            ipt_95.value = "-";
+            document.getElementById('ipt_193').readOnly = true;
+            ipt_193.value = "-";
+            document.getElementById('ipt_196').readOnly = true;
+            ipt_196.value = "-";
+            document.getElementById('ipt_186').readOnly = true;
+            ipt_286.value = "-";
+            document.getElementById('ipt_252').readOnly = true;
+            ipt_252.value = "-";
+            document.getElementById('ipt_296').readOnly = true;
+            ipt_296.value = "-";
+
+    // aqui estou usando .placeholder para deixar especifico onde começa cada resposta
+    // do jogo
+            ipt_3.placeholder = "1";
+            ipt_47.placeholder = "2";
+            ipt_186.placeholder = "3";
+            ipt_168.placeholder = "4";
+            ipt_188.placeholder = "5";
+            ipt_190.placeholder = "6";
+            ipt_234.placeholder = "7";
+            ipt_194.placeholder = "8";
+            ipt_309.placeholder = "9";
+            ipt_311.placeholder = "10";
+            ipt_40.placeholder = "11";
+            ipt_109.placeholder = "12";
+            ipt_131.placeholder = "13";
+            ipt_290.placeholder = "14";
+            ipt_244.placeholder = "15";
+            ipt_160.placeholder = "16";
+        </script>
