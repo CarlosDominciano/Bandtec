@@ -14,12 +14,59 @@
     <!--Primeira caixa contendo as perguntas-->
     <div class="box">
         <div class="dicas">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum minus est perspiciatis molestiae iure dolor, nam, repellat blanditiis modi, rem culpa sequi in necessitatibus nulla non fugit optio quas quibusdam.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum minus est perspiciatis molestiae iure dolor, nam, repellat blanditiis modi, rem culpa sequi in necessitatibus nulla non fugit optio quas quibusdam.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum minus est perspiciatis molestiae iure dolor, nam, repellat blanditiis modi, rem culpa sequi in necessitatibus nulla non fugit optio quas quibusdam.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum minus est perspiciatis molestiae iure dolor, nam, repellat blanditiis modi, rem culpa sequi in necessitatibus nulla non fugit optio quas quibusdam.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum minus est perspiciatis molestiae iure dolor, nam, repellat blanditiis modi, rem culpa sequi in necessitatibus nulla non fugit optio quas quibusdam.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum minus est perspiciatis molestiae iure dolor, nam, repellat blanditiis modi, rem culpa sequi in necessitatibus nulla non fugit optio quas quibusdam.</p>
+            <h1>✽ Dicas</h1> <br>
+            <h3>
+                9 - Tem como papel crucial realizar tarefas e ainda calcular uma série de
+                atividades que são determinadas na rotina de uso do dispositivo.
+            </h3> <br>
+            <h3>
+                10 - Dispositivo que realiza operações lógicas e aritméticas sobre números
+                representados em circuitos lógicos.
+            </h3> <br>
+            <h3>
+                2 - Recurso da placa mãe que capacita os periféricos a terem acesso direto à memória RAM,
+                em sobrecarregarem o processador.
+            </h3> <br>
+            <h3>
+                1 - Processador que possui quatro núcleos e trabalha com todos eles ao mesmo tempo,
+                executando várias funções.
+            </h3> <br>
+            <h3>
+
+            </h3> <br>
+            <h3>
+
+            </h3> <br>
+            <h3>
+
+            </h3> <br>
+            <h3>
+
+            </h3> <br>
+            <h3>
+
+            </h3> <br>
+            <h3>
+
+            </h3> <br>
+            <h3>
+
+            </h3> <br>
+            <h3>
+                
+            </h3> <br>
+            <h3>
+
+            </h3> <br>
+            <h3>
+
+            </h3> <br>
+            <h3>
+
+            </h3> <br>
+            <h3>
+
+            </h3>
         </div>
     </div>
 
@@ -40,50 +87,104 @@
         cont == 187 || cont == 188 || cont == 189 || cont == 190 || cont == 191 || cont == 192 || cont == 193 ||
         cont == 194 || cont == 195 || cont == 196 || cont == 197 || cont == 198 || cont == 199 || cont == 200 ||
         cont == 201 || cont == 229 || cont == 234 || cont == 235 || cont == 236 || cont == 257 || cont == 280 ||
-        cont == 240 || cont == 263 || cont == 286 || cont == 309 || cont == 310 || cont == 311 || cont == 332 ||
-        cont == 168 || cont == 378 || cont == 47 || cont == 48 || cont == 49 || cont == 334 || cont == 357 ||
+        cont == 240 || cont == 263 || cont == 286 || cont == 309 || cont == 332 ||
+        cont == 168 || cont == 378 || cont == 47 || cont == 48 || cont == 49 ||
         cont == 40 || cont == 63 || cont == 86 || cont == 109 || cont == 110 || cont == 131 || cont == 132 ||
-        cont == 155 || cont == 178 || cont == 247 || cont == 270 || cont == 290 || cont == 291 || cont == 292 ||
+        cont == 155 || cont == 178 || cont == 247 || cont == 270 || cont == 289 || cont == 291 || cont == 292 ||
         cont == 293 || cont == 294 || cont == 295 || cont == 296 || cont == 297 || cont == 298 || cont == 299 ||
-        cont == 313 || cont == 336 || cont == 160 || cont == 183 || cont == 206 || cont == 252 || cont == 229 ||
-        cont == 321 || cont == 275 || cont == 355 || cont == 316 || cont == 267 || cont == 244) {
-            inputs.innerHTML += `<input type="text" style="background-color: white; color: black; border: 2px solid #303030;"
-             id="ipt_${cont}" class="cx${cont}" class="prontos">`;
+        cont == 312 || cont == 335 || cont == 160 || cont == 183 || cont == 206 || cont == 252 || cont == 229 ||
+        cont == 321 || cont == 275 || cont == 355 || cont == 316 || cont == 266 || cont == 290 || cont == 119
+        || cont == 120 || cont == 97 || cont == 74 || cont == 243) {
+            inputs.innerHTML += `<input oninput="i()" maxlength="1" type="text"
+            style="background-color: white; color: black; border: 2px solid #303030;"
+            id="ipt_${cont}" class="cx${cont}">`;
         } else {
-        inputs.innerHTML += `<input disabled style="background-color: transparent; color: transparent;  border: 2px solid transparent;" type="text" id="ipt_${cont}" class="cx${cont}" class="prontos">`;
+            inputs.innerHTML += `<input disabled style="background-color: transparent; color: transparent;
+            border: 2px solid transparent;" type="text" id="ipt_${cont}">`;
         }
         cont++;
     }
     // comando para fazer com que os campos de "espaço" no jogo fiquem imutaveis
-            document.getElementById('ipt_95').readOnly = true;
-            ipt_95.value = "-";
-            document.getElementById('ipt_193').readOnly = true;
-            ipt_193.value = "-";
-            document.getElementById('ipt_196').readOnly = true;
-            ipt_196.value = "-";
-            document.getElementById('ipt_186').readOnly = true;
-            ipt_286.value = "-";
-            document.getElementById('ipt_252').readOnly = true;
-            ipt_252.value = "-";
-            document.getElementById('ipt_296').readOnly = true;
-            ipt_296.value = "-";
+    document.getElementById('ipt_95').readOnly = true;
+    ipt_95.style = "background-color: #616161; border: 2px solid #303030;"
+    document.getElementById('ipt_193').readOnly = true;
+    ipt_193.style = "background-color: #616161; border: 2px solid #303030;"
+    document.getElementById('ipt_196').readOnly = true;
+    ipt_196.style = "background-color: #616161; border: 2px solid #303030;"
+    document.getElementById('ipt_286').readOnly = true;
+    ipt_286.style = "background-color: #616161; border: 2px solid #303030;"
+    document.getElementById('ipt_252').readOnly = true;
+    ipt_252.style = "background-color: #616161; border: 2px solid #303030;"
+    document.getElementById('ipt_296').readOnly = true;
+    ipt_296.style = "background-color: #616161; border: 2px solid #303030;"
 
     // aqui estou usando .placeholder para deixar especifico onde começa cada resposta
     // do jogo
-            ipt_3.placeholder = "1";
-            ipt_47.placeholder = "2";
-            ipt_186.placeholder = "3";
-            ipt_168.placeholder = "4";
-            ipt_188.placeholder = "5";
-            ipt_190.placeholder = "6";
-            ipt_234.placeholder = "7";
-            ipt_194.placeholder = "8";
-            ipt_309.placeholder = "9";
-            ipt_311.placeholder = "10";
-            ipt_40.placeholder = "11";
-            ipt_109.placeholder = "12";
-            ipt_131.placeholder = "13";
-            ipt_290.placeholder = "14";
-            ipt_244.placeholder = "15";
-            ipt_160.placeholder = "16";
-        </script>
+    
+    ipt_3.placeholder = "1 ";
+    ipt_47.placeholder = "2 ";
+    ipt_186.placeholder = "3 ";
+    ipt_168.placeholder = "4 ";
+    ipt_188.placeholder = "5 ";
+    ipt_190.placeholder = "6 ";
+    ipt_234.placeholder = "7 ";
+    ipt_194.placeholder = "8 ";
+    ipt_118.placeholder = "9 ";
+    ipt_120.placeholder = "10 ";
+    ipt_40.placeholder = "11 ";
+    ipt_109.placeholder = "12 ";
+    ipt_131.placeholder = "13 ";
+    ipt_289.placeholder = "14 ";
+    ipt_243.placeholder = "15 ";
+    ipt_160.placeholder = "16 ";
+
+    // funçâo dos inputs para sempre atualizar a cada caractere digitado
+    function i() {
+        var dma = ipt_47.value == "D" && ipt_48.value == "M" && ipt_49.value == "A";
+        var quadcore = ipt_3.value == "Q" && ipt_26.value == "U" && ipt_49.value == "A" && 
+        ipt_72.value == "D" && ipt_118.value == "C" && ipt_141.value == "O" && ipt_164.value == "R" && 
+        ipt_187.value == "E";
+        var cpu = ipt_118.value == "C" && ipt_119.value == "P" && ipt_120.value == "U";
+        var ula =  ipt_120.value == "U" && ipt_97.value == "L" && ipt_74.value == "A";
+
+        if (dma) {
+            ipt_47.style = "background-color: #6aff9c; color: black; border: 2px solid #303030;"
+            ipt_48.style = "background-color: #6aff9c; color: black; border: 2px solid #303030;"
+            ipt_49.style = "background-color: #6aff9c; color: black; border: 2px solid #303030;"
+            document.getElementById('ipt_47').readOnly = true;
+            document.getElementById('ipt_48').readOnly = true;
+            document.getElementById('ipt_49').readOnly = true;
+        }
+    
+        if (quadcore) {
+            ipt_3.style = "background-color: #6aff9c; color: black; border: 2px solid #303030;"
+            ipt_26.style = "background-color: #6aff9c; color: black; border: 2px solid #303030;"
+            ipt_49.style = "background-color: #6aff9c; color: black; border: 2px solid #303030;"
+            ipt_72.style = "background-color: #6aff9c; color: black; border: 2px solid #303030;"
+            ipt_95.style = "background-color: #6aff9c; color: black; border: 2px solid #303030;"
+            ipt_118.style = "background-color: #6aff9c; color: black; border: 2px solid #303030;"
+            ipt_141.style = "background-color: #6aff9c; color: black; border: 2px solid #303030;"
+            ipt_164.style = "background-color: #6aff9c; color: black; border: 2px solid #303030;"
+            ipt_187.style = "background-color: #6aff9c; color: black; border: 2px solid #303030;"
+            document.getElementById('ipt_3').readOnly = true;
+            document.getElementById('ipt_26').readOnly = true;
+            document.getElementById('ipt_49').readOnly = true;
+            document.getElementById('ipt_72').readOnly = true;
+            document.getElementById('ipt_118').readOnly = true;
+            document.getElementById('ipt_141').readOnly = true;
+            document.getElementById('ipt_164').readOnly = true;
+            document.getElementById('ipt_187').readOnly = true;
+        }
+
+        if (cpu) {
+            ipt_118.style = "background-color: #6aff9c; color: black; border: 2px solid #303030;"
+            ipt_119.style = "background-color: #6aff9c; color: black; border: 2px solid #303030;"
+            ipt_120.style = "background-color: #6aff9c; color: black; border: 2px solid #303030;"
+            document.getElementById('ipt_118').readOnly = true;
+            document.getElementById('ipt_119').readOnly = true;
+            document.getElementById('ipt_120').readOnly = true;
+        }
+
+
+    }
+</script>

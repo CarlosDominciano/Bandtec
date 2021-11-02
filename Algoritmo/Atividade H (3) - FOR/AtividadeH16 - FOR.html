@@ -7,10 +7,11 @@
     <title>Document</title>
 </head>
 <body>
-    Depósitos que você fez: <input type="text" placeholder="Ex:10..." id="ipt_um"> <br>
+    Depósitos que você fez: <input type="text" placeholder="Ex:10..." id="ipt_um"><br>
     Valor de cada depósito: <input type="text" placeholder="R$1000,00..." id="ipt_dois"><br>
     <button onclick="calcular()">Acompanhar grana</button><br><br>
     <span id="resul"></span>
+   
 </body>
 </html>
 <script>
@@ -29,7 +30,8 @@
                 if (index % 3 == 0) {
                     por = soma * 0.01;
                     soma = soma + por;
-                    resul.innerHTML += `${index}º Mês: R$ ${(soma).toFixed(2)} <br>`;
+                    resul.innerHTML += `${index}º Mês: R$ ${(soma).toFixed(2)} 
+                    <img style="height: 12px;" src="https://cdn-icons-png.flaticon.com/512/148/148839.png"> <br>`;
                 } else {
                     resul.innerHTML += `${index}º Mês: R$ ${(soma).toFixed(2)} <br>`
                 }  
