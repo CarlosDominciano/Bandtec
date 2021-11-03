@@ -12,70 +12,74 @@
         <h1>Palavras Cruzadas</h1>
     </center>
     <!--Primeira caixa contendo as perguntas-->
-    <div class="box">
-        <div class="dicas">
-            <h1>✽ Dicas</h1> <br>
-            <h3>
-                9 - Tem como papel crucial realizar tarefas e ainda calcular uma série de
-                atividades que são determinadas na rotina de uso do dispositivo.
-            </h3> <br>
-            <h3>
-                10 - Dispositivo que realiza operações lógicas e aritméticas sobre números
-                representados em circuitos lógicos.
-            </h3> <br>
-            <h3>
-                2 - Recurso da placa mãe que capacita os periféricos a terem acesso direto à memória RAM,
-                em sobrecarregarem o processador.
-            </h3> <br>
-            <h3>
-                1 - Processador que possui quatro núcleos e trabalha com todos eles ao mesmo tempo,
-                executando várias funções.
-            </h3> <br>
-            <h3>
+        <div class="box">
+            <div class="dicas">
+                <h1>✽ Dicas</h1> <br>
+                <h3>
+                    1 - Processador que possui quatro núcleos e trabalha com todos eles ao mesmo tempo,
+                    executando várias funções;
+                </h3> <br>
+                <h3>
+                    2 - Recurso da placa mãe que capacita os periféricos a terem acesso direto à memória RAM,
+                    em sobrecarregarem o processador;
+                </h3> <br>
+                <h3>
+                    3 - Tem como função armazenar grandes quantidades de informações;
+                </h3> <br>
+                <h3>
+                    4 - Processador Intel, de série mediana;
+                </h3> <br>
+                <h3>
+                    5 - Memória não volátil que grava arquivos utilizando energia;
+                </h3> <br>
+                <h3>
+                    6 - Permite a gravação de dados uma única vez, não sendo possível apagar ou editar nenhuma informação;
+                </h3> <br>
+                <h3>
+                    7 - Responsável pelo armazenamento de informações necessárias para a execução de aplicativos em uso e para
+                    o funcionamento do próprio sistema operacional;
+                </h3> <br>
+                <h3>
+                    8 - Processador que possui dois núcleos e trabalha com ambos ao mesmo tempo,
+                    executando várias funções;
+                </h3> <br>
+                <h3>
+                    9 - Tem como papel crucial realizar tarefas e ainda calcular uma série de
+                    atividades que são determinadas na rotina de uso do dispositivo;
+                </h3> <br>
+                <h3>
+                    10 - Dispositivo que realiza operações lógicas e aritméticas sobre números
+                    representados em circuitos lógicos;
+                </h3> <br>
+                <h3>
+                    11 - Circuito lógico que tem a finalidade de reter a curto prazo um conjunto de bits;
+                </h3> <br>
+                <h3>
+                    12 - Processador Intel, de série avançada;
+                </h3> <br>
+                <h3>
+                    13 - Mecanismo que permite a CPU acessar a memórias ou periféricos externos;
+                </h3> <br>
+                <h3>
+                    14 - Arquitetura de barramento de computador usada para transferir dados entre
+                    dispositivos que são identificados pelo endereço de hardware da memória física;
+                </h3> <br>
+                <h3>
+                    15 - Usado como um disco rígido para armazenar dados em um computador ela pode apagar os dados em blocos inteiros;
+                </h3> <br>
+                <h3>
+                    16 - Dispositivo em que através do interior de um computador são transportados dados e informações importantes.
+                </h3>
+            </div>
+        </div>
 
-            </h3> <br>
-            <h3>
-
-            </h3> <br>
-            <h3>
-
-            </h3> <br>
-            <h3>
-
-            </h3> <br>
-            <h3>
-
-            </h3> <br>
-            <h3>
-
-            </h3> <br>
-            <h3>
-
-            </h3> <br>
-            <h3>
+        <!--Segunda caixa contendo os inputs-->
+        <div class="jogo">
+            <div id="inputs" class="palavras">
                 
-            </h3> <br>
-            <h3>
-
-            </h3> <br>
-            <h3>
-
-            </h3> <br>
-            <h3>
-
-            </h3> <br>
-            <h3>
-
-            </h3>
+            </div>
         </div>
-    </div>
-
-    <!--Segunda caixa contendo os inputs-->
-    <div class="jogo">
-        <div id="inputs" class="palavras">
-            
-        </div>
-    </div>
+    
 </body>
 </html>
 <script>
@@ -96,7 +100,7 @@
         cont == 321 || cont == 275 || cont == 355 || cont == 316 || cont == 266 || cont == 290 || cont == 119
         || cont == 120 || cont == 97 || cont == 74 || cont == 243) {
             inputs.innerHTML += `<input oninput="i()" maxlength="1" type="text"
-            style="background-color: white; color: black; border: 2px solid #303030;"
+            style="background-color: white; color: black; border: 2px solid #3a3a55;"
             id="ipt_${cont}" class="cx${cont}">`;
         } else {
             inputs.innerHTML += `<input disabled style="background-color: transparent; color: transparent;
@@ -105,18 +109,18 @@
         cont++;
     }
     // comando para fazer com que os campos de "espaço" no jogo fiquem imutaveis
-    document.getElementById('ipt_95').readOnly = true;
-    ipt_95.style = "background-color: #616161; border: 2px solid #303030;"
-    document.getElementById('ipt_193').readOnly = true;
-    ipt_193.style = "background-color: #616161; border: 2px solid #303030;"
-    document.getElementById('ipt_196').readOnly = true;
-    ipt_196.style = "background-color: #616161; border: 2px solid #303030;"
-    document.getElementById('ipt_286').readOnly = true;
-    ipt_286.style = "background-color: #616161; border: 2px solid #303030;"
-    document.getElementById('ipt_252').readOnly = true;
-    ipt_252.style = "background-color: #616161; border: 2px solid #303030;"
-    document.getElementById('ipt_296').readOnly = true;
-    ipt_296.style = "background-color: #616161; border: 2px solid #303030;"
+    document.getElementById('ipt_95').disabled = true;
+    ipt_95.style = "background-color: #616161; border: 2px solid #3a3a55;"
+    document.getElementById('ipt_193').disabled = true;
+    ipt_193.style = "background-color: #616161; border: 2px solid #3a3a55;"
+    document.getElementById('ipt_196').disabled = true;
+    ipt_196.style = "background-color: #616161; border: 2px solid #3a3a55;"
+    document.getElementById('ipt_286').disabled = true;
+    ipt_286.style = "background-color: #616161; border: 2px solid #3a3a55;"
+    document.getElementById('ipt_252').disabled = true;
+    ipt_252.style = "background-color: #616161; border: 2px solid #3a3a55;"
+    document.getElementById('ipt_296').disabled = true;
+    ipt_296.style = "background-color: #616161; border: 2px solid #3a3a55;"
 
     // aqui estou usando .placeholder para deixar especifico onde começa cada resposta
     // do jogo
@@ -148,41 +152,41 @@
         var ula =  ipt_120.value == "U" && ipt_97.value == "L" && ipt_74.value == "A";
 
         if (dma) {
-            ipt_47.style = "background-color: #6aff9c; color: black; border: 2px solid #303030;"
-            ipt_48.style = "background-color: #6aff9c; color: black; border: 2px solid #303030;"
-            ipt_49.style = "background-color: #6aff9c; color: black; border: 2px solid #303030;"
-            document.getElementById('ipt_47').readOnly = true;
-            document.getElementById('ipt_48').readOnly = true;
-            document.getElementById('ipt_49').readOnly = true;
+            ipt_47.style = "background-color: #6aff9c; color: black; border: 2px solid #3a3a55;"
+            ipt_48.style = "background-color: #6aff9c; color: black; border: 2px solid #3a3a55;"
+            ipt_49.style = "background-color: #6aff9c; color: black; border: 2px solid #3a3a55;"
+            document.getElementById('ipt_47').disabled = true;
+            document.getElementById('ipt_48').disabled = true;
+            document.getElementById('ipt_49').disabled = true;
         }
     
         if (quadcore) {
-            ipt_3.style = "background-color: #6aff9c; color: black; border: 2px solid #303030;"
-            ipt_26.style = "background-color: #6aff9c; color: black; border: 2px solid #303030;"
-            ipt_49.style = "background-color: #6aff9c; color: black; border: 2px solid #303030;"
-            ipt_72.style = "background-color: #6aff9c; color: black; border: 2px solid #303030;"
-            ipt_95.style = "background-color: #6aff9c; color: black; border: 2px solid #303030;"
-            ipt_118.style = "background-color: #6aff9c; color: black; border: 2px solid #303030;"
-            ipt_141.style = "background-color: #6aff9c; color: black; border: 2px solid #303030;"
-            ipt_164.style = "background-color: #6aff9c; color: black; border: 2px solid #303030;"
-            ipt_187.style = "background-color: #6aff9c; color: black; border: 2px solid #303030;"
-            document.getElementById('ipt_3').readOnly = true;
-            document.getElementById('ipt_26').readOnly = true;
-            document.getElementById('ipt_49').readOnly = true;
-            document.getElementById('ipt_72').readOnly = true;
-            document.getElementById('ipt_118').readOnly = true;
-            document.getElementById('ipt_141').readOnly = true;
-            document.getElementById('ipt_164').readOnly = true;
-            document.getElementById('ipt_187').readOnly = true;
+            ipt_3.style = "background-color: #6aff9c; color: black; border: 2px solid #3a3a55;"
+            ipt_26.style = "background-color: #6aff9c; color: black; border: 2px solid #3a3a55;"
+            ipt_49.style = "background-color: #6aff9c; color: black; border: 2px solid #3a3a55;"
+            ipt_72.style = "background-color: #6aff9c; color: black; border: 2px solid #3a3a55;"
+            ipt_95.style = "background-color: #6aff9c; color: black; border: 2px solid #3a3a55;"
+            ipt_118.style = "background-color: #6aff9c; color: black; border: 2px solid #3a3a55;"
+            ipt_141.style = "background-color: #6aff9c; color: black; border: 2px solid #3a3a55;"
+            ipt_164.style = "background-color: #6aff9c; color: black; border: 2px solid #3a3a55;"
+            ipt_187.style = "background-color: #6aff9c; color: black; border: 2px solid #3a3a55;"
+            document.getElementById('ipt_3').disabled = true;
+            document.getElementById('ipt_26').disabled = true;
+            document.getElementById('ipt_49').disabled = true;
+            document.getElementById('ipt_72').disabled = true;
+            document.getElementById('ipt_118').disabled = true;
+            document.getElementById('ipt_141').disabled = true;
+            document.getElementById('ipt_164').disabled = true;
+            document.getElementById('ipt_187').disabled = true;
         }
 
         if (cpu) {
-            ipt_118.style = "background-color: #6aff9c; color: black; border: 2px solid #303030;"
-            ipt_119.style = "background-color: #6aff9c; color: black; border: 2px solid #303030;"
-            ipt_120.style = "background-color: #6aff9c; color: black; border: 2px solid #303030;"
-            document.getElementById('ipt_118').readOnly = true;
-            document.getElementById('ipt_119').readOnly = true;
-            document.getElementById('ipt_120').readOnly = true;
+            ipt_118.style = "background-color: #6aff9c; color: black; border: 2px solid #3a3a55;"
+            ipt_119.style = "background-color: #6aff9c; color: black; border: 2px solid #3a3a55;"
+            ipt_120.style = "background-color: #6aff9c; color: black; border: 2px solid #3a3a55;"
+            document.getElementById('ipt_118').disabled = true;
+            document.getElementById('ipt_119').disabled = true;
+            document.getElementById('ipt_120').disabled = true;
         }
 
 
