@@ -102,7 +102,7 @@
         || cont == 120 || cont == 97 || cont == 74 || cont == 243) {
             inputs.innerHTML += `<input oninput="i()" maxlength="1" type="text"
             style="background-color: white; color: black; border: 2px solid #3a3a55;"
-            id="ipt_${cont}" class="cx${cont}">`;
+            id="ipt_${cont}" placeholder="${cont}" class="cx${cont}">`;
         } else {
             inputs.innerHTML += `<input disabled style="background-color: transparent; color: transparent;
             border: 2px solid transparent;" type="text" id="ipt_${cont}">`;
@@ -126,70 +126,93 @@
     // aqui estou usando .placeholder para deixar especifico onde começa cada resposta
     // do jogo
     
-    ipt_3.placeholder = "1 ";
-    ipt_47.placeholder = "2 ";
-    ipt_186.placeholder = "3 ";
-    ipt_168.placeholder = "4 ";
-    ipt_188.placeholder = "5 ";
-    ipt_190.placeholder = "6 ";
-    ipt_234.placeholder = "7 ";
-    ipt_194.placeholder = "8 ";
-    ipt_118.placeholder = "9 ";
-    ipt_120.placeholder = "10 ";
-    ipt_40.placeholder = "11 ";
-    ipt_109.placeholder = "12 ";
-    ipt_131.placeholder = "13 ";
-    ipt_289.placeholder = "14 ";
-    ipt_243.placeholder = "15 ";
-    ipt_160.placeholder = "16 ";
+    // ipt_3.placeholder = "1 ";
+    // ipt_47.placeholder = "2 ";
+    // ipt_186.placeholder = "3 ";
+    // ipt_168.placeholder = "4 ";
+    // ipt_188.placeholder = "5 ";
+    // ipt_190.placeholder = "6 ";
+    // ipt_234.placeholder = "7 ";
+    // ipt_194.placeholder = "8 ";
+    // ipt_118.placeholder = "9 ";
+    // ipt_120.placeholder = "10 ";
+    // ipt_40.placeholder = "11 ";
+    // ipt_109.placeholder = "12 ";
+    // ipt_131.placeholder = "13 ";
+    // ipt_289.placeholder = "14 ";
+    // ipt_243.placeholder = "15 ";
+    // ipt_160.placeholder = "16 ";
 
     // funçâo dos inputs para sempre atualizar a cada caractere digitado
     function i() {
-        var dma = ipt_47.value == "D" && ipt_48.value == "M" && ipt_49.value == "A";
-        var quadcore = ipt_3.value == "Q" && ipt_26.value == "U" && ipt_49.value == "A" && 
-        ipt_72.value == "D" && ipt_118.value == "C" && ipt_141.value == "O" && ipt_164.value == "R" && 
-        ipt_187.value == "E";
-        var cpu = ipt_118.value == "C" && ipt_119.value == "P" && ipt_120.value == "U";
-        var ula =  ipt_120.value == "U" && ipt_97.value == "L" && ipt_74.value == "A";
+        var dma = ipt_47.value.toUpperCase() == "D"  && ipt_48.value.toUpperCase() == "M" && ipt_49.value.toUpperCase() == "A";
+
+        var quadcore = ipt_3.value.toUpperCase() == "Q" && ipt_26.value.toUpperCase() == "U" && ipt_49.value.toUpperCase() == "A" && 
+        ipt_72.value.toUpperCase() == "D" && ipt_118.value.toUpperCase() == "C" && ipt_141.value.toUpperCase() == "O" &&
+        ipt_164.value.toUpperCase() == "R" && ipt_187.value.toUpperCase() == "E";
+
+        var cpu = ipt_118.value.toUpperCase() == "C" && ipt_119.value.toUpperCase() == "P" && ipt_120.value.toUpperCase() == "U";
+
+        var ula = ipt_120.value.toUpperCase() == "U" && ipt_97.value.toUpperCase() == "L" && ipt_74.value.toUpperCase() == "A";
+
+        var i5 = ipt_168.value.toUpperCase() == "5" && ipt_191.value.toUpperCase() == "I";
+
+        var i7 = ipt_109.value.toUpperCase() == "I" && ipt_110.value.toUpperCase() == "7";
 
         if (dma) {
+
             ipt_47.style = "background-color: #6aff9c; color: black; border: 2px solid #3a3a55;"
-            ipt_48.style = "background-color: #6aff9c; color: black; border: 2px solid #3a3a55;"
-            ipt_49.style = "background-color: #6aff9c; color: black; border: 2px solid #3a3a55;"
             document.getElementById('ipt_47').disabled = true;
+
+            ipt_48.style = "background-color: #6aff9c; color: black; border: 2px solid #3a3a55;"
             document.getElementById('ipt_48').disabled = true;
+
+            ipt_49.style = "background-color: #6aff9c; color: black; border: 2px solid #3a3a55;"
             document.getElementById('ipt_49').disabled = true;
+
         }
     
         if (quadcore) {
+
             ipt_3.style = "background-color: #6aff9c; color: black; border: 2px solid #3a3a55;"
-            ipt_26.style = "background-color: #6aff9c; color: black; border: 2px solid #3a3a55;"
-            ipt_49.style = "background-color: #6aff9c; color: black; border: 2px solid #3a3a55;"
-            ipt_72.style = "background-color: #6aff9c; color: black; border: 2px solid #3a3a55;"
-            ipt_95.style = "background-color: #497a59; color: black; border: 2px solid #3a3a55;"
-            ipt_118.style = "background-color: #6aff9c; color: black; border: 2px solid #3a3a55;"
-            ipt_141.style = "background-color: #6aff9c; color: black; border: 2px solid #3a3a55;"
-            ipt_164.style = "background-color: #6aff9c; color: black; border: 2px solid #3a3a55;"
-            ipt_187.style = "background-color: #6aff9c; color: black; border: 2px solid #3a3a55;"
             document.getElementById('ipt_3').disabled = true;
+
+            ipt_26.style = "background-color: #6aff9c; color: black; border: 2px solid #3a3a55;"
             document.getElementById('ipt_26').disabled = true;
+
+            ipt_49.style = "background-color: #6aff9c; color: black; border: 2px solid #3a3a55;"
             document.getElementById('ipt_49').disabled = true;
+
+            ipt_72.style = "background-color: #6aff9c; color: black; border: 2px solid #3a3a55;"
             document.getElementById('ipt_72').disabled = true;
+
+            ipt_95.style = "background-color: #497a59; color: black; border: 2px solid #3a3a55;"
+
+            ipt_118.style = "background-color: #6aff9c; color: black; border: 2px solid #3a3a55;"
             document.getElementById('ipt_118').disabled = true;
+
+            ipt_141.style = "background-color: #6aff9c; color: black; border: 2px solid #3a3a55;"
             document.getElementById('ipt_141').disabled = true;
+
+            ipt_164.style = "background-color: #6aff9c; color: black; border: 2px solid #3a3a55;"
             document.getElementById('ipt_164').disabled = true;
+
+            ipt_187.style = "background-color: #6aff9c; color: black; border: 2px solid #3a3a55;"
             document.getElementById('ipt_187').disabled = true;
+
         }
 
         if (cpu) {
+
             ipt_118.style = "background-color: #6aff9c; color: black; border: 2px solid #3a3a55;"
-            ipt_119.style = "background-color: #6aff9c; color: black; border: 2px solid #3a3a55;"
-            ipt_120.style = "background-color: #6aff9c; color: black; border: 2px solid #3a3a55;"
             document.getElementById('ipt_118').disabled = true;
+
+            ipt_119.style = "background-color: #6aff9c; color: black; border: 2px solid #3a3a55;"
             document.getElementById('ipt_119').disabled = true;
+
+            ipt_120.style = "background-color: #6aff9c; color: black; border: 2px solid #3a3a55;"
             document.getElementById('ipt_120').disabled = true;
+
         }
-
-
     }
 </script>
