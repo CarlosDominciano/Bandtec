@@ -32,7 +32,6 @@ h3 {
     height: 392px;
     border: 1px solid #6aff9c;
     border-radius: 25px;
-    float: left;
 }
 
 .palavras {
@@ -60,7 +59,6 @@ h3 {
     height: 392px;
     border: 1px solid #6aff9c;
     border-radius: 25px;
-    float: right;
 }
 
 .dicas {
