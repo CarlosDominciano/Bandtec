@@ -13,6 +13,23 @@
         <!--Primeira caixa contendo as perguntas-->
         <div class="box">
             <div class="dicas">
+
+                <!-- 
+.        (҂`_´)
+         <,︻╦̵̵̿╤─ ҉     ~  •
+█۞███████]▄▄▄▄▄▄▄▄▄▄▃ ●●●
+▂▄▅█████████▅▄▃▂…
+[███████████████████]
+◥⊙▲⊙▲⊙▲⊙▲⊙▲⊙▲⊙
+                 -->
+
+                <h1>✽ Regras</h1> <br>
+                <h3>
+                    ♦ - Se você escrever uma palavra corretamente, ela ficará verde e imutável; <br><br>
+                    ♠ - Para cada letra colocada no lugar errado, o Faustão te lembrará disso...; <br><br>
+                    ♥ - Pode ser que tenha uma pergunta bônus; <br><br>
+                    ♣ - Se divirta :D 
+                </h3> <br><br>
                 <h1>✽ Dicas</h1> <br>
                 <h3>
                     1 - Processador que possui quatro núcleos e trabalha com todos eles ao mesmo tempo,
@@ -89,59 +106,73 @@
     while (cont < 392) {
         if (cont == 3 || cont == 26 || cont == 72 || cont == 95 || cont == 118 || cont == 141 ||
         cont == 211 || cont == 213 || cont == 217 || cont == 224 || cont == 164 || cont == 186 ||
-        cont == 187 || cont == 188 || cont == 189 || cont == 190 || cont == 191 || cont == 192 || cont == 193 ||
-        cont == 194 || cont == 195 || cont == 196 || cont == 197 || cont == 198 || cont == 199 || cont == 200 ||
-        cont == 201 || cont == 229 || cont == 234 || cont == 235 || cont == 236 || cont == 257 || cont == 280 ||
-        cont == 240 || cont == 263 || cont == 286 || cont == 309 || cont == 332 ||
-        cont == 168 || cont == 378 || cont == 47 || cont == 48 || cont == 49 ||
-        cont == 40 || cont == 63 || cont == 86 || cont == 109 || cont == 110 || cont == 131 || cont == 132 ||
-        cont == 155 || cont == 178 || cont == 247 || cont == 270 || cont == 289 || cont == 291 || cont == 292 ||
-        cont == 293 || cont == 294 || cont == 295 || cont == 296 || cont == 297 || cont == 298 || cont == 299 ||
-        cont == 312 || cont == 335 || cont == 160 || cont == 183 || cont == 206 || cont == 252 || cont == 229 ||
-        cont == 321 || cont == 275 || cont == 355 || cont == 316 || cont == 266 || cont == 290 || cont == 119
-        || cont == 120 || cont == 97 || cont == 74 || cont == 243) {
+        cont == 187 || cont == 188 || cont == 189 || cont == 190 || cont == 191 || cont == 192 ||
+        cont == 194 || cont == 195 || cont == 196 || cont == 197 || cont == 198 || cont == 199 ||
+        cont == 201 || cont == 229 || cont == 234 || cont == 235 || cont == 236 || cont == 257 ||
+        cont == 240 || cont == 263 || cont == 286 || cont == 309 || cont == 332 || cont == 193 ||
+        cont == 168 || cont == 378 || cont == 47 || cont == 48 || cont == 49 || cont == 200 ||
+        cont == 280 || cont == 132 || cont == 292 || cont == 299 || cont == 229 || cont == 119 ||
+        cont == 40 || cont == 63 || cont == 86 || cont == 109 || cont == 110 || cont == 131 ||
+        cont == 155 || cont == 178 || cont == 247 || cont == 270 || cont == 289 || cont == 291 ||
+        cont == 293 || cont == 294 || cont == 295 || cont == 296 || cont == 297 || cont == 298 ||
+        cont == 312 || cont == 335 || cont == 160 || cont == 183 || cont == 206 || cont == 252 ||
+        cont == 321 || cont == 275 || cont == 355 || cont == 316 || cont == 266 || cont == 290 ||
+        cont == 120 || cont == 97 || cont == 74 || cont == 243) {
+
             inputs.innerHTML += `<input oninput="validacao()" maxlength="1" type="text"
             style="background-color: white; color: black; border: 2px solid #3a3a55;"
             id="ipt_${cont}" class="cx${cont}">`;
+
         } else {
+
             inputs.innerHTML += `<input disabled style="background-color: transparent; color: transparent;
             border: 2px solid transparent;" type="text" id="ipt_${cont}">`;
+
         }
+
         cont++;
+
     }
+
     // comando para fazer com que os campos de "espaço" no jogo fiquem imutaveis
-    document.getElementById('ipt_95').disabled = true;
+    
     ipt_95.style = "background-color: #616161; border: 2px solid #3a3a55;"
-    document.getElementById('ipt_193').disabled = true;
+    document.getElementById('ipt_95').disabled = true;
+    
     ipt_193.style = "background-color: #616161; border: 2px solid #3a3a55;"
-    document.getElementById('ipt_196').disabled = true;
+    document.getElementById('ipt_193').disabled = true;
+    
     ipt_196.style = "background-color: #616161; border: 2px solid #3a3a55;"
-    document.getElementById('ipt_286').disabled = true;
+    document.getElementById('ipt_196').disabled = true;
+    
     ipt_286.style = "background-color: #616161; border: 2px solid #3a3a55;"
-    document.getElementById('ipt_252').disabled = true;
+    document.getElementById('ipt_286').disabled = true;
+    
     ipt_252.style = "background-color: #616161; border: 2px solid #3a3a55;"
-    document.getElementById('ipt_296').disabled = true;
+    document.getElementById('ipt_252').disabled = true;
+    
     ipt_296.style = "background-color: #616161; border: 2px solid #3a3a55;"
+    document.getElementById('ipt_296').disabled = true;
 
     // aqui estou usando .placeholder para deixar especifico onde começa cada resposta
     // do jogo
     
-    ipt_3.placeholder = "1 ";
-    ipt_47.placeholder = "2 ";
-    ipt_186.placeholder = "3 ";
-    ipt_168.placeholder = "4 ";
-    ipt_280.placeholder = "5 ";
-    ipt_190.placeholder = "6 ";
-    ipt_234.placeholder = "7 ";
-    ipt_194.placeholder = "8 ";
-    ipt_118.placeholder = "9 ";
-    ipt_120.placeholder = "10 ";
-    ipt_40.placeholder = "11 ";
-    ipt_109.placeholder = "12 ";
-    ipt_131.placeholder = "13 ";
-    ipt_289.placeholder = "14 ";
-    ipt_243.placeholder = "15 ";
-    ipt_160.placeholder = "16 ";
+        ipt_3.placeholder = "1 ";
+        ipt_47.placeholder = "2 ";
+        ipt_186.placeholder = "3 ";
+        ipt_168.placeholder = "4 ";
+        ipt_280.placeholder = "5 ";
+        ipt_190.placeholder = "6 ";
+        ipt_234.placeholder = "7 ";
+        ipt_194.placeholder = "8 ";
+        ipt_118.placeholder = "9 ";
+        ipt_120.placeholder = "10 ";
+        ipt_40.placeholder = "11 ";
+        ipt_109.placeholder = "12 ";
+        ipt_131.placeholder = "13 ";
+        ipt_289.placeholder = "14 ";
+        ipt_243.placeholder = "15 ";
+        ipt_160.placeholder = "16 ";
 
     // funçâo dos inputs para sempre atualizar a cada caractere digitado
     function validacao() {
