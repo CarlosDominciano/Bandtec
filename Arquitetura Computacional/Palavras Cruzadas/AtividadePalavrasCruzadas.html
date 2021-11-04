@@ -100,9 +100,9 @@
         cont == 312 || cont == 335 || cont == 160 || cont == 183 || cont == 206 || cont == 252 || cont == 229 ||
         cont == 321 || cont == 275 || cont == 355 || cont == 316 || cont == 266 || cont == 290 || cont == 119
         || cont == 120 || cont == 97 || cont == 74 || cont == 243) {
-            inputs.innerHTML += `<input oninput="i()" maxlength="1" type="text"
+            inputs.innerHTML += `<input oninput="validacao()" maxlength="1" type="text"
             style="background-color: white; color: black; border: 2px solid #3a3a55;"
-            id="ipt_${cont}" placeholder="${cont}" class="cx${cont}">`;
+            id="ipt_${cont}" class="cx${cont}">`;
         } else {
             inputs.innerHTML += `<input disabled style="background-color: transparent; color: transparent;
             border: 2px solid transparent;" type="text" id="ipt_${cont}">`;
@@ -126,92 +126,432 @@
     // aqui estou usando .placeholder para deixar especifico onde começa cada resposta
     // do jogo
     
-    // ipt_3.placeholder = "1 ";
-    // ipt_47.placeholder = "2 ";
-    // ipt_186.placeholder = "3 ";
-    // ipt_168.placeholder = "4 ";
-    // ipt_188.placeholder = "5 ";
-    // ipt_190.placeholder = "6 ";
-    // ipt_234.placeholder = "7 ";
-    // ipt_194.placeholder = "8 ";
-    // ipt_118.placeholder = "9 ";
-    // ipt_120.placeholder = "10 ";
-    // ipt_40.placeholder = "11 ";
-    // ipt_109.placeholder = "12 ";
-    // ipt_131.placeholder = "13 ";
-    // ipt_289.placeholder = "14 ";
-    // ipt_243.placeholder = "15 ";
-    // ipt_160.placeholder = "16 ";
+    ipt_3.placeholder = "1 ";
+    ipt_47.placeholder = "2 ";
+    ipt_186.placeholder = "3 ";
+    ipt_168.placeholder = "4 ";
+    ipt_280.placeholder = "5 ";
+    ipt_190.placeholder = "6 ";
+    ipt_234.placeholder = "7 ";
+    ipt_194.placeholder = "8 ";
+    ipt_118.placeholder = "9 ";
+    ipt_120.placeholder = "10 ";
+    ipt_40.placeholder = "11 ";
+    ipt_109.placeholder = "12 ";
+    ipt_131.placeholder = "13 ";
+    ipt_289.placeholder = "14 ";
+    ipt_243.placeholder = "15 ";
+    ipt_160.placeholder = "16 ";
 
     // funçâo dos inputs para sempre atualizar a cada caractere digitado
-    function i() {
-        var dma = ipt_47.value.toUpperCase() == "D"  && ipt_48.value.toUpperCase() == "M" && ipt_49.value.toUpperCase() == "A";
+    function validacao() {
 
-        var quadcore = ipt_3.value.toUpperCase() == "Q" && ipt_26.value.toUpperCase() == "U" && ipt_49.value.toUpperCase() == "A" && 
-        ipt_72.value.toUpperCase() == "D" && ipt_118.value.toUpperCase() == "C" && ipt_141.value.toUpperCase() == "O" &&
-        ipt_164.value.toUpperCase() == "R" && ipt_187.value.toUpperCase() == "E";
+        var dma = ipt_47.value.toUpperCase() == "D" && ipt_48.value.toUpperCase() == "M" &&
+        ipt_49.value.toUpperCase() == "A";
 
-        var cpu = ipt_118.value.toUpperCase() == "C" && ipt_119.value.toUpperCase() == "P" && ipt_120.value.toUpperCase() == "U";
+        var quadcore = ipt_3.value.toUpperCase() == "Q" && ipt_26.value.toUpperCase() == "U" &&
+        ipt_49.value.toUpperCase() == "A" && ipt_72.value.toUpperCase() == "D" && ipt_118.value.toUpperCase() == "C" &&
+        ipt_141.value.toUpperCase() == "O" && ipt_164.value.toUpperCase() == "R" && ipt_187.value.toUpperCase() == "E";
 
-        var ula = ipt_120.value.toUpperCase() == "U" && ipt_97.value.toUpperCase() == "L" && ipt_74.value.toUpperCase() == "A";
+        var cpu = ipt_118.value.toUpperCase() == "C" && ipt_119.value.toUpperCase() == "P" &&
+        ipt_120.value.toUpperCase() == "U";
+
+        var ula = ipt_120.value.toUpperCase() == "U" && ipt_97.value.toUpperCase() == "L" &&
+        ipt_74.value.toUpperCase() == "A";
 
         var i5 = ipt_168.value.toUpperCase() == "5" && ipt_191.value.toUpperCase() == "I";
 
         var i7 = ipt_109.value.toUpperCase() == "I" && ipt_110.value.toUpperCase() == "7";
 
+        var memoriademassa = ipt_186.value.toUpperCase() == "M" && ipt_187.value.toUpperCase() == "E" && 
+        ipt_188.value.toUpperCase() == "M" && ipt_189.value.toUpperCase() == "O" && ipt_190.value.toUpperCase() == "R" && 
+        ipt_191.value.toUpperCase() == "I" && ipt_192.value.toUpperCase() == "A" && ipt_194.value.toUpperCase() == "D" && 
+        ipt_195.value.toUpperCase() == "E" && ipt_197.value.toUpperCase() == "M" && ipt_198.value.toUpperCase() == "A" && 
+        ipt_199.value.toUpperCase() == "S" && ipt_200.value.toUpperCase() == "S" && ipt_201.value.toUpperCase() == "A";
+
+        var eprom = ipt_280.value.toUpperCase() == "E" && ipt_257.value.toUpperCase() == "P" && 
+        ipt_234.value.toUpperCase() == "R" && ipt_211.value.toUpperCase() == "O" && ipt_188.value.toUpperCase() == "M";
+
+        var ram = ipt_234.value.toUpperCase() == "R" && ipt_235.value.toUpperCase() == "A" &&
+        ipt_236.value.toUpperCase() == "M";
+
+        var rom = ipt_190.value.toUpperCase() == "R" && ipt_213.value.toUpperCase() == "O" &&
+        ipt_236.value.toUpperCase() == "M";
+
+        var cs = ipt_131.value.toUpperCase() == "C" && ipt_132.value.toUpperCase() == "S";
+
+        var addressbus = ipt_289.value.toUpperCase() == "A" && ipt_290.value.toUpperCase() == "D" && 
+        ipt_291.value.toUpperCase() == "D" && ipt_292.value.toUpperCase() == "R" && ipt_293.value.toUpperCase() == "E" && 
+        ipt_294.value.toUpperCase() == "S" && ipt_295.value.toUpperCase() == "S" && ipt_297.value.toUpperCase() == "B" && 
+        ipt_298.value.toUpperCase() == "U" && ipt_299.value.toUpperCase() == "S"; 
+
+        var databus = ipt_160.value.toUpperCase() == "D" && ipt_183.value.toUpperCase() == "A" && 
+        ipt_206.value.toUpperCase() == "T" && ipt_229.value.toUpperCase() == "A" && ipt_275.value.toUpperCase() == "B" && 
+        ipt_298.value.toUpperCase() == "U" && ipt_321.value.toUpperCase() == "S";
+
+        var registradores = ipt_40.value.toUpperCase() == "R" && ipt_63.value.toUpperCase() == "E" && 
+        ipt_86.value.toUpperCase() == "G" && ipt_109.value.toUpperCase() == "I" && ipt_132.value.toUpperCase() == "S" &&
+        ipt_155.value.toUpperCase() == "T" && ipt_178.value.toUpperCase() == "R" && ipt_201.value.toUpperCase() == "A" &&
+        ipt_224.value.toUpperCase() == "D" && ipt_247.value.toUpperCase() == "O" && ipt_270.value.toUpperCase() == "R" &&
+        ipt_293.value.toUpperCase() == "E" && ipt_316.value.toUpperCase() == "S";
+
+        var flash = ipt_243.value.toUpperCase() == "F" && ipt_266.value.toUpperCase() == "L" && 
+        ipt_289.value.toUpperCase() == "A" && ipt_312.value.toUpperCase() == "S" && ipt_335.value.toUpperCase() == "H";
+
+        var dualcore = ipt_194.value.toUpperCase() == "D" && ipt_217.value.toUpperCase() == "U" &&
+        ipt_240.value.toUpperCase() == "A" && ipt_263.value.toUpperCase() == "L" && ipt_309.value.toUpperCase() == "C" && 
+        ipt_332.value.toUpperCase() == "O" && ipt_355.value.toUpperCase() == "R" && ipt_378.value.toUpperCase() == "E";
+
+
+        // aqui começa todas as validação para fazer os inputs ficarem verdes e imutaveis
+        // se a pessoa acertar a palavra, se ela não acertar, a tela continua a mesma coisa
+
         if (dma) {
 
-            ipt_47.style = "background-color: #6aff9c; color: black; border: 2px solid #3a3a55;"
+            ipt_47.style = "background-color: #6aff9c; color: black; border: 2px solid #3a3a55;";
             document.getElementById('ipt_47').disabled = true;
 
-            ipt_48.style = "background-color: #6aff9c; color: black; border: 2px solid #3a3a55;"
+            ipt_48.style = "background-color: #6aff9c; color: black; border: 2px solid #3a3a55;";
             document.getElementById('ipt_48').disabled = true;
 
-            ipt_49.style = "background-color: #6aff9c; color: black; border: 2px solid #3a3a55;"
+            ipt_49.style = "background-color: #6aff9c; color: black; border: 2px solid #3a3a55;";
             document.getElementById('ipt_49').disabled = true;
 
         }
     
         if (quadcore) {
 
-            ipt_3.style = "background-color: #6aff9c; color: black; border: 2px solid #3a3a55;"
+            ipt_3.style = "background-color: #6aff9c; color: black; border: 2px solid #3a3a55;";
             document.getElementById('ipt_3').disabled = true;
 
-            ipt_26.style = "background-color: #6aff9c; color: black; border: 2px solid #3a3a55;"
+            ipt_26.style = "background-color: #6aff9c; color: black; border: 2px solid #3a3a55;";
             document.getElementById('ipt_26').disabled = true;
 
-            ipt_49.style = "background-color: #6aff9c; color: black; border: 2px solid #3a3a55;"
+            ipt_49.style = "background-color: #6aff9c; color: black; border: 2px solid #3a3a55;";
             document.getElementById('ipt_49').disabled = true;
 
-            ipt_72.style = "background-color: #6aff9c; color: black; border: 2px solid #3a3a55;"
+            ipt_72.style = "background-color: #6aff9c; color: black; border: 2px solid #3a3a55;";
             document.getElementById('ipt_72').disabled = true;
 
-            ipt_95.style = "background-color: #497a59; color: black; border: 2px solid #3a3a55;"
+            ipt_95.style = "background-color: #497a59; color: black; border: 2px solid #3a3a55;";
 
-            ipt_118.style = "background-color: #6aff9c; color: black; border: 2px solid #3a3a55;"
+            ipt_118.style = "background-color: #6aff9c; color: black; border: 2px solid #3a3a55;";
             document.getElementById('ipt_118').disabled = true;
 
-            ipt_141.style = "background-color: #6aff9c; color: black; border: 2px solid #3a3a55;"
+            ipt_141.style = "background-color: #6aff9c; color: black; border: 2px solid #3a3a55;";
             document.getElementById('ipt_141').disabled = true;
 
-            ipt_164.style = "background-color: #6aff9c; color: black; border: 2px solid #3a3a55;"
+            ipt_164.style = "background-color: #6aff9c; color: black; border: 2px solid #3a3a55;";
             document.getElementById('ipt_164').disabled = true;
 
-            ipt_187.style = "background-color: #6aff9c; color: black; border: 2px solid #3a3a55;"
+            ipt_187.style = "background-color: #6aff9c; color: black; border: 2px solid #3a3a55;";
             document.getElementById('ipt_187').disabled = true;
 
         }
 
         if (cpu) {
 
-            ipt_118.style = "background-color: #6aff9c; color: black; border: 2px solid #3a3a55;"
+            ipt_118.style = "background-color: #6aff9c; color: black; border: 2px solid #3a3a55;";
             document.getElementById('ipt_118').disabled = true;
 
-            ipt_119.style = "background-color: #6aff9c; color: black; border: 2px solid #3a3a55;"
+            ipt_119.style = "background-color: #6aff9c; color: black; border: 2px solid #3a3a55;";
             document.getElementById('ipt_119').disabled = true;
 
-            ipt_120.style = "background-color: #6aff9c; color: black; border: 2px solid #3a3a55;"
+            ipt_120.style = "background-color: #6aff9c; color: black; border: 2px solid #3a3a55;";
             document.getElementById('ipt_120').disabled = true;
+
+        }
+
+        if (ula) {
+            
+            ipt_120.style = "background-color: #6aff9c; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_120').disabled = true;
+
+            ipt_97.style = "background-color: #6aff9c; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_97').disabled = true;
+
+            ipt_74.style = "background-color: #6aff9c; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_74').disabled = true;
+
+        }
+
+        if (i5) {
+            
+            ipt_168.style = "background-color: #6aff9c; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_168').disabled = true;
+
+            ipt_191.style = "background-color: #6aff9c; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_191').disabled = true;
+
+        }
+
+        if (i7) {
+
+            ipt_109.style = "background-color: #6aff9c; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_109').disabled = true;
+
+            ipt_110.style = "background-color: #6aff9c; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_110').disabled = true;
+
+        }
+        
+        if (memoriademassa) {
+            
+            ipt_186.style = "background-color: #6aff9c; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_186').disabled = true;
+
+            ipt_187.style = "background-color: #6aff9c; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_187').disabled = true;
+
+            ipt_188.style = "background-color: #6aff9c; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_188').disabled = true;
+
+            ipt_189.style = "background-color: #6aff9c; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_189').disabled = true;
+
+            ipt_190.style = "background-color: #6aff9c; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_190').disabled = true;
+
+            ipt_191.style = "background-color: #6aff9c; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_191').disabled = true;
+
+            ipt_192.style = "background-color: #6aff9c; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_192').disabled = true;
+
+            ipt_193.style = "background-color: #497a59; color: black; border: 2px solid #3a3a55;";
+
+            ipt_194.style = "background-color: #6aff9c; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_194').disabled = true;
+
+            ipt_195.style = "background-color: #6aff9c; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_195').disabled = true;
+
+            ipt_196.style = "background-color: #497a59; color: black; border: 2px solid #3a3a55;";
+
+            ipt_197.style = "background-color: #6aff9c; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_197').disabled = true;
+
+            ipt_198.style = "background-color: #6aff9c; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_198').disabled = true;
+
+            ipt_199.style = "background-color: #6aff9c; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_199').disabled = true;
+
+            ipt_200.style = "background-color: #6aff9c; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_200').disabled = true;
+
+            ipt_201.style = "background-color: #6aff9c; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_201').disabled = true;
+
+        }
+
+        if (eprom) {
+            
+            ipt_280.style = "background-color: #6aff9c; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_280').disabled = true;
+
+            ipt_257.style = "background-color: #6aff9c; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_257').disabled = true;
+
+            ipt_234.style = "background-color: #6aff9c; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_234').disabled = true;
+
+            ipt_211.style = "background-color: #6aff9c; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_211').disabled = true;
+
+            ipt_188.style = "background-color: #6aff9c; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_188').disabled = true;
+
+        }
+
+        if (ram) {
+            
+            ipt_234.style = "background-color: #6aff9c; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_234').disabled = true;
+
+            ipt_235.style = "background-color: #6aff9c; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_235').disabled = true;
+
+            ipt_236.style = "background-color: #6aff9c; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_236').disabled = true;
+
+        }
+
+        if (rom) {
+            
+            ipt_190.style = "background-color: #6aff9c; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_190').disabled = true;
+
+            ipt_213.style = "background-color: #6aff9c; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_213').disabled = true;
+
+            ipt_236.style = "background-color: #6aff9c; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_236').disabled = true;
+
+        }
+
+        if (cs) {
+            
+            ipt_131.style = "background-color: #6aff9c; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_131').disabled = true;
+
+            ipt_132.style = "background-color: #6aff9c; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_132').disabled = true;
+
+        }
+
+        if (addressbus) {
+            
+            ipt_289.style = "background-color: #6aff9c; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_289').disabled = true;
+
+            ipt_290.style = "background-color: #6aff9c; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_290').disabled = true;
+
+            ipt_291.style = "background-color: #6aff9c; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_291').disabled = true;
+
+            ipt_292.style = "background-color: #6aff9c; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_292').disabled = true;
+
+            ipt_293.style = "background-color: #6aff9c; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_293').disabled = true;
+
+            ipt_294.style = "background-color: #6aff9c; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_294').disabled = true;
+
+            ipt_295.style = "background-color: #6aff9c; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_295').disabled = true;
+
+            ipt_296.style = "background-color: #497a59; color: black; border: 2px solid #3a3a55;";
+            
+            ipt_297.style = "background-color: #6aff9c; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_297').disabled = true;
+            
+            ipt_298.style = "background-color: #6aff9c; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_298').disabled = true;
+
+            ipt_299.style = "background-color: #6aff9c; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_299').disabled = true;
+
+        }
+
+        if (databus) {
+            
+            ipt_160.style = "background-color: #6aff9c; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_160').disabled = true;
+
+            ipt_183.style = "background-color: #6aff9c; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_183').disabled = true;
+
+            ipt_206.style = "background-color: #6aff9c; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_206').disabled = true;
+
+            ipt_229.style = "background-color: #6aff9c; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_229').disabled = true;
+
+            ipt_252.style = "background-color: #497a59; color: black; border: 2px solid #3a3a55;";
+            
+            ipt_275.style = "background-color: #6aff9c; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_275').disabled = true;
+            
+            ipt_298.style = "background-color: #6aff9c; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_298').disabled = true;
+
+            ipt_321.style = "background-color: #6aff9c; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_321').disabled = true;
+
+        }
+
+        if (registradores) {
+            
+            ipt_40.style = "background-color: #6aff9c; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_40').disabled = true;
+
+            ipt_63.style = "background-color: #6aff9c; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_63').disabled = true;
+
+            ipt_86.style = "background-color: #6aff9c; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_86').disabled = true;
+
+            ipt_109.style = "background-color: #6aff9c; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_109').disabled = true;
+
+            ipt_132.style = "background-color: #6aff9c; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_132').disabled = true;
+
+            ipt_155.style = "background-color: #6aff9c; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_155').disabled = true;
+
+            ipt_178.style = "background-color: #6aff9c; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_178').disabled = true;
+
+            ipt_201.style = "background-color: #6aff9c; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_201').disabled = true;
+
+            ipt_224.style = "background-color: #6aff9c; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_224').disabled = true;
+        
+            ipt_247.style = "background-color: #6aff9c; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_247').disabled = true;
+
+            ipt_270.style = "background-color: #6aff9c; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_270').disabled = true;
+
+            ipt_293.style = "background-color: #6aff9c; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_293').disabled = true;
+
+            ipt_316.style = "background-color: #6aff9c; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_315').disabled = true;
+
+        }
+
+        if (flash) {
+            
+            ipt_243.style = "background-color: #6aff9c; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_243').disabled = true;
+        
+            ipt_266.style = "background-color: #6aff9c; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_266').disabled = true;
+
+            ipt_289.style = "background-color: #6aff9c; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_289').disabled = true;
+
+            ipt_312.style = "background-color: #6aff9c; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_312').disabled = true;
+
+            ipt_335.style = "background-color: #6aff9c; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_335').disabled = true;
+
+        }
+
+        if (dualcore) {
+            
+            ipt_194.style = "background-color: #6aff9c; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_194').disabled = true;
+        
+            ipt_217.style = "background-color: #6aff9c; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_217').disabled = true;
+
+            ipt_240.style = "background-color: #6aff9c; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_240').disabled = true;
+
+            ipt_263.style = "background-color: #6aff9c; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_263').disabled = true;
+
+            ipt_286.style = "background-color: #497a59; color: black; border: 2px solid #3a3a55;";
+
+            ipt_309.style = "background-color: #6aff9c; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_309').disabled = true;
+        
+            ipt_332.style = "background-color: #6aff9c; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_332').disabled = true;
+
+            ipt_355.style = "background-color: #6aff9c; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_355').disabled = true;
+
+            ipt_378.style = "background-color: #6aff9c; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_378').disabled = true;
 
         }
     }
