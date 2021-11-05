@@ -7,8 +7,8 @@
     <title>Palavras Cruzadas</title>
     <link rel="stylesheet" href="./AtividadePalavrasCruzadas.css">
 </head>
-<body onclick="start()">
-    <audio onload="start()" id="missionStart" src="./Mission Start"></audio>
+<body>
+    <audio id="missionStart" src="./Mission Start"></audio>
     <audio id="missionComplete" src="./Mission Complete"></audio>
     <center>
         <h1>Palavras Cruzadas</h1>
@@ -17,8 +17,8 @@
             <div class="dicas">
 
                 <!-- 
-.        (҂`_´)
-         <,︻╦̵̵̿╤─ ҉     ~  •
+.        (҂`_´) 
+         <,︻╦̵̵̿╤─ ҉    ~  •
 █۞███████]▄▄▄▄▄▄▄▄▄▄▃ ●●●
 ▂▄▅█████████▅▄▃▂…
 [███████████████████]
@@ -97,10 +97,12 @@
 
         <!--Segunda caixa contendo os inputs-->
         <div class="jogo">
-            <div id="inputs" class="palavras">
+            <div onclick="start()" id="inputs" class="palavras">
                 
             </div>
         </div>
+
+        <button onclick="recomecar()">Recomeçar</button>
     </center>
     
 </body>
@@ -277,35 +279,7 @@
         ipt_47.value.toUpperCase() == "D" && ipt_48.value.toUpperCase() == "M" && ipt_49.value.toUpperCase() == "A" &&
         ipt_3.value.toUpperCase() == "Q" && ipt_26.value.toUpperCase() == "U" && ipt_164.value.toUpperCase() == "R" &&
         ipt_72.value.toUpperCase() == "D" && ipt_141.value.toUpperCase() == "O";
-
-        var completo = ipt_194.value = "" && ipt_217.value = "" &&
-        ipt_240.value = "" && ipt_263.value && ipt_309.value = "" && 
-        ipt_332.value = "" && ipt_355.value && ipt_378.value = "" &&
-        ipt_243.value = "" && ipt_266.value && ipt_312.value = "" &&
-        ipt_289.value = "" && ipt_335.value &&  ipt_40.value = "" &&
-        ipt_86.value = "" && ipt_109.value && ipt_132.value = "" &&
-        ipt_155.value = "" && ipt_178.value && ipt_201.value = "" &&
-        ipt_224.value = "" && ipt_247.value && ipt_270.value = "" &&
-        ipt_293.value = "" && ipt_316.value && ipt_63.value = "" && 
-        ipt_160.value = "" && ipt_183.value && ipt_321.value = "" &&
-        ipt_206.value = "" && ipt_229.value && ipt_275.value = "" && 
-        ipt_298.value = "" &&  ipt_289.value && ipt_290.value = "" && 
-        ipt_291.value = "" && ipt_292.value && ipt_131.value = "" &&
-        ipt_294.value = "" && ipt_295.value && ipt_297.value = "" && 
-        ipt_299.value = "" && ipt_190.value && ipt_213.value = "" &&
-        ipt_236.value = "" && ipt_234.value && ipt_235.value = "" &&
-        ipt_280.value = "" && ipt_257.value && ipt_192.value = "" && 
-        ipt_211.value = "" && ipt_188.value && ipt_186.value = "" &&
-        ipt_187.value = "" && ipt_197.value && ipt_198.value = "" && 
-        ipt_189.value = "" && ipt_200.value && ipt_199.value = "" &&
-        ipt_191.value = "" && ipt_195.value && ipt_110.value = "" &&
-        ipt_168.value = "" && ipt_120.value && ipt_97.value = "" &&
-        ipt_74.value = "" && ipt_118.value && ipt_119.value = "" &&
-        ipt_47.value = "" && ipt_48.value && ipt_49.value = "" &&
-        ipt_3.value = "" && ipt_26.value && ipt_164.value = "" &&
-        ipt_72.value = "" && ipt_141.value = "";
-
-        
+ 
         
         // aqui começa todas as validação para fazer os inputs ficarem verdes e imutaveis
         // se a pessoa acertar a palavra, se ela não acertar, a tela continua a mesma coisa
@@ -663,8 +637,377 @@
             
             const misComplete = document.getElementById('missionComplete')
             misComplete.play();
-
+            
         }
 
+    }
+
+    function recomecar() {
+
+        missionCont = 0;
+        misStart = document.getElementById('missionStart')
+
+            ipt_194.value = "";
+            ipt_217.value = "";
+            ipt_240.value = "";
+            ipt_263.value = "";
+            ipt_309.value = "";
+            ipt_332.value = "";
+            ipt_355.value = "";
+            ipt_378.value = "";
+            ipt_243.value = "";
+            ipt_266.value = "";
+            ipt_312.value = "";
+            ipt_289.value = "";
+            ipt_335.value = "";
+            ipt_40.value = "";
+            ipt_86.value = "";
+            ipt_109.value = "";
+            ipt_132.value = "";
+            ipt_155.value = "";
+            ipt_178.value = "";
+            ipt_201.value = "";
+            ipt_224.value = "";
+            ipt_247.value = "";
+            ipt_270.value = "";
+            ipt_293.value = "";
+            ipt_316.value = "";
+            ipt_63.value = "";
+            ipt_160.value = "";
+            ipt_183.value = "";
+            ipt_321.value = "";
+            ipt_206.value = "";
+            ipt_229.value = "";
+            ipt_275.value = "";
+            ipt_298.value = "";
+            ipt_289.value = "";
+            ipt_290.value = "";
+            ipt_291.value = "";
+            ipt_292.value = "";
+            ipt_131.value = "";
+            ipt_294.value = "";
+            ipt_295.value = "";
+            ipt_297.value = "";
+            ipt_299.value = "";
+            ipt_190.value = "";
+            ipt_213.value = "";
+            ipt_236.value = "";
+            ipt_234.value = "";
+            ipt_235.value = "";
+            ipt_280.value = "";
+            ipt_257.value = "";
+            ipt_192.value = "";
+            ipt_211.value = "";
+            ipt_188.value = "";
+            ipt_186.value = "";
+            ipt_187.value = "";
+            ipt_197.value = "";
+            ipt_198.value = "";
+            ipt_189.value = "";
+            ipt_200.value = "";
+            ipt_199.value = "";
+            ipt_191.value = "";
+            ipt_195.value = "";
+            ipt_110.value = "";
+            ipt_168.value = "";
+            ipt_120.value = "";
+            ipt_97.value = "";
+            ipt_74.value = "";
+            ipt_118.value = "";
+            ipt_119.value = "";
+            ipt_47.value = "";
+            ipt_48.value = "";
+            ipt_49.value = "";
+            ipt_3.value = "";
+            ipt_26.value = "";
+            ipt_164.value = "";
+            ipt_72.value = "";
+            ipt_141.value = "";
+
+            ipt_194.style = "background-color: white; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_194').disabled = false;
+        
+            ipt_217.style = "background-color: white; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_217').disabled = false;
+
+            ipt_240.style = "background-color: white; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_240').disabled = false;
+
+            ipt_263.style = "background-color: white; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_263').disabled = false;
+
+            ipt_286.style = "background-color: #616161; color: black; border: 2px solid #3a3a55;";
+
+            ipt_309.style = "background-color: white; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_309').disabled = false;
+        
+            ipt_332.style = "background-color: white; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_332').disabled = false;
+
+            ipt_355.style = "background-color: white; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_355').disabled = false;
+
+            ipt_378.style = "background-color: white; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_378').disabled = false;
+
+            ipt_243.style = "background-color: white; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_243').disabled = false;
+        
+            ipt_266.style = "background-color: white; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_266').disabled = false;
+
+            ipt_289.style = "background-color: white; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_289').disabled = false;
+
+            ipt_312.style = "background-color: white; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_312').disabled = false;
+
+            ipt_335.style = "background-color: white; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_335').disabled = false;
+
+            ipt_40.style = "background-color: white; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_40').disabled = false;
+
+            ipt_63.style = "background-color: white; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_63').disabled = false;
+
+            ipt_86.style = "background-color: white; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_86').disabled = false;
+
+            ipt_109.style = "background-color: white; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_109').disabled = false;
+
+            ipt_132.style = "background-color: white; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_132').disabled = false;
+
+            ipt_155.style = "background-color: white; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_155').disabled = false;
+
+            ipt_178.style = "background-color: white; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_178').disabled = false;
+
+            ipt_201.style = "background-color: white; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_201').disabled = false;
+
+            ipt_224.style = "background-color: white; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_224').disabled = false;
+        
+            ipt_247.style = "background-color: white; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_247').disabled = false;
+
+            ipt_270.style = "background-color: white; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_270').disabled = false;
+
+            ipt_293.style = "background-color: white; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_293').disabled = false;
+
+            ipt_316.style = "background-color: white; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_315').disabled = false;
+
+            ipt_160.style = "background-color: white; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_160').disabled = false;
+
+            ipt_183.style = "background-color: white; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_183').disabled = false;
+
+            ipt_206.style = "background-color: white; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_206').disabled = false;
+
+            ipt_229.style = "background-color: white; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_229').disabled = false;
+
+            ipt_252.style = "background-color: #616161; color: black; border: 2px solid #3a3a55;";
+            
+            ipt_275.style = "background-color: white; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_275').disabled = false;
+            
+            ipt_298.style = "background-color: white; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_298').disabled = false;
+
+            ipt_321.style = "background-color: white; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_321').disabled = false;
+
+            ipt_289.style = "background-color: white; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_289').disabled = false;
+
+            ipt_290.style = "background-color: white; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_290').disabled = false;
+
+            ipt_291.style = "background-color: white; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_291').disabled = false;
+
+            ipt_292.style = "background-color: white; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_292').disabled = false;
+
+            ipt_293.style = "background-color: white; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_293').disabled = false;
+
+            ipt_294.style = "background-color: white; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_294').disabled = false;
+
+            ipt_295.style = "background-color: white; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_295').disabled = false;
+
+            ipt_296.style = "background-color: #616161; color: black; border: 2px solid #3a3a55;";
+            
+            ipt_297.style = "background-color: white; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_297').disabled = false;
+            
+            ipt_298.style = "background-color: white; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_298').disabled = false;
+
+            ipt_299.style = "background-color: white; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_299').disabled = false;
+
+            ipt_131.style = "background-color: white; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_131').disabled = false;
+
+            ipt_132.style = "background-color: white; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_132').disabled = false;
+
+            ipt_190.style = "background-color: white; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_190').disabled = false;
+
+            ipt_213.style = "background-color: white; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_213').disabled = false;
+
+            ipt_236.style = "background-color: white; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_236').disabled = false;
+
+            ipt_234.style = "background-color: white; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_234').disabled = false;
+
+            ipt_235.style = "background-color: white; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_235').disabled = false;
+
+            ipt_236.style = "background-color: white; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_236').disabled = false;
+
+            ipt_280.style = "background-color: white; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_280').disabled = false;
+
+            ipt_257.style = "background-color: white; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_257').disabled = false;
+
+            ipt_234.style = "background-color: white; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_234').disabled = false;
+
+            ipt_211.style = "background-color: white; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_211').disabled = false;
+
+            ipt_188.style = "background-color: white; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_188').disabled = false;
+
+            ipt_186.style = "background-color: white; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_186').disabled = false;
+
+            ipt_187.style = "background-color: white; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_187').disabled = false;
+
+            ipt_188.style = "background-color: white; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_188').disabled = false;
+
+            ipt_189.style = "background-color: white; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_189').disabled = false;
+
+            ipt_190.style = "background-color: white; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_190').disabled = false;
+
+            ipt_191.style = "background-color: white; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_191').disabled = false;
+
+            ipt_192.style = "background-color: white; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_192').disabled = false;
+
+            ipt_193.style = "background-color: #616161; color: black; border: 2px solid #3a3a55;";
+
+            ipt_194.style = "background-color: white; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_194').disabled = false;
+
+            ipt_195.style = "background-color: white; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_195').disabled = false;
+
+            ipt_196.style = "background-color: #616161; color: black; border: 2px solid #3a3a55;";
+
+            ipt_197.style = "background-color: white; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_197').disabled = false;
+
+            ipt_198.style = "background-color: white; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_198').disabled = false;
+
+            ipt_199.style = "background-color: white; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_199').disabled = false;
+
+            ipt_200.style = "background-color: white; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_200').disabled = false;
+
+            ipt_201.style = "background-color: white; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_201').disabled = false;
+
+            ipt_109.style = "background-color: white; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_109').disabled = false;
+
+            ipt_110.style = "background-color: white; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_110').disabled = false;
+
+            ipt_168.style = "background-color: white; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_168').disabled = false;
+
+            ipt_191.style = "background-color: white; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_191').disabled = false;
+
+            ipt_120.style = "background-color: white; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_120').disabled = false;
+
+            ipt_97.style = "background-color: white; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_97').disabled = false;
+
+            ipt_74.style = "background-color: white; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_74').disabled = false;
+
+            ipt_118.style = "background-color: white; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_118').disabled = false;
+
+            ipt_119.style = "background-color: white; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_119').disabled = false;
+
+            ipt_120.style = "background-color: white; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_120').disabled = false;
+
+            ipt_3.style = "background-color: white; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_3').disabled = false;
+
+            ipt_26.style = "background-color: white; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_26').disabled = false;
+
+            ipt_49.style = "background-color: white; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_49').disabled = false;
+
+            ipt_72.style = "background-color: white; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_72').disabled = false;
+
+            ipt_95.style = "background-color: #616161; color: black; border: 2px solid #3a3a55;";
+
+            ipt_118.style = "background-color: white; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_118').disabled = false;
+
+            ipt_141.style = "background-color: white; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_141').disabled = false;
+
+            ipt_164.style = "background-color: white; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_164').disabled = false;
+
+            ipt_187.style = "background-color: white; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_187').disabled = false;
+
+            ipt_47.style = "background-color: white; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_47').disabled = false;
+
+            ipt_48.style = "background-color: white; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_48').disabled = false;
+
+            ipt_49.style = "background-color: white; color: black; border: 2px solid #3a3a55;";
+            document.getElementById('ipt_49').disabled = false;
+        
     }
 </script>

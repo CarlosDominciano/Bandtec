@@ -90,3 +90,16 @@ h3 {
     font-size: 10px;
     float: left;
 } 
+
+button {
+    background-color: #3a3a55;
+    width: 150px;
+    height: 75px;
+    font-size: 20px;
+    color: mintcream;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 25px;
+    border: 1px solid #6aff9c;
+    margin: 50px 0px;
+    cursor: pointer;
+}
