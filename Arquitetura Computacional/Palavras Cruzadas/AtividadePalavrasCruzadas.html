@@ -8,11 +8,11 @@
     <link rel="stylesheet" href="./AtividadePalavrasCruzadas.css">
 </head>
 <body>
-
-    <audio src="./Mission Complete"></audio>
+    <audio onload="start()" id="missionStart" src="./Mission Start"></audio>
+    <audio id="missionComplete" src="./Mission Complete"></audio>
     <center>
         <h1>Palavras Cruzadas</h1>
-        <!--Primeira caixa contendo as perguntas-->
+        <!--Primeira caixa contendo as dicas e regras-->
         <div class="box">
             <div class="dicas">
 
@@ -27,10 +27,11 @@
 
                 <h1>✽ Regras</h1> <br>
                 <h3>
-                    ♦ - Se você escrever uma palavra corretamente, ela ficará verde e imutável; <br><br>
-                    ♠ - Para cada letra colocada no lugar errado, o Faustão te lembrará disso...; <br><br>
-                    ♥ - Pode ser que tenha uma pergunta bônus; <br><br>
+
+                    ♠ - Complete tudo e receba suas congratulações; <br><br>
+                    ♥ - Se você escrever uma palavra corretamente, ela ficará verde e imutável; <br><br>
                     ♣ - Se divirta :D 
+
                 </h3> <br><br>
                 <h1>✽ Dicas</h1> <br>
                 <h3>
@@ -95,7 +96,7 @@
 
         <!--Segunda caixa contendo os inputs-->
         <div class="jogo">
-            <div id="inputs" class="palavras">
+            <div onclick="start()" id="inputs" class="palavras">
                 
             </div>
         </div>
@@ -104,6 +105,16 @@
 </body>
 </html>
 <script>
+    var missionCont = 0;
+    var misStart = document.getElementById('missionStart')
+    function start() {
+            misStart.currentTime = 0
+            misStart.play();
+            missionCont++
+            if (missionCont >= 1) {
+                misStart = null;
+            }
+    }
     //While para gerar os inputs automaticamente com style único
     var cont = 1;
     while (cont < 392) {
@@ -617,9 +628,10 @@
 
         if (completo) {
             
-            const audio = document.querySelector('audio')
-            audio.currentTime = 0
-            audio.play();
+            const misComplete = document.getElementById('missionComplete')
+            misComplete.play();
+
         }
+
     }
 </script>
