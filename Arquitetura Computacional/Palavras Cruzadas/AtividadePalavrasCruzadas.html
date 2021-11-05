@@ -7,7 +7,7 @@
     <title>Palavras Cruzadas</title>
     <link rel="stylesheet" href="./AtividadePalavrasCruzadas.css">
 </head>
-<body>
+<body onclick="start()">
     <audio onload="start()" id="missionStart" src="./Mission Start"></audio>
     <audio id="missionComplete" src="./Mission Complete"></audio>
     <center>
@@ -28,8 +28,9 @@
                 <h1>✽ Regras</h1> <br>
                 <h3>
 
-                    ♠ - Complete tudo e receba suas congratulações; <br><br>
-                    ♥ - Se você escrever uma palavra corretamente, ela ficará verde e imutável; <br><br>
+                    ♦ - Se colocar qualquer campo ou palavra errado, nada acontecerá; <br><br>
+                    ♠ - Se você escrever uma palavra corretamente, ela ficará verde e imutável; <br><br>
+                    ♥ - Complete tudo e receba suas congratulações; <br><br>
                     ♣ - Se divirta :D 
 
                 </h3> <br><br>
@@ -96,7 +97,7 @@
 
         <!--Segunda caixa contendo os inputs-->
         <div class="jogo">
-            <div onclick="start()" id="inputs" class="palavras">
+            <div id="inputs" class="palavras">
                 
             </div>
         </div>
@@ -105,6 +106,7 @@
 </body>
 </html>
 <script>
+    // configurações para fazer o audio de entrada iniciar apenas uma vez.
     var missionCont = 0;
     var misStart = document.getElementById('missionStart')
     function start() {
@@ -115,8 +117,10 @@
                 misStart = null;
             }
     }
+
     //While para gerar os inputs automaticamente com style único
     var cont = 1;
+
     while (cont < 392) {
         if (cont == 3 || cont == 26 || cont == 72 || cont == 95 || cont == 118 || cont == 141 ||
         cont == 211 || cont == 213 || cont == 217 || cont == 224 || cont == 164 || cont == 186 ||
