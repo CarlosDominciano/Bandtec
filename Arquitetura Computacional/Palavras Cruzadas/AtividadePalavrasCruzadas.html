@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="./AtividadePalavrasCruzadas.css">
 </head>
 <body>
+
+    <audio src="./Mission Complete"></audio>
     <center>
         <h1>Palavras Cruzadas</h1>
         <!--Primeira caixa contendo as perguntas-->
@@ -86,6 +88,7 @@
                 <h3>
                     16 - Dispositivo em que através do interior de um computador são transportados dados e informações importantes.
                 </h3>
+                <audio src="./Errou!!!"></audio>
             </div>
         </div>
     
@@ -233,7 +236,33 @@
         ipt_240.value.toUpperCase() == "A" && ipt_263.value.toUpperCase() == "L" && ipt_309.value.toUpperCase() == "C" && 
         ipt_332.value.toUpperCase() == "O" && ipt_355.value.toUpperCase() == "R" && ipt_378.value.toUpperCase() == "E";
 
-
+        var completo = ipt_194.value.toUpperCase() == "D" && ipt_217.value.toUpperCase() == "U" &&
+        ipt_240.value.toUpperCase() == "A" && ipt_263.value.toUpperCase() == "L" && ipt_309.value.toUpperCase() == "C" && 
+        ipt_332.value.toUpperCase() == "O" && ipt_355.value.toUpperCase() == "R" && ipt_378.value.toUpperCase() == "E" &&
+        ipt_243.value.toUpperCase() == "F" && ipt_266.value.toUpperCase() == "L" && ipt_312.value.toUpperCase() == "S" &&
+        ipt_289.value.toUpperCase() == "A" && ipt_335.value.toUpperCase() == "H" &&  ipt_40.value.toUpperCase() == "R" &&
+        ipt_86.value.toUpperCase() == "G" && ipt_109.value.toUpperCase() == "I" && ipt_132.value.toUpperCase() == "S" &&
+        ipt_155.value.toUpperCase() == "T" && ipt_178.value.toUpperCase() == "R" && ipt_201.value.toUpperCase() == "A" &&
+        ipt_224.value.toUpperCase() == "D" && ipt_247.value.toUpperCase() == "O" && ipt_270.value.toUpperCase() == "R" &&
+        ipt_293.value.toUpperCase() == "E" && ipt_316.value.toUpperCase() == "S" && ipt_63.value.toUpperCase() == "E" && 
+        ipt_160.value.toUpperCase() == "D" && ipt_183.value.toUpperCase() == "A" && ipt_321.value.toUpperCase() == "S" &&
+        ipt_206.value.toUpperCase() == "T" && ipt_229.value.toUpperCase() == "A" && ipt_275.value.toUpperCase() == "B" && 
+        ipt_298.value.toUpperCase() == "U" &&  ipt_289.value.toUpperCase() == "A" && ipt_290.value.toUpperCase() == "D" && 
+        ipt_291.value.toUpperCase() == "D" && ipt_292.value.toUpperCase() == "R" && ipt_131.value.toUpperCase() == "C" &&
+        ipt_294.value.toUpperCase() == "S" && ipt_295.value.toUpperCase() == "S" && ipt_297.value.toUpperCase() == "B" && 
+        ipt_299.value.toUpperCase() == "S" && ipt_190.value.toUpperCase() == "R" && ipt_213.value.toUpperCase() == "O" &&
+        ipt_236.value.toUpperCase() == "M" && ipt_234.value.toUpperCase() == "R" && ipt_235.value.toUpperCase() == "A" &&
+        ipt_280.value.toUpperCase() == "E" && ipt_257.value.toUpperCase() == "P" && ipt_192.value.toUpperCase() == "A" && 
+        ipt_211.value.toUpperCase() == "O" && ipt_188.value.toUpperCase() == "M" && ipt_186.value.toUpperCase() == "M" &&
+        ipt_187.value.toUpperCase() == "E" && ipt_197.value.toUpperCase() == "M" && ipt_198.value.toUpperCase() == "A" && 
+        ipt_189.value.toUpperCase() == "O" && ipt_200.value.toUpperCase() == "S" && ipt_199.value.toUpperCase() == "S" &&
+        ipt_191.value.toUpperCase() == "I" && ipt_195.value.toUpperCase() == "E" && ipt_110.value.toUpperCase() == "7" &&
+        ipt_168.value.toUpperCase() == "5" && ipt_120.value.toUpperCase() == "U" && ipt_97.value.toUpperCase() == "L" &&
+        ipt_74.value.toUpperCase() == "A" && ipt_118.value.toUpperCase() == "C" && ipt_119.value.toUpperCase() == "P" &&
+        ipt_47.value.toUpperCase() == "D" && ipt_48.value.toUpperCase() == "M" && ipt_49.value.toUpperCase() == "A" &&
+        ipt_3.value.toUpperCase() == "Q" && ipt_26.value.toUpperCase() == "U" && ipt_164.value.toUpperCase() == "R" &&
+        ipt_72.value.toUpperCase() == "D" && ipt_141.value.toUpperCase() == "O";
+        
         // aqui começa todas as validação para fazer os inputs ficarem verdes e imutaveis
         // se a pessoa acertar a palavra, se ela não acertar, a tela continua a mesma coisa
 
@@ -584,6 +613,13 @@
             ipt_378.style = "background-color: #6aff9c; color: black; border: 2px solid #3a3a55;";
             document.getElementById('ipt_378').disabled = true;
 
+        }
+
+        if (completo) {
+            
+            const audio = document.querySelector('audio')
+            audio.currentTime = 0
+            audio.play();
         }
     }
 </script>
