@@ -7,26 +7,35 @@
     <title>Document</title>
 </head>
 <body>
-    Número de vezes que a frase vai repetir: <input type="text" placeholder="Ex:30..." id="ipt_um"> <br>
-    Frase: <input type="text" placeholder="Ex:Te odeio." id="ipt_dois"> <br>
+    Nome do papagaio que irá narrar a frase: <input type="text" id="nome"> <br>
+    Número de vezes que a frase vai repetir: <input type="text" placeholder="Ex:30..." id="qntdRepeti"> <br>
+    Frase: <input type="text" placeholder="Ex:Te odeio." id="frs"> <br>
     <button onclick="calcular()">Papagaio</button>
 </body>
 </html>
 <script>
     function calcular() {
-        var num = Number(ipt_um.value);
-        var frase = ipt_dois.value;
+        var num = Number(qntdRepeti.value);
+        var frase = frs.value;
+        var papagaio = nome.value; 
+
         for (var index = 1; index <= num; index++) {
 
-            alert(`${index} ✯ Papagaio Loro diz: ${frase}`)
+            alert(`${index} ✯ Papagaio ${papagaio} diz: ${frase}`)
 
             if (index == 20) {
-                alert("*Papagaio Loro lost his sanity*");
-                alert("*Papagaio loro take a gun*")
-                alert("announcer: What are you going to do?!")
-                alert("*Papagaio loro shoots hymself*")
+                alert(`*Papagaio ${papagaio} lost his sanity*`);
+                alert(`*Papagaio ${papagaio} take a gun*`)
+                alert(`announcer: What are you going to do?!`)
+                alert(`*Papagaio ${papagaio} shoots hymself*`)
                 break
             }
+        }
+        for (var index = 20; index <= num; index++) {
+            
+            alert(`${index} ✯ Papagaio ${papagaio.toUpperCase()} diz: ${frase}`)
+            
+        
         }
     }
 </script>
