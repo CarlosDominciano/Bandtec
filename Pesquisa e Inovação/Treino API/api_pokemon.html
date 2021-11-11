@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    digite o nome do pokemon:
+     <input type="text" id="id_pokemon_inserido"> <br>
+     <button onclick="buscarPokemon()">Buscar Pokemon</button>
+<br><br>
+     <img src="" alt="imagem de um pokemon" id="id_img_pokemon" style="display: none;">
+
+     <h1 style="color: red;display: none;" id="erro_titulo">ERRO</h1>
+</body>
+</html>
+<script>
+function buscarPokemon(){
+    fetch(`https://pokeapi.co/api/v2/pokemon/${id_pokemon_inserido.value}`)
+    .then(function (resposta) {
+        
+        resposta.json()
+        .then(function(json){
+            id_img_pokemon.src = json.sprites.front_default;
+            id_img_pokemon.style.display = "block";
+            erro_titulo.style.display = "none";
+            console.log(json);
+})
+        .catch(function(error){
+            id_img_pokemon.style.display = "none";
+            erro_titulo.style.display = "block";
+            console.log(error);
+        
+        })
+      })
+}
+
+</script>
