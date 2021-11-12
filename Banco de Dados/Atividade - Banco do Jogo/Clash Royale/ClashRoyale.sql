@@ -1,0 +1,4 @@
+CREATE DATABASE ClashRoyale;
+USE ClashRoyale;
+
+CREATE TABLE 
