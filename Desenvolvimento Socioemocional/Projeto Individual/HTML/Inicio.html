@@ -6,30 +6,195 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GameZone</title>
     <link rel="stylesheet" href="../CSS/Inicio.css">
+    <link rel="shortcut icon" href="../Icons/gamezoneicon.png" type="image/x-icon">
 </head>
 <body>
     <div class="header">
         <div class="container">
-            <a href="">
-                <img class="logo" src="../Icons/gamezone.png" alt="">
+            <a href="../HTML/Inicio.html">
+                <img class="logo" src="../Icons/gamezone.png">
             </a>
             <ul class="navbar">
                 <li class="agora">
                     Inicial
                 </li>
                 <li>
-                    <a href="./simulador.html">Ultimas notícias</a>
+                    <a href="#">Ultimas notícias</a>
                 </li>
                 <li>|</li>
                 <li>
-                    <a href="./login.html">Comunidade</a>
+                    <div class="select">
+                        <select onchange="comunidade()" id="comuni">
+                            <option style="background-color: #684083;" selected disabled>Comunidade</option>
+                            <option style="font-weight: 400;" value="entrar" >Entrar</option>
+                            <option style="font-weight: 400;" value="criar" >Criar conta</option>
+                            <option style="font-weight: 400;" value="sobre" >Sobre</option>
+                        </select>
+                    </div>
                 </li>
             </ul>
         </div>
     </div>
     
-    https://pa1.narvii.com/6447/6d8a4dcd65dace6a120781cd673d86f92ec73126_hq.gif 
+    <div class="explicacao">
+        <div class="container">
+            <div class="rolagem">
+                O que é a 
+                <span> 
+                    GameZone? 
+                </span>
 
+                <div class="texto">
+                    É uma central Geek focada em jogos de qualquer gênero com o intuito de 
+                    reunir os jogadores para jogarem on-line e conhecerem pessoas com 
+                    os mesmos gostos que o seu. 
+                </div>
 
+                <div class="texto">
+                    Também é um blog para passar notícias do mundo Geek para deixar 
+                    você sempre atualizados sobre 
+                    <span>
+                        Bugs, Glitches, Atualizações, Últimas novidades
+                    </span>
+                    e muito mais. 
+                </div>
+
+                <div class="texto">
+                    Sabe aquele 
+                    <span>
+                        BloodBorne
+                    </span> 
+                    que você está sofrendo para matar a 
+                    <span>
+                        Fera Sedenta de sangue?
+                    </span>
+                    Ou aquele 
+                    <span>
+                        Loot
+                    </span>
+                    que você não sabe como pegar no 
+                    <span>
+                        Terraria?
+                    </span>
+                    Aqui temos tudo para ajudar você a prosseguir no game e para encontrar pessoas para 
+                    você jogar aquele 
+                    <span>
+                        SoulsBorne
+                    </span>
+                    da vida!
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="fotdesc">
+        <div class="container">
+            <div class="fotosbox">
+                <div class="banner">
+                    <img title="League of Legends" src="../Icons/loli.webp">
+                </div>
+                <div class="banner">
+                    <img title="Spider-Man" src="../Icons/spidermann.png">
+                </div>
+                <div class="banner">
+                    <img onclick="noticias()" title="Legacy of Kain: Soul Reaver" src="../Icons/soulreaver.png">
+                </div>
+            </div>
+            
+            <div class="descbox">
+                <div class="desc">
+                    <p>
+                        Entre na nossa 
+                        <span>
+                            comunidade,
+                        </span>
+                            receba diariamente conteúdo dos melhores jogos
+                            e notícias do 
+                        <span>
+                            mundo Geek.
+                        </span>
+                        Também conheça jogadores(a) dispostos(a) a jogar junto a você
+                        para ganhar!
+                    </p>
+                </div>
+                <div class="desc">
+                    <p>
+                        Nossa rede conta com diversos recursos e APIs de diversos gêneros e jogos para você ver 
+                        se aquele 
+                        <span>
+                            Baú
+                        </span>
+                        que você tanto quer está para chegar no
+                        <span>
+                            Clash Royale,
+                        </span>
+                        ou para ver como vai ficar aquele 
+                        <span>
+                            Deck 
+                        </span>
+                        de
+                        <span>
+                            Yu-Gi-Oh!
+                        </span>
+                    </p>
+                </div>
+                <div class="desc">
+                    <p>
+                       Venha recobrar a nostalgia de jogos antigos e aqueles clássicos maravilhoso que sonhamos 
+                       com um 
+                       <span>
+                           Remaster, Reboot, ou Remake!
+                       </span>
+                    </p>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <div class="social">
+
+                <a href="https://www.facebook.com">
+                    <img title="Siga nossa página do Facebook. ♞" src="../Icons/facebook.png">
+                </a>
+
+                <a href="https://www.instagram.com">
+                    <img title="Veja nossas fotos no Instagram. ♝" src="../Icons/instagram.png">
+                </a>
+
+                <a href="https://www.youtube.com">
+                    <img title="Ative o sininho no nosso canal do Youtube. ♜" src="../Icons/youtube.png">
+                </a>
+
+                <a href="https://www.twitch.tv"> 
+                    <img title="Acompanhe nossas lives na Twitch. ♛" src="../Icons/twitch.png">
+                </a>
+
+                <a href="https://www.twitter.com">
+                    <img title="Compartilhe nossa Hashtag no Twitter. ♚" src="../Icons/twitter.png">
+                </a>
+
+            </div>
+            <div class="direitos">
+                <h4>Copyright © 2021 GameZone - Todos os direitos reservados.</h4>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
+<script>
+    function comunidade() {
+        if (comuni.value == "entrar") {
+            window.location.href = "../HTML/Entrar.html"
+        } else if (comuni.value == "criar") {
+            window.location.href = "../HTML/Cadastrar.html"
+        } else if (comuni.value == "sobre") {
+            window.location.href = "../HTML/Sobre.html"
+        }
+    }
+    function noticias() {
+        window.location.href = "../HTML/Notícias.html"
+    }
+</script>

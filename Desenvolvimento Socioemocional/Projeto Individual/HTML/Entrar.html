@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameZone</title>
+    <link rel="stylesheet" href="../CSS/Entrar.css">
+    <link rel="shortcut icon" href="../Icons/gamezoneicon.png" type="image/x-icon">
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <a href="../HTML/Inicio.html">
+                <img class="logo" src="../Icons/gamezone.png">
+            </a>
+            <ul class="navbar">
+                <li>
+                    <a href="../HTML/Inicio.html">
+                        Inicial
+                    </a>
+                </li>
+                <li>
+                    <a href=".">
+                        Ultimas notícias
+                    </a>
+                </li>
+                <li>|</li>
+                <li>
+                    <div class="select">
+                        <select onchange="comunidade()" id="comuni">
+                            <option style="background-color: #684083;" selected disabled >Comunidade</option>
+                            <option style="font-weight: 700;background-color: #684083;" selected disabled >Entrar</option>
+                            <option style="font-weight: 400;" value="criar" >Criar conta</option>
+                            <option style="font-weight: 400;" value="sobre" >Sobre</option>
+                        </select>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="login">
+        <div class="container">
+            <div class="entrar">
+
+                <span>
+                    Email ou nome de usuário
+                </span>
+                <input type="text" placeholder="Email ou nome de usuário">
+
+                <span>
+                    Senha
+                </span>
+                <input type="password" placeholder="Senha">
+
+                <button onclick="entrar()">
+                    Acessar a Comunidade
+                </button>
+
+                <div class="forgot">
+                    <span>
+                        Esqueceu sua senha?
+                    </span>
+                    <a href="">
+                        clique aqui!
+                    </a>
+                    <span>
+                        Ainda não tem conta?
+                    </span>
+                    <a href="../HTML/Cadastrar.html">
+                        Crie uma!
+                    </a>
+                    
+                    <div class="nada"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <div class="social">
+
+                <a href="https://www.facebook.com">
+                    <img title="Siga nossa página do Facebook. ♞" src="../Icons/facebook.png">
+                </a>
+
+                <a href="https://www.instagram.com">
+                    <img title="Veja nossas fotos no Instagram. ♝" src="../Icons/instagram.png">
+                </a>
+
+                <a href="https://www.youtube.com">
+                    <img title="Ative o sininho no nosso canal do Youtube. ♜" src="../Icons/youtube.png">
+                </a>
+
+                <a href="https://www.twitch.tv"> 
+                    <img title="Acompanhe nossas lives na Twitch. ♛" src="../Icons/twitch.png">
+                </a>
+
+                <a href="https://www.twitter.com">
+                    <img title="Compartilhe nossa Hashtag no Twitter. ♚" src="../Icons/twitter.png">
+                </a>
+
+            </div>
+            <div class="direitos">
+                <h4>Copyright © 2021 GameZone - Todos os direitos reservados.</h4>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    function comunidade() {
+        if (comuni.value == "criar") {
+            window.location.href = "../HTML/Cadastrar.html"
+        } else if (comuni.value == "sobre") {
+            window.location.href = "../HTML/Sobre.html"
+        }
+    }
+</script>

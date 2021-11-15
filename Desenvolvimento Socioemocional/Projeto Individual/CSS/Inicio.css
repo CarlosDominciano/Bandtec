@@ -5,6 +5,21 @@ body {
     background-color: #111111;
 }
 
+body::-webkit-scrollbar {
+    width: 10px;
+    border-radius: 45px;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: #616161;
+    border-radius: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #a078bb;
+    border-radius: 10px;
+}
+
 .container {
     width: 80%;
     margin: auto;
@@ -43,3 +58,218 @@ body {
     list-style: none;
     color: #9455bf;
 }
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    outline: 0;
+    box-shadow: none;
+    border: 0!important;
+    background: #9455bf;
+    background-image: none;
+    flex: 1;
+    padding: 0 .5em;
+    color: white;
+    font-weight: 400;
+    cursor: pointer;
+    font-family: 'Exo 2', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+.select {
+    position: relative;
+    display: flex;
+    width: 10em;
+    height: 2em;
+    line-height: 2;
+    background: #111111;
+    overflow: hidden;
+    border-radius: .25em;
+}
+
+
+.select::after {
+    content: '\25BC';
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0 1em;
+    background: #b7a6c2;
+    cursor: pointer;
+    pointer-events: none;
+    transition: .25s all ease;
+}
+
+.select:hover::after {
+    color: #616161;
+}
+
+
+/* EXPLICAÇÃO */
+
+.explicacao {
+        padding: 50px 0;
+        height: 500px;
+        color: white;
+        font-family: monospace;
+        font-size: xx-large;
+        background-color: #151515;
+}
+
+.rolagem {
+    height: 500px;
+    width: 100%;
+    overflow-y: scroll;
+    flex-wrap: wrap;
+}
+
+.rolagem::-webkit-scrollbar-track {
+    background-color: transparent;
+    border-radius: 10px;
+}
+
+.rolagem::-webkit-scrollbar {
+    width: 5px;
+    border-radius: 30px;
+}
+
+.rolagem::-webkit-scrollbar-thumb {
+    background: #a078bb;
+    border-radius: 10px;
+}
+
+.explicacao span {
+    font-weight: 700;
+    color: #9455bf;
+}
+
+.explicacao .texto {
+    color: white;
+    margin-top: 30px;
+}
+
+/* Fotos e decricao */
+.fotdesc {
+    padding: 50px 0;
+    background-color: #151515;
+}
+
+.fotdesc .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 50px 0;
+}
+
+.fotosbox {
+    height: 100vh;
+    width: 33.3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.banner {
+    display: flex;
+}
+
+.banner img {
+    width: 70%;
+    margin: auto;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.descbox {
+    height: 100vh;
+    width: 66.6%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+
+}
+
+.desc {
+    display: flex;
+    height: 50%;
+    overflow-y: scroll;
+    margin-bottom: 15px;
+}
+
+.desc::-webkit-scrollbar-track {
+    background-color: transparent;
+    border-radius: 10px;
+}
+
+.desc::-webkit-scrollbar {
+    width: 5px;
+    border-radius: 30px;
+}
+
+.desc::-webkit-scrollbar-thumb {
+    background: #a078bb;
+    border-radius: 10px;
+}
+
+.desc p {
+    width: 80%;
+    margin: auto;
+    font-size: 20px;
+    color: white;
+    font-family: monospace;
+    
+}
+
+.desc p span {
+    font-weight: 700;
+    color: #9455bf;
+}
+
+/* FOOTER */
+.footer {
+    background-color: #111111;
+    height: 150px;
+    color: white;
+    margin: 0;
+    padding: 0;
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    border-top: 3px solid #9455bf;
+}
+
+.footer .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.social {
+    height: 100px;
+    width: 600px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: 30px;
+}
+.social a {
+width: 100%;
+}
+
+.social img {
+    width: 75%;
+    cursor: pointer;
+}
+
+
+
+
