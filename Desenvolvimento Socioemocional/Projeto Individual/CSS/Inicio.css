@@ -171,16 +171,17 @@ select::-ms-expand {
     width: 33.3%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-
+    justify-content: center;
 }
 
 .banner {
     display: flex;
+    height: 33.33%;
+    width: 100%;
 }
 
 .banner img {
-    width: 70%;
+    height: 95%;
     margin: auto;
     margin-bottom: 15px;
     cursor: pointer;
