@@ -47,31 +47,38 @@
                 <span>
                     Email
                 </span>
-                <input type="text" placeholder="Email">
+                <input type="text" id="ipt_email" placeholder="Email">
 
                 <span>
                     Senha
                 </span>
-                <input type="password" placeholder="Senha">
+                <input type="password" id="ipt_senha" placeholder="Senha">
 
                 <span>
                     Confirmar Senha
                 </span>
-                <input type="password" placeholder="Confirmar Senha">
+                <input type="password" id="ipt_confirmSenha" placeholder="Confirmar Senha">
 
                 <span>
                     Nome Completo
                 </span>
-                <input type="text" placeholder="Nome Completo">
+                <input type="text" id="ipt_nome" placeholder="Nome Completo">
 
                 <span>
                     Nick - Nome de usuário
                 </span>
-                <input type="text" placeholder="Nick Name">
+                <input type="text" id="ipt_nick" placeholder="Nick Name">
 
                 <button onclick="criarConta()">
                     Entrar para a comunidade
                 </button>
+            </div>
+
+            <div id="div_aguardar" class="loading-div">
+                <img src="../Icons/spidervenom.gif" id="loading-gif">
+            </div>
+
+            <div id="div_erros_login">
 
             </div>
         </div>
@@ -116,5 +123,79 @@
         } else if (comuni.value == "sobre") {
             window.location.href = "../HTML/Sobre.html"
         }
+    }
+
+    function criarConta() {
+        aguardar();
+
+        var nomeVar = ipt_nome.value;
+        var emailVar = ipt_email.value;
+        var senhaVar = ipt_senha.value;
+        var confirmSenhaVar = ipt_confirmSenha.value;
+        var nickVar = ipt_nick.value;
+
+        if (nomeVar == "" || emailVar == "" || senhaVar == "" || confirmSenhaVar == "" || nickVar == "") {
+
+            window.alert("Preencha todos os campos para prosseguir!");
+            if (nomeVar == "") {
+                console.log('nome está em branco')
+            }
+            if (emailVar == "") {
+                console.log('email está em branco')
+            }
+            if (senhaVar == "") {
+                console.log('senha está em branco')
+            }
+            if (confirmSenhaVar == "") {
+                console.log('confirmacaoSenha está em branco')
+            }
+            if (nickVar == "") {
+                console.log('nick está em branco')
+            }
+            finalizarAguardar();
+            return false;
+        }
+
+        if (emailVar.indexOf("@") == -1 || emailVar.indexOf(".com") == -1) {
+            window.alert("Ops, e-mail inválido! Verifique e tente novamente.");
+            finalizarAguardar();
+            return false;
+        }
+
+        if (senhaVar != confirmacaoSenhaVar) {
+            window.alert("As senhas inseridas devem ser iguais para prosseguir!");
+            finalizarAguardar();
+            return false;
+        }
+
+        fetch("/usuarios/cadastrar", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                nomeServer: nomeVar,
+                emailServer: emailVar,
+                senhaServer: senhaVar,
+                nickServer: nickVar
+            })
+        }).then(function (resposta) {
+
+            console.log("resposta: ", resposta);
+
+            if (resposta.ok) {
+                window.alert("Cadastro realizado com sucesso!");
+                window.location = "Entrar.html";
+                limparFormulario();
+                finalizarAguardar();
+            } else {
+                throw ("Houve um erro ao tentar realizar o cadastro!");
+            }
+        }).catch(function (resposta) {
+            console.log(`#ERRO: ${resposta}`);
+            finalizarAguardar();
+        });
+
+        return false;
     }
 </script>

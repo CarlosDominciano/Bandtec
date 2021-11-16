@@ -199,7 +199,18 @@ button {
     font-family: monospace;
     font-size: 17px;
     margin-top: 60px;
+}
 
+.loading-div {
+    width: 50px;
+    /* border: 3px solid pink; */
+    margin: auto;
+    display: none;
+}
+  
+.loading-div img {
+    height: 50px;
+    width: 50px;
 }
 
 /* FOOTER */

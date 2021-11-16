@@ -130,7 +130,7 @@ select::-ms-expand {
 
 .entrar {
     height: 600px;
-    width: 55%;
+    width: 65%;
     background-color: #111111;
     border-top-left-radius: 200px;
     border-bottom-right-radius: 200px;
@@ -171,13 +171,24 @@ button {
     width: 50%;
     border: 4px solid #9455bf;
     border-radius: 15px;
-    background-color: #b7a6c2;
+    background-color: #b6c2a6;
     cursor: pointer;
     font-family: monospace;
     font-size: 17px;
-    margin-top: 20px;
+}
+.nada {
+    height: 40px;
+    width: 50%;
+}
+.loading-div {
+    height: 250px;
+    width: 65%;
+    display: none;
 }
 
+.loading-div img {
+    width: 100%;
+}
 
 /* FOOTER */
 .footer {
