@@ -114,7 +114,6 @@ select::-ms-expand {
 .login {
     padding: 50px 0;
     background-color: #151515;
-    background-image: url('https://giffiles.alphacoders.com/157/15714.gif');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -128,25 +127,27 @@ select::-ms-expand {
     flex-wrap: wrap;
 }
 
-.entrar {
-    height: 600px;
-    width: 65%;
-    background-color: #111111;
-    border-top-left-radius: 200px;
-    border-bottom-right-radius: 200px;
+.cadastrar {
+    height: 700px;
+    width: 55%;
+    background-image: url("https://giffiles.alphacoders.com/157/15714.gif");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     align-items: center;
-    opacity: 0.9;
     justify-content: center;
 }
 
-.entrar span {
+.cadastrar span {
     color: antiquewhite;
     font-weight: 700;
     font-family: monospace;
     font-size: x-large;
     margin-top: 10px;
+    padding-bottom: 2px;
+ 
 }
 
 input {
@@ -157,6 +158,7 @@ input {
     font-family: monospace;
     font-size: 17px;
     margin-bottom: 15px;
+    opacity: 0.8;
 }
 
 input::placeholder {
@@ -176,10 +178,7 @@ button {
     font-family: monospace;
     font-size: 17px;
 }
-.nada {
-    height: 40px;
-    width: 50%;
-}
+
 .loading-div {
     height: 250px;
     width: 65%;

@@ -113,12 +113,13 @@ select::-ms-expand {
 /* EXPLICAÇÃO */
 
 .explicacao {
-        padding: 50px 0;
+        padding: 20px 0;
         height: 500px;
         color: white;
         font-family: monospace;
         font-size: xx-large;
-        background-color: #151515;
+        background-color: #222222;
+        border-bottom: 20px dashed whitesmoke;
 }
 
 .rolagem {
@@ -156,7 +157,7 @@ select::-ms-expand {
 /* Fotos e decricao */
 .fotdesc {
     padding: 50px 0;
-    background-color: #151515;
+    background-color: #222222;
 }
 
 .fotdesc .container {
