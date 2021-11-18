@@ -5,18 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GameZone</title>
-    <link rel="stylesheet" href="../CSS/Entrar.css">
-    <link rel="shortcut icon" href="../Icons/gamezoneicon.png" type="image/x-icon">
+    <script src="./js/funcoes.js"></script>
+    <link rel="stylesheet" href="./css/login.css">
+    <link rel="shortcut icon" href="./assets/Icons/gamezoneicon.png" type="image/x-icon">
 </head>
 <body>
     <div class="header">
         <div class="container">
-            <a href="../HTML/Inicio.html">
-                <img class="logo" src="../Icons/gamezone.png">
+            <a href="index.html">
+                <img class="logo" src="./assets/Icons/gamezone.png">
             </a>
             <ul class="navbar">
                 <li>
-                    <a href="../HTML/Inicio.html">
+                    <a href="index.html">
                         Inicial
                     </a>
                 </li>
@@ -62,18 +63,18 @@
                     <span>
                         Esqueceu sua senha?
                     </span>
-                    <a href="">
+                    <a href="#">
                         clique aqui!
                     </a>
                     <span>
                         Ainda não tem conta?
                     </span>
-                    <a href="../HTML/Cadastrar.html">
+                    <a href="cadastro.html">
                         Crie uma!
                     </a>
                     </div>
                     <div id="div_aguardar" class="loading-div">
-                        <img src="../Icons/spidervenom.gif" id="loading-gif">
+                        <img src="./assets/Icons/spidervenom.gif" id="loading-gif">
                     </div>
     
                     <div id="div_erros_login">
@@ -88,23 +89,23 @@
             <div class="social">
 
                 <a href="https://www.facebook.com">
-                    <img title="Siga nossa página do Facebook. ♞" src="../Icons/facebook.png">
+                    <img title="Siga nossa página do Facebook. ♞" src="./assets/Icons/facebook.png">
                 </a>
 
                 <a href="https://www.instagram.com">
-                    <img title="Veja nossas fotos no Instagram. ♝" src="../Icons/instagram.png">
+                    <img title="Veja nossas fotos no Instagram. ♝" src="./assets/Icons/instagram.png">
                 </a>
 
                 <a href="https://www.youtube.com">
-                    <img title="Ative o sininho no nosso canal do Youtube. ♜" src="../Icons/youtube.png">
+                    <img title="Ative o sininho no nosso canal do Youtube. ♜" src="./assets/Icons/youtube.png">
                 </a>
 
                 <a href="https://www.twitch.tv"> 
-                    <img title="Acompanhe nossas lives na Twitch. ♛" src="../Icons/twitch.png">
+                    <img title="Acompanhe nossas lives na Twitch. ♛" src="./assets/Icons/twitch.png">
                 </a>
 
                 <a href="https://www.twitter.com">
-                    <img title="Compartilhe nossa Hashtag no Twitter. ♚" src="../Icons/twitter.png">
+                    <img title="Compartilhe nossa Hashtag no Twitter. ♚" src="./assets/Icons/twitter.png">
                 </a>
 
             </div>
@@ -118,9 +119,9 @@
 <script>
     function comunidade() {
         if (comuni.value == "criar") {
-            window.location.href = "../HTML/Cadastrar.html"
+            window.location.href = "cadastro.html"
         } else if (comuni.value == "sobre") {
-            window.location.href = "../HTML/Sobre.html"
+            window.location.href = "sobre.html"
         }
     }
 
@@ -170,7 +171,7 @@
                     sessionStorage.ID_USUARIO = json.id;
 
                     setTimeout(function () {
-                        window.location = "./dashboard/cards.html";
+                        window.location = "home.html";
                     }, 1000); // apenas para exibir o loading
 
                 });
