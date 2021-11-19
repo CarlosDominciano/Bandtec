@@ -12,7 +12,7 @@ function validarSessao() {
         if (h1LoginUsuario != undefined) {
             h1LoginUsuario.innerHTML = email;
         }
-        b_usuario.innerHTML = nome;
+        b_usuario.innerHTML = `Olá ${nome}!`;
 
         // finalizarAguardar();
     } else {
@@ -31,11 +31,16 @@ function limparSessao() {
 function aguardar() {
     var divAguardar = document.getElementById("div_aguardar");
     divAguardar.style.display = "flex";
+    var divCadastrar = document.getElementById("div_loading");
+    divCadastrar.style.display = "none";
+
 }
 
 function finalizarAguardar(texto) {
     var divAguardar = document.getElementById("div_aguardar");
     divAguardar.style.display = "none";
+    var divCadastrar = document.getElementById("div_loading");
+    divCadastrar.style.display = "flex";
 
     var divErrosLogin = document.getElementById("div_erros_login");
     if (texto) {

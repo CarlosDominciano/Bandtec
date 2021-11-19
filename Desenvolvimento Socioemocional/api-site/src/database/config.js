@@ -22,7 +22,7 @@ var mySqlConfig = {
     host: "localhost",
     user: "root",
     database: "gamezone",
-    password: "bandtec",
+    password: "Atomikzer0@",
 };
 
 function executar(instrucao) {
@@ -69,3 +69,4 @@ function executar(instrucao) {
 module.exports = {
     executar
 }
+

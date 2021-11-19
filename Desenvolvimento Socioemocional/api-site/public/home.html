@@ -1,72 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="icon" href="./assets/icon/favicon.ico">
+    <title>GameZone</title>
 
     <script src="./js/funcoes.js"></script>
-
-    <title>HOME</title>
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="shortcut icon" href="./assets/Icons/gamezoneicon.png" type="image/x-icon">
 </head>
-
 <body onload="validarSessao()">
-
-    <!--header inicio-->
-
-    <div class="side-header">
+    <div class="header">
         <div class="container">
-            <h1><span class="highlight">Projeto</span> IoT Revolucionário</h1>
-            <div class="usuario">
-                <h3>Olá, <b id="b_usuario"></b></h3>
-            </div>
-            <div class="nav">
-                <ul>
-                    <li><a href="avisos.html">Postagem</a></li>
-                    <li><a href="tempo-real.html">Tempo Real</a></li>
-                    <li><a href="grafico-chartjs.html">Gráfico de histórico recente</a></li>
-                    <li><a href="#" class="highlight" onclick="limparSessao()">LOGOUT</a></li>
-                    <li><a href="pagina-estatica-chartsjs.html">
-                            <i class="show-on-hover">IR PARA PÁGINA GRÁFICO ESTÁTICO</i>
-                        </a></li>
-
-                </ul>
-            </div>
+            <a href="index.html">
+                <img class="logo" src="./assets/Icons/gamezone.png">
+            </a>
+            <ul class="navbar">
+                <li class="agora">
+                    Sala de estar
+                </li>
+                <li>
+                    <a href="#">Ultimas notícias</a>
+                </li>
+                <li>|</li>
+                <li>
+                    <div class="select">
+                        <select onchange="comunidade()" id="comuni">
+                            <option id="b_usuario" style="background-color: #684083; font-weight: 700;" selected disabled></option>
+                            <option style="font-weight: 400;" value="entrar" >Mini-games</option>
+                            <option style="font-weight: 400;" value="criar" >Sair</option>
+                        </select>
+                    </div>
+                </li>
+            </ul>
         </div>
     </div>
-    <!--header fim-->
 
-    <div class="corpo">
+
+
+
+
+    <div class="footer">
         <div class="container">
-            <h1 id="h1_login_usuario"></h1>
+            <div class="social">
 
-            <button onclick="mostrarModal()">Modal</button>
+                <a href="https://www.facebook.com">
+                    <img title="Siga nossa página do Facebook. ♞" src="./assets/Icons/facebook.png">
+                </a>
 
-            <a onclick="limparSessao()" href="login.html">Sair</a>
+                <a href="https://www.instagram.com">
+                    <img title="Veja nossas fotos no Instagram. ♝" src="./assets/Icons/instagram.png">
+                </a>
+
+                <a href="https://www.youtube.com">
+                    <img title="Ative o sininho no nosso canal do Youtube. ♜" src="./assets/Icons/youtube.png">
+                </a>
+
+                <a href="https://www.twitch.tv"> 
+                    <img title="Acompanhe nossas lives na Twitch. ♛" src="./assets/Icons/twitch.png">
+                </a>
+
+                <a href="https://www.twitter.com">
+                    <img title="Compartilhe nossa Hashtag no Twitter. ♚" src="./assets/Icons/twitter.png">
+                </a>
+
+            </div>
+            <div class="direitos">
+                <h4>Copyright © 2021 GameZone - Todos os direitos reservados.</h4>
+            </div>
         </div>
     </div>
-
-    <div id="div_modal" class="div-modal">
-        <div id="modal_backdrop" onclick="fecharModal()" class="modal-backdrop">
-        </div>
-        <div id="modal_container" class="modal-container">
-            <button onclick="fecharModal()">fechar modal</button>
-        </div>
-    </div>
-
-    <div id="div_aguardar" class="div-aguardar">
-        <img src="./assets/aguarde-pink3.gif" id="img_aguarde">
-    </div>
-
 </body>
-
 </html>
-
-<script>
-
-
-</script>

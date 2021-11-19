@@ -43,7 +43,7 @@
 
     <div class="login">
         <div class="container">
-            <div class="cadastrar">
+            <div id="div_loading" class="cadastrar">
 
                 <span>
                     Email
@@ -186,7 +186,7 @@
 
             if (resposta.ok) {
                 window.alert("Cadastro realizado com sucesso!");
-                window.location = ".login.html";
+                window.location = "login.html";
                 limparFormulario();
                 finalizarAguardar();
             } else {
