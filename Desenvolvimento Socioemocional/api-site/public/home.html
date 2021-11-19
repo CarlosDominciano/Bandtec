@@ -28,8 +28,8 @@
                     <div class="select">
                         <select onchange="comunidade()" id="comuni">
                             <option id="b_usuario" style="background-color: #684083; font-weight: 700;" selected disabled></option>
-                            <option style="font-weight: 400;" value="entrar" >Mini-games</option>
-                            <option style="font-weight: 400;" value="criar" >Sair</option>
+                            <option style="font-weight: 400;" value="minigames" >Mini-games</option>
+                            <option style="font-weight: 400;" value="sair" >Sair</option>
                         </select>
                     </div>
                 </li>
@@ -73,3 +73,13 @@
     </div>
 </body>
 </html>
+<script>
+    function comunidade() {
+        if (comuni.value == "sair") {
+        limparSessao()
+        }
+        if (comuni.value == "minigames") {
+            miniGames()
+        }
+    }
+</script>

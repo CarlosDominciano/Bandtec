@@ -4,6 +4,7 @@ function validarSessao() {
 
     var email = sessionStorage.EMAIL_USUARIO;
     var nome = sessionStorage.NOME_USUARIO;
+    var nick = sessionStorage.NICK_USUARIO;
 
     var h1LoginUsuario = document.getElementById("h1_login_usuario");
 
@@ -26,6 +27,12 @@ function limparSessao() {
     // finalizarAguardar();
     window.location = "../login.html";
 }
+function miniGames() {
+    // aguardar();
+    // finalizarAguardar();
+    window.location = "../games.html";
+}
+
 
 // carregamento (loading)
 function aguardar() {
