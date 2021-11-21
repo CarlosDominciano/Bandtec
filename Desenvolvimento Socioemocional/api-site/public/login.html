@@ -22,8 +22,8 @@
                     </a>
                 </li>
                 <li>
-                    <a href=".">
-                        Ultimas notícias
+                    <a href="noticias.html">
+                        Notícias
                     </a>
                 </li>
                 <li>|</li>
@@ -41,8 +41,11 @@
         </div>
     </div>
 
+    
     <div class="login">
         <div class="container">
+            <div id="div_erros_login"></div>
+            <audio preload="auto" id="erro_audio" src="../public/assets/Mission Complete"></audio>
             <div id="div_loading" class="entrar">
 
                 <span>
@@ -77,8 +80,6 @@
                 <div id="div_aguardar" class="loading-div">
                     <img src="./assets/Icons/spidervenom.gif" id="loading-gif">
                 </div>
-
-                <div id="div_erros_login">
             </div>
         </div>
     </div>
@@ -168,7 +169,9 @@
                     sessionStorage.EMAIL_USUARIO = json.email;
                     sessionStorage.NOME_USUARIO = json.nome;
                     sessionStorage.ID_USUARIO = json.id;
+                    sessionStorage.NICK_USUARIO = json.nick;
 
+                    
                     setTimeout(function () {
                         window.location = "home.html";
                     }, 1000); // apenas para exibir o loading

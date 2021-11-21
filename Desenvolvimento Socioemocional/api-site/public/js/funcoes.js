@@ -13,7 +13,7 @@ function validarSessao() {
         if (h1LoginUsuario != undefined) {
             h1LoginUsuario.innerHTML = email;
         }
-        b_usuario.innerHTML = `Olá ${nome}!`;
+        b_usuario.innerHTML = `Olá, ${nick}!`;
 
         // finalizarAguardar();
     } else {
@@ -27,6 +27,7 @@ function limparSessao() {
     // finalizarAguardar();
     window.location = "../login.html";
 }
+
 function miniGames() {
     // aguardar();
     // finalizarAguardar();
@@ -48,10 +49,14 @@ function finalizarAguardar(texto) {
     divAguardar.style.display = "none";
     var divCadastrar = document.getElementById("div_loading");
     divCadastrar.style.display = "flex";
+    var alertAudio = document.getElementById('erro_audio')
 
     var divErrosLogin = document.getElementById("div_erros_login");
     if (texto) {
         divErrosLogin.innerHTML = texto;
+        alertAudio.src = "../assets/alertSong.mpeg"
+        alertAudio.currentTime = 0;
+        alertAudio.play();
     }
 }
 

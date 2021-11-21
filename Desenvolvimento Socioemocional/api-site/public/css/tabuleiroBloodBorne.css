@@ -20,6 +20,11 @@ body::-webkit-scrollbar-thumb {
     border-radius: 10px;
 }
 
+a {
+    text-decoration: none;
+    cursor: unset;
+}
+
 .container {
     width: 80%;
     margin: auto;
@@ -44,6 +49,7 @@ body::-webkit-scrollbar-thumb {
 .header a {
     text-decoration: none;
     color: #9455bf;
+    cursor: pointer;
 }
 
 .agora {
@@ -109,135 +115,17 @@ select::-ms-expand {
     color: #616161;
 }
 
-
-/* EXPLICAÇÃO */
-
-.explicacao {
-        padding: 2rem 0 5rem 0;
-        height: 500px;
-        color: white;
-        font-family: monospace;
-        font-size: xx-large;
-        background-color: #222222;
-        border-bottom: 20px dashed whitesmoke;
-}
-
-.rolagem {
-    height: 500px;
-    width: 100%;
-    overflow-y: scroll;
-    flex-wrap: wrap;
-}
-
-.rolagem::-webkit-scrollbar-track {
-    background-color: transparent;
-    border-radius: 10px;
-}
-
-.rolagem::-webkit-scrollbar {
-    width: 5px;
-    border-radius: 30px;
-}
-
-.rolagem::-webkit-scrollbar-thumb {
-    background: #a078bb;
-    border-radius: 10px;
-}
-
-.explicacao span {
-    font-weight: 700;
-    color: #9455bf;
-}
-
-.explicacao .texto {
-    color: white;
-    margin-top: 30px;
-}
-
-/* Fotos e decricao */
-.fotdesc {
-    padding: 50px 0;
-    background-color: #222222;
-}
-
-.fotdesc .container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding: 50px 0;
-}
-
-.fotosbox {
-    height: 100vh;
-    width: 33.3%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.banner {
-    display: flex;
-    height: 33.33%;
-    width: 100%;
-}
-
-.banner img {
-    height: 95%;
-    margin: auto;
-    margin-bottom: 15px;
-    cursor: pointer;
-    transition: 0.2s;
-}
-
-.banner img:hover {
-    transform: scale(1.1);
-}
-
-.descbox {
-    height: 100vh;
-    width: 66.6%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+/* TERMINO DO HEADER */
 
 
-}
 
-.desc {
-    display: flex;
-    height: 50%;
-    overflow-y: scroll;
-    margin-bottom: 15px;
-}
 
-.desc::-webkit-scrollbar-track {
-    background-color: transparent;
-    border-radius: 10px;
-}
 
-.desc::-webkit-scrollbar {
-    width: 5px;
-    border-radius: 30px;
-}
 
-.desc::-webkit-scrollbar-thumb {
-    background: #a078bb;
-    border-radius: 10px;
-}
 
-.desc p {
-    width: 80%;
-    margin: auto;
-    font-size: 20px;
-    color: white;
-    font-family: monospace;
-    
-}
 
-.desc p span {
-    font-weight: 700;
-    color: #9455bf;
-}
+
+
 
 /* FOOTER */
 .footer {

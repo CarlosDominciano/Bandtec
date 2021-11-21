@@ -7,21 +7,23 @@
     <title>GameZone</title>
 
     <script src="./js/funcoes.js"></script>
-    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/tabuleiroBloodBorne.css">
     <link rel="shortcut icon" href="./assets/Icons/gamezoneicon.png" type="image/x-icon">
 </head>
-<body onload="validarSessao()">
+<body>
     <div class="header">
         <div class="container">
             <a href="index.html">
                 <img class="logo" src="./assets/Icons/gamezone.png">
             </a>
             <ul class="navbar">
-                <li class="agora">
-                    Sala de estar
+                <li>
+                    <a href="index.html">
+                        Inicial
+                    </a>
                 </li>
                 <li>
-                    <a href="noticiasLogin.html">
+                    <a href="noticias.html">
                         Notícias
                     </a>
                 </li>
@@ -29,15 +31,20 @@
                 <li>
                     <div class="select">
                         <select onchange="comunidade()" id="comuni">
-                            <option id="b_usuario" style="background-color: #684083; font-weight: 700;" selected disabled></option>
-                            <option style="font-weight: 400;" value="minigames" >Mini-games</option>
-                            <option style="font-weight: 400;" value="sair" >Sair</option>
+                            <option style="background-color: #684083; font-weight: 700;" selected disabled>Comunidade</option>
+                            <option style="font-weight: 400;" value="entrar" >Entrar</option>
+                            <option style="font-weight: 400;" value="criar" >Criar conta</option>
+                            <option style="font-weight: 400;" value="sobre" >Sobre</option>
                         </select>
                     </div>
                 </li>
             </ul>
         </div>
     </div>
+
+
+
+
 
 
 
@@ -77,11 +84,12 @@
 </html>
 <script>
     function comunidade() {
-        if (comuni.value == "sair") {
-        limparSessao()
-        }
-        if (comuni.value == "minigames") {
-            miniGames()
+        if (comuni.value == "entrar") {
+            window.location.href = "login.html"
+        } else if (comuni.value == "criar") {
+            window.location.href = "cadastro.html"
+        } else if (comuni.value == "sobre") {
+            window.location.href = "sobre.html"
         }
     }
 </script>

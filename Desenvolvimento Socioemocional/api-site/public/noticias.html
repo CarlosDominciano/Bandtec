@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameZone</title>
+
+    <script src="./js/funcoes.js"></script>
+    <link rel="stylesheet" href="./css/noticias.css">
+    <link rel="shortcut icon" href="./assets/Icons/gamezoneicon.png" type="image/x-icon">
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <a href="index.html">
+                <img class="logo" src="./assets/Icons/gamezone.png">
+            </a>
+            <ul class="navbar">
+                <li>
+                    <a href="index.html">
+                        Inicial
+                    </a>
+                </li>
+                <li class="agora">
+                    Notícias
+                </li>
+                <li>|</li>
+                <li>
+                    <div class="select">
+                        <select onchange="comunidade()" id="comuni">
+                            <option style="background-color: #684083; font-weight: 700;" selected disabled>Comunidade</option>
+                            <option style="font-weight: 400;" value="entrar" >Entrar</option>
+                            <option style="font-weight: 400;" value="criar" >Criar conta</option>
+                            <option style="font-weight: 400;" value="sobre" >Sobre</option>
+                        </select>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="noticias">
+        <div class="container">
+            <div class="noticiasCards">
+                    <a href="#">
+                        <div class="card">
+                            <div class="raziel"></div>
+                            <div class="descricao">
+                                <span>
+                                    Legacy of Kain: Soul Reaver Remaster | Está em desenvolvimento 
+                                    e pode ser anunciado este ano (2021)
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="tabuleiroBloodBorne.html">
+                        <div class="card">
+                            <div class="bloodborne"></div>
+                            <div class="descricao">
+                                <span>
+                                    Bloodborne | Jogo de tabuleiro inspirado no RPG é lançado no Brasil
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="card">
+                            <div class="gow"></div>
+                            <div class="descricao">
+                                <span>
+                                    God of War | Game ser lançado no PC aumenta em 370% acessos da PS
+                                    Brasil no Reclame Aqui
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                    
+                    
+                    <a href="#">
+                        <div class="card">
+                            <div class="terraria"></div>
+                            <div class="descricao">
+                                <span>
+                                    Terraria | O jogo está cada vez melhor, a atualização do Journey's
+                                    End agora está no ar
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="card">
+                            <div class="arcane"></div>
+                            <div class="descricao">
+                                <span>
+                                    LoL | Arcane tem mais de 34 milhões de horas assistidas na Netflix  
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="card">
+                            <div class="kimetsu"></div>
+                            <div class="descricao">
+                                <span>
+                                    Kimetsu no Yaiba | Review do jogo The Hinokami Chronicles
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="footer">
+        <div class="container">
+            <div class="social">
+
+                <a href="https://www.facebook.com">
+                    <img title="Siga nossa página do Facebook. ♞" src="./assets/Icons/facebook.png">
+                </a>
+
+                <a href="https://www.instagram.com">
+                    <img title="Veja nossas fotos no Instagram. ♝" src="./assets/Icons/instagram.png">
+                </a>
+
+                <a href="https://www.youtube.com">
+                    <img title="Ative o sininho no nosso canal do Youtube. ♜" src="./assets/Icons/youtube.png">
+                </a>
+
+                <a href="https://www.twitch.tv"> 
+                    <img title="Acompanhe nossas lives na Twitch. ♛" src="./assets/Icons/twitch.png">
+                </a>
+
+                <a href="https://www.twitter.com">
+                    <img title="Compartilhe nossa Hashtag no Twitter. ♚" src="./assets/Icons/twitter.png">
+                </a>
+
+            </div>
+            <div class="direitos">
+                <h4>Copyright © 2021 GameZone - Todos os direitos reservados.</h4>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    function comunidade() {
+        if (comuni.value == "entrar") {
+            window.location.href = "login.html"
+        } else if (comuni.value == "criar") {
+            window.location.href = "cadastro.html"
+        } else if (comuni.value == "sobre") {
+            window.location.href = "sobre.html"
+        }
+    }
+</script>
