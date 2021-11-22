@@ -22,7 +22,6 @@ body::-webkit-scrollbar-thumb {
 
 a {
     text-decoration: none;
-    cursor: unset;
 }
 
 .container {
@@ -39,6 +38,7 @@ a {
     color: #32B9CD;
     border-bottom: 3px solid #9455bf;
     padding: 10px 0;
+    background-color: #111111;
 }
 
 .header .container {
@@ -117,6 +117,69 @@ select::-ms-expand {
 
 /* TERMINO DO HEADER */
 
+.fundo {
+    padding: 2rem 0 5rem 0;
+    color: white;
+    font-family: monospace;
+    font-size: xx-large;
+    background-color: #222222; 
+    border-bottom: 20px dashed whitesmoke;
+    
+}
+
+.reportagem {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.reportagem img {
+    width: 700px;
+    margin-bottom: 3rem;
+    margin-top: 4rem;
+}
+
+.reportagem .titulo {
+    text-align: center;
+    font-weight: 700;
+    color: #9455bf;
+    text-shadow: 1px 1px 1px black;
+}
+
+.reportagem span {
+    text-align: left;
+    color: #ffffff;
+    font-size: x-large;
+    text-shadow: 1px 1px 1px black;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.reportagem div {
+    width: 65%;
+    margin: 2rem 0;
+    color: #cfc868;
+    text-shadow: 1px 1px 1px black;
+    text-align: center;
+    
+}
+
+.reportagem span a {
+    color: #cfc868;
+}
+
+iframe {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+/* TERMINO DA REPORTAGEM */
+
+/* COMEÇO DA INDICACAO */
+
 .noticias {
     padding: 2rem 0 5rem 0;
     color: white;
@@ -134,15 +197,15 @@ select::-ms-expand {
     text-align: center;
 }
 
-.noticiasCards a{
-    margin-bottom: 2px;    
-}
-
 .noticiasCards h2 {
     width: 100%;
     font-family: monospace;
     color: #9455bf;
     text-shadow: 1px 1px 1px black;
+}
+
+.noticiasCards a{
+    margin-bottom: 2px;    
 }
 
 .card {
@@ -165,17 +228,6 @@ select::-ms-expand {
     background-repeat: no-repeat;
 }
 
-.card .bloodborne {
-    width: 100%;
-    height: 70%;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    background-image: url("../assets/Icons/blood.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
 .card .gow {
     width: 100%;
     height: 70%;
@@ -186,16 +238,7 @@ select::-ms-expand {
     background-size: cover;
     background-repeat: no-repeat;
 }
-.card .terraria {
-    width: 100%;
-    height: 70%;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    background-image: url("../assets/Icons/terraria.webp");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
+
 .card .arcane {
     width: 100%;
     height: 70%;
@@ -206,6 +249,18 @@ select::-ms-expand {
     background-size: cover;
     background-repeat: no-repeat;
 }
+
+.card .bloodborne {
+    width: 100%;
+    height: 70%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-image: url("../assets/Icons/blood.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}   
+
 .card .kimetsu {
     width: 100%;
     height: 70%;
@@ -213,6 +268,17 @@ select::-ms-expand {
     border-top-right-radius: 20px;
     background-image: url("../assets/Icons/demon.webp");
     background-position: 10%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.card .terraria {
+    width: 100%;
+    height: 70%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-image: url("../assets/Icons/terraria.webp");
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -232,20 +298,9 @@ select::-ms-expand {
     color: #cfc868;
 }
 
-/* .noticiasCards::-webkit-scrollbar-track {
-    background-color: black;
-    border-radius: 10px;
-}
+/* TERMINO DA INDICACAO */
 
-.noticiasCards::-webkit-scrollbar {
-    width: 5px;
-    border-radius: 30px;
-}
 
-.noticiasCards::-webkit-scrollbar-thumb {
-    background: #a078bb;
-    border-radius: 10px;
-} */
 
 
 /* FOOTER */
