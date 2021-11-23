@@ -261,13 +261,13 @@ iframe {
     background-repeat: no-repeat;
 }   
 
-.card .kimetsu {
+.card .epic {
     width: 100%;
     height: 70%;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    background-image: url("../assets/Icons/demon.webp");
-    background-position: 10%;
+    background-image: url("../assets/Icons/epicwall.png");
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }

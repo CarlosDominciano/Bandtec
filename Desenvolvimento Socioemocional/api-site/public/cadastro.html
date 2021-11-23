@@ -43,8 +43,10 @@
 
     <div class="login">
         <div class="container">
+            <div id="div_erros_cadastro">
+                
+            </div>
             <div id="div_loading" class="cadastrar">
-
                 <span>
                     Email
                 </span>
@@ -194,6 +196,8 @@
             }
         }).catch(function (resposta) {
             console.log(`#ERRO: ${resposta}`);
+            div_erros_cadastro.innerHTML = "Houve um erro ao cadastrar, e-mail ou nick já em uso!"
+            
             finalizarAguardar();
         });
 
