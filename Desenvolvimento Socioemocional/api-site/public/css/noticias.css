@@ -146,10 +146,10 @@ select::-ms-expand {
 }
 
 .card {
-    width: 200px;
+    width: 20vw;
     height: 400px;
     margin: 3rem 0 2rem 3rem;
-    transition: 1s;
+    transition: transform 1s;
     color: white;
     cursor: pointer;
 }

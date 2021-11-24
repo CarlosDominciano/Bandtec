@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameZone</title>
+
+    <script src="./js/funcoes.js"></script>
+    <link rel="stylesheet" href="./css/reportagem.css">
+    <link rel="shortcut icon" href="./assets/Icons/gamezoneicon.png" type="image/x-icon">
+</head>
+<body onload="validarSessao()">
+    <div class="header">
+        <div class="container">
+            <a href="home.html">
+                <img class="logo" src="./assets/Icons/gamezone.png">
+            </a>
+            <ul class="navbar">
+                <li>
+                    <a href="home.html">
+                        Comunidade
+                    </a>
+                </li>
+                <li>
+                    <a href="noticiasLogin.html">
+                        Notícias
+                    </a>
+                </li>
+                <li>|</li>
+                <li>
+                    <div class="select">
+                        <select onchange="comunidade()" id="comuni">
+                            <option id="b_usuario" style="background-color: #684083; font-weight: 700;" selected disabled></option>
+                            <option style="font-weight: 400;" value="minigames" >Mini-games</option>
+                            <option style="font-weight: 400;" value="sair" >Sair</option>
+                        </select>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="fundo">
+        <div class="container">
+            <div class="reportagem">
+                    <h2 class="titulo">
+                        Bloodborne: jogo de tabuleiro inspirado no RPG é lançado no Brasil (2021)
+                    </h2>
+                <img src="./assets/Icons/bloodrep.png">
+                <span>
+                    O jogo de tabuleiro inspirado no RPG Bloodborne acaba de ser lançado no Brasil pela Galápagos Jogos.
+                    Elaborado pelo prestigiado designer de jogos Eric Lang, a novidade permite que até quatro jogadores
+                    se tornem "Caçadores" na cidade gótica de Yharnam.
+                </span>
+                <span>
+                    A mecânica envolve combates contra múltiplos inimigos,
+                    a partir de um sistema de cartas. Os personagens são representados por mais de 30 miniaturas detalhadas
+                    - quatro delas, dedicadas aos heróis.
+                </span>
+                <iframe width="640" height="360" src="https://www.youtube.com/embed/N-W9Dh0OyK4" title="YouTube video player"
+                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+                <span>
+                    Assim como no jogo da From Software, lançado em 2015, o nível de dificuldade é alto e morrer é
+                    praticamente inevitável. Mas você recomeça de outro ponto, despertando do "Sonho do Caçador" pronto
+                    para outra rodada.
+                </span>
+                <span>
+                    Outro ponto forte é que o tabuleiro do jogo é dinâmico, constituído por 20 peças de mapa que se
+                    reencaixam a cada partida. Além disso, há mais de 500 cartas diferentes, que determinam itens, recompensas,
+                    aprimoramentos, armas, ações dos chefões e eventos de campanha.
+                </span>
+                <span>
+                    O jogo está à venda por R$ 799 no site da 
+                    <a href="https://www.mundogalapagos.com.br/bloodborne-the-board-game/produto/BLB101?utm_campaign=gj_rd-station-email_blb101_awareness_trafego_aberto_base_br_hotshots&utm_content=blb101_jogos-heavy-gamer_produto_20211112_email&utm_medium=email&utm_source=rd-station&utm_term=mailing_interesse_br#scroll-see-more"> 
+                        Galápagos.
+                    </a>
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="noticias">
+        <div class="container">
+            <div class="noticiasCards">
+                <h2>
+                    Veja notícias similares
+                </h2>
+                    <a href="soulReaverRemasterLogin.html">
+                        <div class="card">
+                            <div class="raziel"></div>
+                            <div class="descricao">
+                                <span>
+                                    Legacy of Kain: Soul Reaver Remaster | Está em desenvolvimento 
+                                    e pode ser anunciado este ano (2021)
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="godPCLogin.html">
+                        <div class="card">
+                            <div class="gow"></div>
+                            <div class="descricao">
+                                <span>
+                                    God of War | Game ser lançado no PC aumenta em 370% acessos da PS
+                                    Brasil no Reclame Aqui (2021)
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="arcaneNetflixLogin.html">
+                        <div class="card">
+                            <div class="arcane"></div>
+                            <div class="descricao">
+                                <span>
+                                    LoL | Arcane tem mais de 34 milhões de horas assistidas na Netflix (2021)
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <div class="footer">
+        <div class="container">
+            <div class="social">
+
+                <a href="https://www.facebook.com">
+                    <img title="Siga nossa página do Facebook. ♞" src="./assets/Icons/facebook.png">
+                </a>
+
+                <a href="https://www.instagram.com">
+                    <img title="Veja nossas fotos no Instagram. ♝" src="./assets/Icons/instagram.png">
+                </a>
+
+                <a href="https://www.youtube.com">
+                    <img title="Ative o sininho no nosso canal do Youtube. ♜" src="./assets/Icons/youtube.png">
+                </a>
+
+                <a href="https://www.twitch.tv"> 
+                    <img title="Acompanhe nossas lives na Twitch. ♛" src="./assets/Icons/twitch.png">
+                </a>
+
+                <a href="https://www.twitter.com">
+                    <img title="Compartilhe nossa Hashtag no Twitter. ♚" src="./assets/Icons/twitter.png">
+                </a>
+
+            </div>
+            <div class="direitos">
+                <h4>Copyright © 2021 GameZone - Todos os direitos reservados.</h4>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    function comunidade() {
+        if (comuni.value == "sair") {
+        limparSessao()
+        }
+        if (comuni.value == "minigames") {
+            miniGames()
+        }
+    }
+</script>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameZone</title>
+
+    <script src="./js/funcoes.js"></script>
+    <link rel="stylesheet" href="./css/reportagem.css">
+    <link rel="shortcut icon" href="./assets/Icons/gamezoneicon.png" type="image/x-icon">
+</head>
+<body onload="validarSessao()">
+    <div class="header">
+        <div class="container">
+            <a href="home.html">
+                <img class="logo" src="./assets/Icons/gamezone.png">
+            </a>
+            <ul class="navbar">
+                <li>
+                    <a href="home.html">
+                        Comunidade
+                    </a>
+                </li>
+                <li>
+                    <a href="noticiasLogin.html">
+                        Notícias
+                    </a>
+                </li>
+                <li>|</li>
+                <li>
+                    <div class="select">
+                        <select onchange="comunidade()" id="comuni">
+                            <option id="b_usuario" style="background-color: #684083; font-weight: 700;" selected disabled></option>
+                            <option style="font-weight: 400;" value="minigames" >Mini-games</option>
+                            <option style="font-weight: 400;" value="sair" >Sair</option>
+                        </select>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="fundo">
+        <div class="container">
+            <div class="reportagem">
+                <h2 class="titulo">
+                    LoL: Arcane tem mais de 34 milhões de horas assistidas na Netflix (2021)
+                </h2>
+                <img src="./assets/Icons/jinx.jpg">
+                <span>
+                    Arcane, a série de LoL na Netflix, continua mostrando números incríveis em favor
+                    da Riot Games. Segundo o site Netflix Top 10, o show atingiu a marca de 34 milhões
+                    de horas assistidas na plataforma de streaming durante a sua estreia.
+                </span>
+                <span>
+                    Os dados são relativos entre os dias 8 a 14 de novembro. Nesse período,
+                    Arcane ficou em segundo lugar, perdendo apenas para Narcos que acumulou 50,2
+                    milhões de horas até então.
+                </span>
+                <img src="./assets/Icons/loljinx.jpg">
+                <span>
+                    O sucesso de Arcane continua se mostrando por todo o mundo. Na última quarta (17),
+                    a Wizards of the Coast revelou um crossover inédito de Magic com League of Legends
+                    para celebrar o sucesso de Arcane.
+                </span>
+                <span>
+                    Arcane também atingiu recentemente o status de melhor série da Netflix no IMDb e
+                    estreou em 1º lugar em toda a plataforma, superando Round 6.
+                </span>
+                <iframe width="640" height="360" src="https://www.youtube.com/embed/F5tSoaJ93ac"
+                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay;
+                clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
+            </div>
+        </div>
+    </div>
+
+    <div class="noticias">
+        <div class="container">
+            <div class="noticiasCards">
+                <h2>
+                    Veja notícias similares
+                </h2>
+                <a href="godPCLogin.html">
+                    <div class="card">
+                        <div class="gow"></div>
+                        <div class="descricao">
+                            <span>
+                                God of War | Game ser lançado no PC aumenta em 370% acessos da PS
+                                Brasil no Reclame Aqui (2021)
+                            </span>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="terrariaJourneyLogin.html">
+                    <div class="card">
+                        <div class="terraria"></div>
+                        <div class="descricao">
+                            <span>
+                                Terraria | O jogo está cada vez melhor, a atualização do Journey's
+                                End agora está no ar (2021)
+                            </span>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="soulReaverRemasterLogin.html">
+                    <div class="card">
+                        <div class="raziel"></div>
+                        <div class="descricao">
+                            <span>
+                                Legacy of Kain: Soul Reaver Remaster | Está em desenvolvimento 
+                                e pode ser anunciado este ano (2021)
+                            </span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <div class="social">
+
+                <a href="https://www.facebook.com">
+                    <img title="Siga nossa página do Facebook. ♞" src="./assets/Icons/facebook.png">
+                </a>
+
+                <a href="https://www.instagram.com">
+                    <img title="Veja nossas fotos no Instagram. ♝" src="./assets/Icons/instagram.png">
+                </a>
+
+                <a href="https://www.youtube.com">
+                    <img title="Ative o sininho no nosso canal do Youtube. ♜" src="./assets/Icons/youtube.png">
+                </a>
+
+                <a href="https://www.twitch.tv"> 
+                    <img title="Acompanhe nossas lives na Twitch. ♛" src="./assets/Icons/twitch.png">
+                </a>
+
+                <a href="https://www.twitter.com">
+                    <img title="Compartilhe nossa Hashtag no Twitter. ♚" src="./assets/Icons/twitter.png">
+                </a>
+
+            </div>
+            <div class="direitos">
+                <h4>Copyright © 2021 GameZone - Todos os direitos reservados.</h4>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    function comunidade() {
+        if (comuni.value == "sair") {
+        limparSessao()
+        }
+        if (comuni.value == "minigames") {
+            miniGames()
+        }
+    }
+</script>

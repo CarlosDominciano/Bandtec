@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameZone</title>
+
+    <script src="./js/funcoes.js"></script>
+    <link rel="stylesheet" href="./css/reportagem.css">
+    <link rel="shortcut icon" href="./assets/Icons/gamezoneicon.png" type="image/x-icon">
+</head>
+<body onload="validarSessao()">
+    <div class="header">
+        <div class="container">
+            <a href="home.html">
+                <img class="logo" src="./assets/Icons/gamezone.png">
+            </a>
+            <ul class="navbar">
+                <li>
+                    <a href="home.html">
+                        Comunidade
+                    </a>
+                </li>
+                <li>
+                    <a href="noticiasLogin.html">
+                        Notícias
+                    </a>
+                </li>
+                <li>|</li>
+                <li>
+                    <div class="select">
+                        <select onchange="comunidade()" id="comuni">
+                            <option id="b_usuario" style="background-color: #684083; font-weight: 700;" selected disabled></option>
+                            <option style="font-weight: 400;" value="minigames" >Mini-games</option>
+                            <option style="font-weight: 400;" value="sair" >Sair</option>
+                        </select>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="fundo">
+        <div class="container">
+            <div class="reportagem">
+                <h2 class="titulo">
+                    Games grátis: Epic Games Store está oferecendo três jogos de graça (22/11/2021)
+                </h2>
+                <img src="./assets/Icons/epiccapa.jpg">
+                <span>
+                    A Epic Games anunciou nessa semana os jogos que vão estar de graça para os usuários.
+                    São três títulos, que estarão disponíveis para download na plataforma ou no site até o dia 25 de novembro.
+                </span>
+                <span>
+                    Os jogos são Never Alone, uma historia ambientada no Alasca, onde precisaremos resolver puzzles para
+                    descobrir a causa de uma nevasca eterna que ameaça a sobrevivência de tudo o que elas conhecem;
+                    Kid A Mnesia Exhibittion, game inspirado nos álbuns Kid A e Amnesiac, da banda Radiohead; e Guild
+                    of Dungeoneering, um jogo de exploração de masmorras, só que ao contrário: ao invés do jogador
+                    explorar a masmorra, ele vai construí-la.
+                </span>
+                <span>
+                    Para resgatar os jogos, é preciso acessar o site, clicando 
+                    <a href="https://www.epicgames.com/store/pt-BR/free-games">
+                        aqui,
+                    </a>
+                    fazer login e clicar em Obter.
+                </span>
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="noticias">
+        <div class="container">
+            <div class="noticiasCards">
+                <h2>
+                    Veja notícias similares
+                </h2>
+                <a href="godPCLogin.html">
+                    <div class="card">
+                        <div class="gow"></div>
+                        <div class="descricao">
+                            <span>
+                                God of War | Game ser lançado no PC aumenta em 370% acessos da PS
+                                Brasil no Reclame Aqui (2021)
+                            </span>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="terrariaJourneyLogin.html">
+                    <div class="card">
+                        <div class="terraria"></div>
+                        <div class="descricao">
+                            <span>
+                                Terraria | O jogo está cada vez melhor, a atualização do Journey's
+                                End agora está no ar (2021)
+                            </span>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="soulReaverRemasterLogin.html">
+                    <div class="card">
+                        <div class="raziel"></div>
+                        <div class="descricao">
+                            <span>
+                                Legacy of Kain: Soul Reaver Remaster | Está em desenvolvimento 
+                                e pode ser anunciado este ano (2021)
+                            </span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <div class="social">
+
+                <a href="https://www.facebook.com">
+                    <img title="Siga nossa página do Facebook. ♞" src="./assets/Icons/facebook.png">
+                </a>
+
+                <a href="https://www.instagram.com">
+                    <img title="Veja nossas fotos no Instagram. ♝" src="./assets/Icons/instagram.png">
+                </a>
+
+                <a href="https://www.youtube.com">
+                    <img title="Ative o sininho no nosso canal do Youtube. ♜" src="./assets/Icons/youtube.png">
+                </a>
+
+                <a href="https://www.twitch.tv"> 
+                    <img title="Acompanhe nossas lives na Twitch. ♛" src="./assets/Icons/twitch.png">
+                </a>
+
+                <a href="https://www.twitter.com">
+                    <img title="Compartilhe nossa Hashtag no Twitter. ♚" src="./assets/Icons/twitter.png">
+                </a>
+
+            </div>
+            <div class="direitos">
+                <h4>Copyright © 2021 GameZone - Todos os direitos reservados.</h4>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    function comunidade() {
+        if (comuni.value == "sair") {
+        limparSessao()
+        }
+        if (comuni.value == "minigames") {
+            miniGames()
+        }
+    }
+</script>
