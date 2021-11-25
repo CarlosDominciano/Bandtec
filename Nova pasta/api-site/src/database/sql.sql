@@ -9,6 +9,8 @@ CREATE TABLE usuario (
 	nome VARCHAR(50),
 	email VARCHAR(50),
 	senha VARCHAR(50),
+	cpf VARCHAR(15),
+	cnpj VARCHAR(15)
 );
 
 CREATE TABLE aviso (

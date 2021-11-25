@@ -113,22 +113,33 @@ select::-ms-expand {
 
 .comunidades {
     padding: 2rem 0 2rem 0;
-    height: 500px;
     color: white;
     font-family: monospace;
     font-size: xx-large;
     background-color: #222222;
     border-bottom: 20px dashed whitesmoke;
+    background-color: rgb(177, 82, 177);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
+
+
 
 .comuniCards {
-    height: 500px;
+    height: 250px;
     width: 100%;
-    overflow-y: scroll;
     flex-wrap: wrap;
+    background-color: #32B9CD;
+    margin: 3rem auto;
 }
 
-.comuniCards::-webkit-scrollbar-track {
+.especicComuni {
+    
+}
+
+/* .comuniCards::-webkit-scrollbar-track {
     background-color: transparent;
     border-radius: 10px;
 }
@@ -141,7 +152,7 @@ select::-ms-expand {
 .comuniCards::-webkit-scrollbar-thumb {
     background: #a078bb;
     border-radius: 10px;
-}
+} */
 
 
 

@@ -30,10 +30,6 @@
                     </a>
 
                     <a href="login.html">
-                        <img src="./icons/user.png" title="Login e cadastro" alt="Foto de usuário">
-                    </a>
-
-                    <a href="cadastrar.html">
                         <img class="selecionado" src="./icons/user.png" title="Login e cadastro" alt="Foto de usuário">
                     </a>
                 </div>  
@@ -44,9 +40,31 @@
     <!--Inicio do Inputs-->
     <div class="logiCad">
         <center>
-            <h1 class="ou">cadastre-se!</h1>
+            <h1 class="ou">Entre ou cadastre-se!</h1>
         </center>
         <div class="container">
+            <div class="caixaLog">
+                <div class="login">
+                    E-mail <br>
+                    <input id="entrar_email" type="text" placeholder="Login"> <br>
+                    Senha <br>
+                    <input id="entrar_senha" type="password" placeholder="Senha"> <br>
+                    <p>
+                        Esqueceu sua senha?
+                    </p>
+                    <a href="https://support.google.com/accounts/answer/7682439?hl=pt-BR">
+                        Clique aqui
+                    </a> <br><br>
+                    <button onclick="entrar()" class="btn">Entrar</button>
+                    <div onclick="google()" class="google">
+                        <img src="./icons/google.png" alt=""> 
+                        <p>Logar com o Google</p>
+                    </div>
+                </div>
+            </div>
+            <div class="linha">
+            </div>
+
             <div class="caixaCad">
                 <div class="cadastro">
                     Nome <br>
@@ -96,6 +114,74 @@
 </body>
 </html>
 <script>
+    function entrar() {
+        
+
+        var emailVar = entrar_email.value;
+        var senhaVar = entrar_senha.value;
+
+        console.log("FORM LOGIN: ", emailVar);
+        console.log("FORM SENHA: ", senhaVar);
+
+        // TODO: VERIFICAR AS VALIDAÇÕES QUE ELES ESTÃO APRENDENDO EM ALGORITMOS 
+        if (emailVar == "" || senhaVar == "") {
+            window.alert("Preencha todos os campos para prosseguir!");
+            finalizarAguardar();
+            return false;
+        }
+
+        if (emailVar.indexOf("@") == -1 || emailVar.indexOf(".com") == -1) {
+            window.alert("Ops, e-mail inválido! Verifique e tente novamente.");
+            finalizarAguardar();
+            return false;
+        }
+
+        fetch("/usuarios/autenticar", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                emailServer: emailVar,
+                senhaServer: senhaVar
+            })
+        }).then(function (resposta) {
+            console.log("ESTOU NO THEN DO entrar()!")
+
+            if (resposta.ok) {
+                console.log(resposta);
+
+                resposta.json().then(json => {
+                    console.log(json);
+                    console.log(JSON.stringify(json));
+
+                    sessionStorage.EMAIL_USUARIO = json.email;
+                    sessionStorage.NOME_USUARIO = json.nome;
+                    sessionStorage.ID_USUARIO = json.id;
+
+                    setTimeout(function () {
+                        window.location = "home.html"
+                    }, 1000); // apenas para exibir o loading
+
+                });
+
+            } else {
+
+                console.log("Houve um erro ao tentar realizar o login!");
+
+                resposta.text().then(texto => {
+                    console.error(texto);
+                    finalizarAguardar(texto);
+                });
+            }
+
+        }).catch(function (erro) {
+            console.log(erro);
+        })
+
+        return false;
+    }
+
     function cadastrar() {
 
         var nomeVar = ipt_nome.value;
@@ -146,8 +232,8 @@
                 nomeServer: nomeVar,
                 emailServer: emailVar,
                 senhaServer: senhaVar,
-                cnpj: cnpjVar,
-                cpf: cpfVar
+                cnpjServer: cnpjVar,
+                cpfServer: cpfVar
             })
         }).then(function (resposta) {
 

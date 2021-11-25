@@ -336,6 +336,8 @@ justify-content: center;
 .logiCad .caixaLog {
     height: 600px;
     background-color: #19bfed;
+    border-bottom-left-radius: 200px;
+    border-top-right-radius: 200px;
     text-align: center;
     display: flex;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -380,7 +382,8 @@ justify-content: center;
 .logiCad .caixaCad {
     height: 600px;
     background-color: #19C0ED;
-    border-radius: 10000px;
+    border-top-left-radius: 200px;
+    border-bottom-right-radius: 200px;
     text-align: center;
     display: flex;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
