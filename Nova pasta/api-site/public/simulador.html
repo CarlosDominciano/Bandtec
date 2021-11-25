@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador financeiro</title>
+    <link rel="stylesheet" href="./css/site.css">
+    <link rel="shortcut icon" href="./icons/iconRecreative.png" type="image/x-icon">
+    <script src="./js/funcoes.js"></script>
+    <style>
+        #parteUmCalculadora {
+            display: block;
+        }
+        #parteDoisCalculadora {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+        <!--Inicio do Header-->
+        <div class="header">
+            <div class="container">
+                <a href="index.html">
+                    <img class="logo" title="Inicial" src="./icons/Recreative.png" alt="Foto do logo">
+                </a>
+                <div class="navbar">
+                    <div class="nav-item">
+                        <a href="simulador.html">
+                            <img class="selecionado" src="./icons/calculadora.png" title="Simulador financeiro" alt="Foto de uma Calculadora">
+                        </a>
+    
+                        <a href="index.html">
+                            <img  src="./icons/inicial.png"  title="Inicial" alt="Foto de uma casa">
+                        </a>
+    
+                        <a href="cadastro.html">
+                            <img src="./icons/atendimento.png" title="FAQ" alt="Foto de atendimento">
+                        </a>
+    
+                        <a href="login.html">
+                            <img src="./icons/user.png" title="Login e cadastro" alt="Foto de usuário">
+                        </a>
+                    </div>  
+                </div>
+            </div>
+        </div>
+
+    <!--Inicio da calculadora-->
+    <div class="simulador">
+        <div class="container">
+            <div class="calculadora">
+                <div class="caixaUm">
+                    <div class="caixaxaUm">
+                        <span id="parteUmCalculadora">
+                            <h2>Calcule seus gastos com Filamentos e veja nossos lucros em sua empresa</h2> <br>
+                            Material usado por mês (em gramas) <br>
+                            <input type="number" id="ipt_gastoMaterial" placeholder="3000 = 3Kg..."><br><br>
+                            Quantidade de material perdido por mês (em gramas) <br>
+                            <input type="number" id="ipt_materialPerdido" placeholder="Ex:200..."> <br><br>
+                            Quantidade de impressoras que superaquecem por mês <br>
+                            <input type="number" id="ipt_aqueci" placeholder="Ex:5..."> <br><br>
+                            Gastos com energia por mês <br>
+                            <input type="number" id="ipt_gastoEnergia" placeholder="Ex:R$3000.00..."> <br><br>
+                            Espaço que as impressoras combrem (em metros quadrados) <br>
+                            <input type="number" id="ipt_metros" placeholder="Ex:20..."> <br><br><br>
+                            <button onclick="calcular()" class="botao">Analisar lucros</button>
+                        </span>
+                        <span id="parteDoisCalculadora">
+                            <div id="material">
+
+                            </div>
+                            <button onclick="voltar()" class="botao">Voltar</button>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Inicio do Footer-->
+    <div class="footer">
+        <div class="container"> 
+            <div class="float-box">
+                <div class="redes">   
+                    <p class="p">Nossas redes sociais</p>
+                    <a href="https://web.whatsapp.com/">
+                        <img src="./icons/whatsapp.png" alt="">
+                    </a>
+
+                    <a href="https://facebook.com/">
+                        <img src="./icons/facebook.png" alt="">
+                    </a>
+
+                    <a href="https://instagram.com/">
+                        <img src="./icons/instagram.png" alt="">
+                    </a>
+
+                    <a href="https://linkedin.com/">
+                        <img src="./icons/linkedin.png" alt="">
+                    </a>
+                    <p class="direitos">© Recreative3D 2021 | Recreative3D.com - All Rights Reserved</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    function calcular() {
+        var gastoMaterial = Number(ipt_gastoMaterial.value);
+        var qntdPerdida = Number(ipt_materialPerdido.value);
+        var aqueciMes = Number(ipt_aqueci.value);
+        var gastoEnergia = Number(ipt_gastoEnergia.value);
+        var metros = Number(ipt_metros.value);
+        var instala = (metros * 250 / 6).toFixed(2) ;
+        var qntdPerdidaDps = 0;
+        var aqueciMesDps = 0;
+        var metrosQuad = 0;
+        var gastoEnergiaDps = 0;
+        var calMaterial = 0;
+        
+        if (qntdPerdida == 0 || aqueciMes == 0 || gastoEnergia == 0 || gastoMaterial == 0 || metros == 0) {
+            alert("Insira os dados corretamente. Por favor!")
+        } else {
+
+        if (gastoMaterial >= 10000) {
+            qntdPerdidaDps = qntdPerdida * 25 / 100;
+            calMaterial = qntdPerdida - qntdPerdidaDps;
+            parteUmCalculadora.style.display = "none";
+            parteDoisCalculadora.style.display = "block";
+
+            material.innerHTML = `Depois da nossa solução, você perderá em média ${qntdPerdidaDps} gramas por mês. O que é 
+            ${(calMaterial).toFixed(2)} a mais de possíveis lucros. <br><br>`
+        }
+
+        if (gastoMaterial < 10000) {
+            qntdPerdidaDps = qntdPerdida * 40 / 100;
+            calMaterial = qntdPerdida - qntdPerdidaDps;
+            parteUmCalculadora.style.display = "none";
+            parteDoisCalculadora.style.display = "block";
+
+            material.innerHTML = `Depois da nossa solução, você perderá em média ${qntdPerdidaDps} gramas por mês. O que é 
+            ${(calMaterial).toFixed(2)} a mais de possíveis lucros. <br><br>`
+        }
+
+        if (gastoMaterial < 6000) {
+            qntdPerdidaDps = qntdPerdida * 50 / 100;
+            calMaterial = qntdPerdida - qntdPerdidaDps;
+            parteUmCalculadora.style.display = "none";
+            parteDoisCalculadora.style.display = "block";
+
+            material.innerHTML = `Depois da nossa solução, você perderá em média ${qntdPerdidaDps} gramas por mês. O que é 
+            ${(calMaterial).toFixed(2)} a mais de possíveis lucros. <br><br>`
+
+        }
+
+        if (gastoMaterial < 2500) {
+            qntdPerdidaDps = qntdPerdida * 66 / 100;
+            calMaterial = qntdPerdida - qntdPerdidaDps;
+            parteUmCalculadora.style.display = "none";
+            parteDoisCalculadora.style.display = "block";
+            
+            
+            material.innerHTML = `Depois da nossa solução, perderá em média ${(qntdPerdidaDps).toFixed(2)} gramas por mês. O que é 
+            ${(calMaterial).toFixed(2)} a mais de possíveis lucros. <br><br>`
+
+        }
+        
+        
+        if (gastoEnergia > instala) {
+            gastoEnergiaDps = gastoEnergia - instala;
+            
+            material.innerHTML += `Com nossa instalação, além de evitar o disperdício do filamento, você vai economizar 
+            na sua energia elétrica, chegando a gastar R$${(gastoEnergiaDps).toFixed(2)} em média por mês. <br><br>`;
+
+        }
+        if (instala > gastoEnergia) {
+            gastoEnergiaDps = instala - gastoEnergia;
+            
+            material.innerHTML += `Com nossa instalação, você vai aumentar a produtividade gerando um lucro maior com as 
+            impressoras, chegando a gastar ${(gastoEnergiaDps).toFixed(2)} nos primeiros 6 meses, já que cobramos a instalação inicial,
+            depois disso, você começará a lucrar muito mais. <br><br>`;
+
+        }
+
+        if (instala == gastoEnergia) {
+            gastoEnergiaDps = instala - gastoEnergia;
+
+            material.innerHTML += `Com nossa instalação, você vai aumentar a produtividade gerando um lucro maior com as 
+            impressoras, gastando o mesmo valor que sempre gastou em energia nos primeiros 6 meses, já que cobramos a instalação inicial,
+            depois disso, você começará a lucrar muito mais. <br><br>`;
+        }
+
+        material.innerHTML += `Além de tudo isso, trazermos a proposta de resolver o problema do superaquecimento de
+        suas máquinasem até 60%, o que seria ${(aqueciMes * 40 / 100).toFixed()} de suas máquinas com base nos dados informados
+        <br> <br> <br>`;
+
+        }
+    }
+    function voltar() {
+        parteUmCalculadora.style.display = "block";
+        parteDoisCalculadora.style.display = "none";
+        ipt_gastoMaterial.value = "";
+        ipt_aqueci.value = "";
+        ipt_gastoEnergia.value = "";
+        ipt_materialPerdido.value = "";
+        ipt_metros.value = "";
+    }
+</script>
