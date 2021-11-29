@@ -50,27 +50,27 @@
                 <span>
                     Email
                 </span>
-                <input oninput="verificar()" type="text" id="ipt_email" placeholder="Email">
+                <input type="text" id="ipt_email" placeholder="Email">
 
                 <span>
                     Senha
                 </span>
-                <input oninput="verificar()" type="password" id="ipt_senha" placeholder="Senha">
+                <input type="password" id="ipt_senha" placeholder="Senha">
 
                 <span>
                     Confirmar Senha
                 </span>
-                <input oninput="verificar()" type="password" id="ipt_confirmSenha" placeholder="Confirmar Senha">
+                <input type="password" id="ipt_confirmSenha" placeholder="Confirmar Senha">
 
                 <span>
                     Nome Completo
                 </span>
-                <input oninput="verificar()" type="text" id="ipt_nome" placeholder="Nome Completo">
+                <input type="text" id="ipt_nome" placeholder="Nome Completo">
 
                 <span>
                     Nick - Nome de usuário
                 </span>
-                <input oninput="verificar()" type="text" id="ipt_nick" placeholder="Nick Name">
+                <input type="text" id="ipt_nick" placeholder="Nick Name">
 
                 <button onclick="cadastrar()">
                     Entrar para a comunidade
@@ -136,6 +136,11 @@
         var senhaVar = ipt_senha.value;
         var confirmSenhaVar = ipt_confirmSenha.value;
         var nickVar = ipt_nick.value;
+        var maxPontosVar = null;
+        var dataInicioJogoVar = null;
+        var dataTerminoJogoVar = null;
+        var fkUsuarioVar = null;
+
 
         if (nomeVar == "" || emailVar == "" || senhaVar == "" || confirmSenhaVar == "" || nickVar == "") {
 
@@ -180,7 +185,11 @@
                 nomeServer: nomeVar,
                 emailServer: emailVar,
                 senhaServer: senhaVar,
-                nickServer: nickVar
+                nickServer: nickVar,
+                maxPontosServer: maxPontosVar,
+                dataInicioJogoServer: dataInicioJogoVar,
+                dataTerminoJogoServer: dataTerminoJogoVar,
+                fkUsuarioServer: fkUsuarioVar
             })
         }).then(function (resposta) {
 
