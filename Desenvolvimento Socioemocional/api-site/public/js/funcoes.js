@@ -5,6 +5,7 @@ function validarSessao() {
     var email = sessionStorage.EMAIL_USUARIO;
     var nome = sessionStorage.NOME_USUARIO;
     var nick = sessionStorage.NICK_USUARIO;
+    var maxPontos = sessionStorage.MAXPONTOS_PONTOS;
 
     var h1LoginUsuario = document.getElementById("h1_login_usuario");
 

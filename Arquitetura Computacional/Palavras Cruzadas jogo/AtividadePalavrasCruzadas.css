@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.paizao {
+    padding: 2rem 0 5rem 0;
+    color: white;
+    font-family: monospace;
+    font-size: xx-large;
+    background-color: #ff0000;
+    border-bottom: 20px dashed whitesmoke;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+#jogo {
+    height: 1000px;
+    width: 1000px;
+    padding: 1rem 1rem;
+    margin: auto;
+    background-color: aqua;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    width: 95%;
+    margin: auto;
+}
+
+input {
+    width: 35.575px;
+    height: 35.575px;
+    margin: auto;
+    padding: 0;
+}
+
+#input {
+    width: 990px;
+    height: 990px;
+    background-color: blue;
+    margin: auto;
+}
