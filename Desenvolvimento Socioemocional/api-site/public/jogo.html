@@ -7,7 +7,7 @@
     <title>GameZone</title>
 
     <script src="./js/funcoes.js"></script>
-    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/jogo.css">
     <link rel="shortcut icon" href="./assets/Icons/gamezoneicon.png" type="image/x-icon">
 </head>
 <body onload="validarSessao()">
@@ -17,9 +17,11 @@
                 <img class="logo" src="./assets/Icons/gamezone.png">
             </a>
             <ul class="navbar">
-                <li class="agora">
-                    Comunidade
-                </li>
+                <a href="home.html">
+                    <li >
+                        Comunidade
+                    </li>
+                </a>
                 <li>
                     <a href="noticiasLogin.html">
                         Notícias
@@ -39,14 +41,30 @@
         </div>
     </div>
 
-    <div class="comunidades">
+    <div class="jogos">
         <div class="container">
-            <div class="comuniCards">
-                <a href="">
-                    <div class="especificComuni">
-                            
+            <div class="jogosCards">
+                <div style="display: none;" onclick="mostrarPalavraCruzada()" id="iniciarPC">
+                    <div class="card">
+                        <div class="palavraCruzada"></div>
+                        <div class="descricao">
+                            <span>
+                                Se divirta jogando Palavras-Cruzadas com o tema Geek!
+                            </span>
+                        </div>
                     </div>
-                </a>
+                </div>
+                <div id="palavraCruzada">
+                    <button class="btnInicio" onclick="iniciarPalavraCruzada()">
+                        Iniciar Game?
+                    </button>
+                    <span>
+
+                    </span>
+                    <button class="btnVoltar" onclick="voltar()">
+                        Voltar
+                    </button>
+                </div>
             </div>
         </div>
     </div>
@@ -94,5 +112,15 @@
         if (comuni.value == "minigames") {
             miniGames()
         }
+    }
+
+    function mostrarPalavraCruzada() {
+        iniciarPC.style.display = "none";
+        palavraCruzada.style.display = "block";
+}
+
+    function voltar() {
+        iniciarPC.style.display = "block";
+        palavraCruzada.style.display = "none";
     }
 </script>

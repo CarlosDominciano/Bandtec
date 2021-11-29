@@ -31,7 +31,7 @@ function limparSessao() {
 function miniGames() {
     // aguardar();
     // finalizarAguardar();
-    window.location = "../games.html";
+    window.location = "../jogo.html";
 }
 
 
