@@ -27,10 +27,10 @@ function cadastrar(nome, email, senha, nick) {
     return database.executar(instrucao);
 }
 
-function terminarJogo(maxPontos, dataInicioJogo, dataTerminoJogo, fkUsuario) {
-    console.log("ACESSEI O USUARIO MODEL \n \n\t\t >> Se aqui der erro de 'Error: connect ECONNREFUSED',\n \t\t >> verifique suas credenciais de acesso ao banco\n \t\t >> e se o servidor de seu BD está rodando corretamente. \n\n function terminarJogo():", maxPontos, dataInicioJogo, dataTerminoJogo, fkUsuario);
+function terminarJogo(maxPontos, fkUsuario) {
+    console.log("ACESSEI O USUARIO MODEL \n \n\t\t >> Se aqui der erro de 'Error: connect ECONNREFUSED',\n \t\t >> verifique suas credenciais de acesso ao banco\n \t\t >> e se o servidor de seu BD está rodando corretamente. \n\n function terminarJogo():", maxPontos, fkUsuario);
     var instrucao = `
-        INSERT INTO pontos (maxPontos, dataInicioJogo, dataTerminoJogo, fkUsuario) VALUES ('${maxPontos}', '${dataInicioJogo}', '${dataTerminoJogo}', '${fkUsuario}');
+        INSERT INTO pontos (maxPontos, fkUsuario) VALUES ('${maxPontos}', '${fkUsuario}');
     `;
     console.log("Executando a instrução SQL: \n" + instrucao);
     return database.executar(instrucao);

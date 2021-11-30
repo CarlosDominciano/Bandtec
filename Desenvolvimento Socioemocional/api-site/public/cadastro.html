@@ -136,10 +136,6 @@
         var senhaVar = ipt_senha.value;
         var confirmSenhaVar = ipt_confirmSenha.value;
         var nickVar = ipt_nick.value;
-        var maxPontosVar = null;
-        var dataInicioJogoVar = null;
-        var dataTerminoJogoVar = null;
-        var fkUsuarioVar = null;
 
 
         if (nomeVar == "" || emailVar == "" || senhaVar == "" || confirmSenhaVar == "" || nickVar == "") {
@@ -185,11 +181,7 @@
                 nomeServer: nomeVar,
                 emailServer: emailVar,
                 senhaServer: senhaVar,
-                nickServer: nickVar,
-                maxPontosServer: maxPontosVar,
-                dataInicioJogoServer: dataInicioJogoVar,
-                dataTerminoJogoServer: dataTerminoJogoVar,
-                fkUsuarioServer: fkUsuarioVar
+                nickServer: nickVar
             })
         }).then(function (resposta) {
 

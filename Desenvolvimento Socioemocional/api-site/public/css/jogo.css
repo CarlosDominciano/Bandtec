@@ -146,7 +146,7 @@ select::-ms-expand {
 }
 
 .card {
-    width: 90%;
+    width: 100%;
     height: 250px;
     transition: transform 1s;
     color: white;
@@ -159,7 +159,7 @@ select::-ms-expand {
 .card .quiz {
     width: 100%;
     height: 70%;
-    background-image: url("../assets/Icons/palavracruzada.jpg");
+    background-image: url("../assets/Icons/quiz.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -181,120 +181,34 @@ select::-ms-expand {
     font-weight: 900;
     font-style: italic;
     color: #cfc868;
+    font-family: monospace;
 }
 
-#quizJogo {
-    width: 100%;
-    height: 50vh;
-    display: none;
+.metricas {
+    border-radius: 30px;
+    width: 50%;
+    height: 250px;
+    display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     justify-content: center;
-    text-align: center;
     align-items: center;
-}
-
-.btn {
-    background-color: #744594;
-    border: 2px solid #cfc868;
-    height: 4rem;
-    width: 22rem;
-    border-radius: 30px;
-    text-align: center;
     font-family: monospace;
-    color: white;
-    font-weight: 800;
-    font-size: x-large;
-    cursor: pointer;
-    transition: 1s;
 }
 
-.btn:hover {
-    transform: scale(1.1);
-}
-
-.m {
-    margin: 2rem 0;
-    height: 4rem;
-    width: 16rem;
-}
-
-.c {
-    height: 4rem;
-    width: 8rem;
-}
-
-.perguntas {
-    width: 100%;
-    height: 500px;
-    display: none;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    margin: auto;
-}
-.respostasDiv {
-    width: 100%;
-    height: 500px;
-    display: none;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    margin: auto;
-}
-
-.titulo {
+.pontos {
     width: 70%;
-    height: 20%;
-    margin-top: 1rem;
-}
+    height: 40%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #111111;
+    border-radius: 30px;
+    margin-bottom: 3rem;
+    font-size: 80%;
 
-.alternativas {
-    width: 45%;
-    height: 15%;
-    background-color: #744594;
-    border: 2px solid #cfc868;
-    border-radius: 30px;
-    text-align: center;
-    font-family: monospace;
-    color: white;
-    font-weight: 800;
-    font-size: x-large;
-    cursor: pointer;
-    margin: 0 1rem;
-}
 
-.respostaC {
-    width: 45%;
-    height: 15%;
-    background-color: #45944e;
-    border: 2px solid #cfc868;
-    border-radius: 30px;
-    text-align: center;
-    font-family: monospace;
-    color: white;
-    font-weight: 800;
-    font-size: x-large;
-    cursor: pointer;
-    display: block;
-}
-.proximo {
-    width: 70%;
-    height: 15%;
-    background-color: #744594;
-    border: 2px solid #cfc868;
-    border-radius: 30px;
-    text-align: center;
-    font-family: monospace;
-    color: white;
-    font-weight: 800;
-    font-size: x-large;
-    cursor: pointer;
-    display: block;
 }
 
 

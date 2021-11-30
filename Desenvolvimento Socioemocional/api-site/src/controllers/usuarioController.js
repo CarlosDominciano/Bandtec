@@ -65,10 +65,6 @@ function cadastrar(req, res) {
     var email = req.body.emailServer;
     var senha = req.body.senhaServer;
     var nick = req.body.nickServer;
-    var maxPontos = req.body.maxPontosServer;
-    var dataInicioJogo = req.body.dataInicioJogoServer;
-    var dataTerminoJogo = req.body.dataTerminoJogoServer;
-    var fkUsuario = req.body.fkUsuarioServer;
 
     if (nome == undefined) {
         res.status(400).send("Seu nome está undefined!");
@@ -80,7 +76,7 @@ function cadastrar(req, res) {
         res.status(400).send("Seu nick está undefined!");
     } else {
         
-        usuarioModel.cadastrar(nome, email, senha, nick, maxPontos, dataInicioJogo, dataTerminoJogo, fkUsuario)
+        usuarioModel.cadastrar(nome, email, senha, nick)
             .then(
                 function (resultado) {
                     res.json(resultado);

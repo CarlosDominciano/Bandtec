@@ -7,12 +7,12 @@ CREATE TABLE usuario (
 	nome VARCHAR(70) NOT NULL,
 	email VARCHAR(70) UNIQUE NOT NULL,
 	senha VARCHAR(50) NOT NULL,
-	nick VARCHAR(50) NOT NULL
+	nick VARCHAR(50) UNIQUE NOT NULL
 );
 
 CREATE TABLE pontos (
 	idPonto INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
 	maxPontos DECIMAL(2),
-	dataInicioJogo DATETIME,
-	dataTerminoJogo DATETIME
+    fkUsuario INT, 
+    FOREIGN KEY (fkUsuario) REFERENCES usuario(idUsuario)
 );
