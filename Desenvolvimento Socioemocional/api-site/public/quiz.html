@@ -7,7 +7,6 @@
     <title>GameZone</title>
 
     <script src="./js/funcoes.js"></script>
-    <script src="./js/quiz.js"></script>
     <link rel="stylesheet" href="./css/quiz.css">
     <link rel="stylesheet" href="./css/select.css">
     <link rel="shortcut icon" href="./assets/Icons/gamezoneicon.png" type="image/x-icon">
@@ -25,30 +24,63 @@
           </div>
         </div>
         <div class="controls">
-          <button id="start-btn" class="start-btn btn">Start</button>
-          <button id="next-btn" class="next-btn btn hide">Next</button>
+          <button id="start-btn" class="start-btn btn">Começar</button>
+          <button id="next-btn" class="next-btn btn hide">Próximo</button>
         </div>
         
             <button onclick="voltar()" class="sair btn">
             <div id="b_usuario"></div> Deseja sair?
             </button>
         
+
+            <button onclick="voltar()" class="sair btn">
+                teste
+            </button>
+            
     </div>
     
 </body>
 </html>
 <script>
-
+    var maxPontosVar;
+    var fkUsuarioVar;
     function voltar() {
-        window.location.href = "jogo.html"
+        
+        fkUsuarioVar = sessionStorage.ID_USUARIO;
+        console.log("fkUsuarioVar",fkUsuarioVar);
+
+        fetch("/usuarios/cadastrar", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                maxPontosServer: maxPontosVar,
+                fkUsuarioServer: fkUsuarioVar
+            })
+        }).then(function (resposta) {
+
+            console.log("resposta: ", resposta);
+
+        }).catch(function (resposta) {
+            console.log(`#ERRO: ${resposta}`);
+            
+        });
+
+        // return false;
+        // if (fkUsuarioVar == sessionStorage.ID_USUARIO) {
+        //     alert("gravou o id")
+        // window.location.href = "jogo.html"
+        // }
     }
+
     const startButton = document.getElementById('start-btn')
     const nextButton = document.getElementById('next-btn')
     const questionContainerElement = document.getElementById('question-container')
     const questionElement = document.getElementById('question')
     const answerButtonsElement = document.getElementById('answer-buttons')
 
-    let shuffledQuestions, currentQuestionIndex, pontos
+    let shuffledQuestions, currentQuestionIndex
 
     startButton.addEventListener('click', startGame)
     nextButton.addEventListener('click', () => {
@@ -107,13 +139,13 @@
         nextButton.classList.remove('hide')
     } else {
         startButton.innerText = 'Terminar'
-        if (pontos == 7) {
+        if (pontos == questions.length) {
             alert(`Parabéns, você acertou todas, você realmente gosta de jogar. Você acertou ${pontos}/${questions.length}`)
-        } else if (pontos >= 5) {
+        } else if (pontos >= questions.length * 0.7) {
             alert(`Foi quase lá, por pouco você não acerta todas. Você acertou ${pontos}/${questions.length}`)
-        } else if (pontos >= 3) {
+        } else if (pontos >= questions.length * 0.4) {
             alert(`Você deve jogar apenas no Easy. Você acertou ${pontos}/${questions.length}`)
-        } else if (pontos >= 0) {
+        } else if (pontos >= questions.length * 0) {
             alert(`Melhor parar de jogar... Você acertou ${pontos}/${questions.length}`)
         }
         startButton.addEventListener('click', voltar())
