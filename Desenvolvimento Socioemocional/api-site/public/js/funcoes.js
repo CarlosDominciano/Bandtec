@@ -15,7 +15,7 @@ function validarSessao() {
             h1LoginUsuario.innerHTML = email;
         }
         b_usuario.innerHTML = `Olá, ${nick}!`;
-        Recorde.innerHTML = `${maxPontos}`
+        recorde.innerHTML = `${maxPontos}`
 
         // finalizarAguardar();
     } else {
