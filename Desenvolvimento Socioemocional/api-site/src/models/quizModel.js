@@ -10,7 +10,7 @@ function listar_quiz() {
 }
 
 
-function cadastrar_quiz(maxPontos, fkUsuario) {
+function cadastrarQuiz(maxPontos, fkUsuario) {
     console.log("ACESSEI O QUIZ MODEL \n \n\t\t >> Se aqui der erro de 'Error: connect ECONNREFUSED',\n \t\t >> verifique suas credenciais de acesso ao banco\n \t\t >> e se o servidor de seu BD está rodando corretamente. \n\n function cadastrar_quiz():", maxPontos, fkUsuario);
 
     var instrucao = `
@@ -22,6 +22,6 @@ function cadastrar_quiz(maxPontos, fkUsuario) {
 }
 
 module.exports = {
-    cadastrar_quiz,
+    cadastrarQuiz,
     listar_quiz,
 };

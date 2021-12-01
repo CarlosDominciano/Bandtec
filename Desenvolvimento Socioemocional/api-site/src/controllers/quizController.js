@@ -1,4 +1,4 @@
-var quizModel = require("../models/usuarioModel");
+var quizModel = require('../models/quizModel');
 
 var sessoes = [];
 
@@ -23,7 +23,7 @@ function cadastrar_quiz(req, res) {
     var maxPontos = req.body.maxPontosServer;
     var fkUsuario = req.body.fkUsuarioServer;
         
-        quizModel.cadastrar_quiz(maxPontos, fkUsuario)
+        quizModel.cadastrarQuiz(maxPontos, fkUsuario)
             .then(
                 function (resultado) {
                     res.json(resultado);
