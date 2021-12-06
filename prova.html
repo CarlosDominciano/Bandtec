@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Controle de Reembolsos de Despesas com Locomoção</h1>
+    Entre com o valor do reembolso: <input type="text" id="iptValor">
+    <button onclick="cadastrar()">Cadastrar</button><br><br>
+    <b>Total de reembolsos cadastrardos: <span id="resultadoReembolso"></span></b><br><br><br><br>
+
+    <h1>Consulta de Reembolsos</h1>
+    Entre com o intervalo de valores a ser pesquisado: <br>
+    De: <input type="text" id="iptDe"> Até: <input type="text" id="iptAte"> 
+    <button onclick="intervalo()">Resumir Intervalo</button> <br><br><br>
+
+    <span id="resultado"></span>
+
+</body>
+</html>
+<script>
+    var vtReembolso = [];
+    function cadastrar() {
+        var reembolso = Number(iptValor.value);
+        if (reembolso >= 4 && reembolso <= 16) {
+            vtReembolso.push(reembolso);
+            resultadoReembolso.innerHTML = vtReembolso.length;
+        } else {
+            alert("uepa")
+        }
+    }
+
+    function intervalo() {
+        var de = Number(iptDe.value);
+        var ate = Number(iptAte.value);
+        var intervalos = de >= 4 && de <= 16 && ate >= de && ate <= 16; 
+        var soma = 0;
+        var somaCont = 0;
+        var maior = 0;
+        var menor = 99;
+        if (intervalos) {
+            for (var cont = 0; cont <= vtReembolso.length; cont++) {
+                
+                if (vtReembolso[cont] >= de && vtReembolso[cont] <= ate ) {
+                    somaCont++;
+                    soma += vtReembolso[cont]
+                    if (vtReembolso[cont] > maior) {
+                        maior = vtReembolso[cont]
+                    }
+                    if (vtReembolso[cont] < menor) {
+                        menor = vtReembolso[cont]  
+                        
+                    }
+                }
+                
+            }
+            resultado.innerHTML = `maior ${maior} menor ${menor}`
+        } else {
+            alert("erro")
+        }
+    }
+</script>
