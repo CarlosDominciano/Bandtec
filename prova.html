@@ -11,14 +11,19 @@
     <h1>Controle de Reembolsos de Despesas com Locomoção</h1>
     Entre com o valor do reembolso: <input type="text" id="iptValor">
     <button onclick="cadastrar()">Cadastrar</button><br><br>
-    <b>Total de reembolsos cadastrardos: <span id="resultadoReembolso"></span></b><br><br><br><br>
+    <b>Total de reembolsos cadastrardos: <span id="resultadoReembolso"></span></b>
+    <br><br><br><br>
 
     <h1>Consulta de Reembolsos</h1>
     Entre com o intervalo de valores a ser pesquisado: <br>
     De: <input type="text" id="iptDe"> Até: <input type="text" id="iptAte"> 
-    <button onclick="intervalo()">Resumir Intervalo</button> <br><br><br>
+    <button onclick="intervalo()">Resumir Intervalo</button> 
+    <br><br><br>
 
-    <span id="resultado"></span>
+    <span id="resultado"></span> 
+    <br><br>
+
+    <span id="resultadoOcor"></span>
 
 </body>
 </html>
@@ -42,25 +47,38 @@
         var somaCont = 0;
         var maior = 0;
         var menor = 99;
+        var menorOcor = 0;
+        var maiorOcor = 0;
+        resultadoOcor.innerHTML = ``;
+        resultado.innerHTML = ``;
         if (intervalos) {
-            for (var cont = 0; cont <= vtReembolso.length; cont++) {
+            for (var cont = vtReembolso.length - 1; cont >= 0; cont--) {
                 
                 if (vtReembolso[cont] >= de && vtReembolso[cont] <= ate ) {
                     somaCont++;
                     soma += vtReembolso[cont]
                     if (vtReembolso[cont] > maior) {
                         maior = vtReembolso[cont]
+                        maiorOcor = cont + 1;
                     }
                     if (vtReembolso[cont] < menor) {
-                        menor = vtReembolso[cont]  
+                        menor = vtReembolso[cont] 
+                        menorOcor = cont + 1; 
                         
                     }
+                    resultadoOcor.innerHTML += `valor ${vtReembolso[cont]} na posição ${cont + 1} <br>`;
                 }
                 
             }
-            resultado.innerHTML = `maior ${maior} menor ${menor}`
+            resultado.innerHTML = `maior ${maior} na ocorrencia ${maiorOcor} <br>
+                                menor ${menor} na ocorrencia ${menorOcor} <br>
+                                média ${soma/somaCont}`
         } else {
-            alert("erro")
+            alert("catapimbas")
+        }
+        if (soma == 0) {
+            alert("nao foi achada ocorrencia")
+            resultado.innerHTML = "";
         }
     }
 </script>
