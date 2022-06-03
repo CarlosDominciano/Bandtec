@@ -1,0 +1,10 @@
+Analise de Dados
+
+Entidade:
+Algo do mundo real que: pode ser definido, contém atributos e é relevante para o negócio que está sendo modelado.
+
+Pode ser:
+Objeto que desempenha um papel especifico no sistema;
+Ojeto que possui propriedas que o distinguem de outras entidades;
+Objeto: computador, veiculo, imovel, produto, etc.
+

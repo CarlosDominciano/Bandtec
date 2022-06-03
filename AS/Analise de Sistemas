@@ -1,0 +1,96 @@
+Analise de Sistemas 
+
+Canva = Jack carai fds eh nôíŝ
+
+"Lean UX Canvas ajuda as equipes a estruturar seu trabalho, como um problema de negocio a ser resolvido. Ao dissecar esse problema de negócios em suas principais suposições, você pode desenvolver hipóteses para projetar experimentos e testes"
+¬Jeff Gothelf.
+	//Parecido com Debug fds.
+
+
+
+
+
+Canvas das vaca
+
+Problemas tarefas, Business problem: 
+Org. Dados. Prod.
+Cons. Dados.
+Descarte Leite Rejeitado.
+Armz Dados.
+
+Ideias e soluções: 
+Bco Dados.
+Conversão.
+
+Clientes e usuarios:
+Pessoal setor de prod.
+Parte financeira.
+Direção.
+Descarte.
+
+
+Beneficio:
+Organização Dados, diminuição dos trabalhos manuais.
+Diminuição de falhas.
+Maior velocidade na apuração dos dados.
+
+Atividade:
+
+No primeiro Canvas vam,os fazer o quadro de Problemas. E escolher um processo e construir o Canvas a partir desse processo (Problema).
+
+
+O Usuario eh corno e n sabe o que quer...
+
+Identificar requisitos.
+ User Story - Ferramenta para fazer o apoio dos usuários
+ Principal froma de fazer o levantamento dos requisitos
+
+
+Eu, enquanto QUEM,
+Quero O QUE
+Para POR QUE.
+
+Para POR QUE,
+enquanto QUEM,
+eu quero O QUE.
+
+Quem pede, porque pede para quem pede.
+
+
+
+EX: Eu como gerente quero poder monitorar inscrições para ter maior controle sobre o volume de candidatos.
+
+
+Importancia de rastrear os requisitos:
+Possibilidade de analisar o impacto das alterações 
+Uma analise mais aprofundada dos requisitos, permitindo encontrar inconsistencias
+Descobrir se a solução dos requisitos cumpre apenas os pontos a que se propõe 
+Ser uma forma confiaveln de se certificar de que todos os requisitos estão sendo abordados
+
+
+
+ID unico - codigo para identificar o requisito
+Nome do requisito - duas ou tres palavras que caracterizam o requisito
+descricao - descricao detalhada do requisito
+prioridade/ tipo requisito - atrativo, normal, necessario.
+situacao de desenvolvimento - situacao em que o requisito se encontra na fase atual do projeto (ativo, cancelado, executado)
+codigo do artefato - Codigo do artefato associado ao requisito
+codigo de desenho - referencia para a documentação de desenho relativa ao requisito em causa
+codigo de teste - referencia para os testes 
+
+
+Ferramentas para apoio da evolução dos requisitos:
+Levantamento de necessidades
+Passo 1 
+ENtendimento inicial do desejo do cliente
+Passo 2
+Mapa dos processos
+Passo 3
+Desenhos tecnicos
+Passo 4
+Desenvolvimento da solução
+
+
+
+
+

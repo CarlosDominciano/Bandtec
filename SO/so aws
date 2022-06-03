@@ -1,0 +1,27 @@
+On-Premises
+ 
+Você gerencia tudo, como fazer uma noite da pizza e você tem tudo: ingredientes, forno, refri, cadeiras, mesa...
+APLICAÇÕES
+DADOS
+RUNTIME
+MIDDLEWARE
+SO
+VIRTUALIZAÇÃO
+SERVIDORES
+ARMAZENAMENTO
+REDES
+
+================================================================================
+Iaas (Infraestrutura como serviço)
+
+Você gerencia o hardware, mas o software é a empresa que disponibiliza, como por exemplo as cadeiras, refri e talheres da noite da pika.
+
+================================================================================
+Paas (Plataforma)
+
+Na noite da pika vc só leva os talher.
+
+
+Saas (Software)
+
+Você vai almoçar no restaurante.
