@@ -1,0 +1,42 @@
+Aula 01 - 02/08/22
+
+Estrutura de qualquer dado:
+Variáveis,
+Informações pegas do banco,
+Dados armazenados em memória...
+
+Um conjunto de dados armazenados em memória.
+Implementar extrutura de dados para entender como elas em si funcionam.
+
+Ementa é o resumo do que é a disciplina
+
+Ementa de ED:
+Caracterização, análise e implementação de estruturas de dados básicas:
+- Listas estáticas
+- Pilhas
+- Filas
+- Árvores binárias
+
+Implementação de métodos de pesquisa e de ordenação de dados.
+
+
+Conteúdo:
+POO:
+- Revisão de classes abstratas/métodos abstratos
+- Polimorfismo
+- Interfaces
+Vetores (Em Java)
+(Matriz) (Armazenar dados em mais de uma dimensão)
+Listas estáticas
+Pilhas (Empilhamento, pilhagem de pratos, Ctrl+Z, o último a ser feito é o primeiro a ser usado)
+Filas (o primeiro a ser feito é o primeiro a ser usado)
+Árvores/Árvores binŕias. (Diretórios)
+Ordenação:
+- Selection sort/Bubble sort/Insertion sort
+- Quick sort e Merge sort
+Pesquisa sequencial x Pesquisa binária
+Importação/exportação de dados em arquivo texto
+Recursão
+Padrões de projeto (Solução para um problema, Projetos tinham problema em comum e pessoas criaram um padrão para lidar com isso)
+
+

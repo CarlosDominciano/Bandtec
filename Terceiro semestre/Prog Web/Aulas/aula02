@@ -1,0 +1,21 @@
+Aula 02 - 08/08/22
+
+API's é um jeit de se comunicar / entrar / chamar o sistema (Robôs, pessoas... uma "conversa" em si).
+REST API é protocolado e navegado em HTTP/HTTPS (HTTPS é apenas um site verificado).
+REST é um SUPER USO do protocolo HTTP.
+
+URL (Uniform Resource Locator) ou endereço:
+HTTP é um protocólo ou schema.
+localhost -> host (ou IP).
+:8080 -> Porta TCP.
+/despedida -> URI.
+
+Essas portas existem para evitar um conjestionamento na rede que você acessa.
+
+Dados brutos:
+- Textos.
+- Números.
+- Datas.
+- Imagens...
+
+Meta programação é uma programação sobre uma programação. Te dá muitas informações com poucas coisas.

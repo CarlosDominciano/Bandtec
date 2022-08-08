@@ -1,0 +1,12 @@
+Aula 02 Prática - 08/08/22
+
+SPRINGBOOT: 
+- Spring Web: Build web, including RESTful, applications using Spring MVC.
+	Uses Apache Tomcat as the default embedded container.
+	Com: Java 11; Maven; Spring Boot 2.7.2.
+	Se inicia essa API baixando na máquina e apenas rodando o programa em JAVA,
+	a partir daí ela começa a rodar no navegador na porta LOCALHOST:8080.
+- 
+
+Em Java os "@" são anotações
+
