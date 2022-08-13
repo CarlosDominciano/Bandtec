@@ -1,0 +1,45 @@
+Aula 01 - 11/08/22
+
+PARA QUE SERVE ENGENHARIA DE SOFTWARE:
+-----------------------------------------------
+O engenheiro de software é o profissional que, por exemplos, custeia o projeto de software ao qual ele foi designado.
+Fazendo também a analise em cascata da engenharia dos sistemas, do projeto, do code, do teste e da manutenção.
+-----------------------------------------------
+
+ALGUMAS FALHAS COMUNS DE SOFTWARE:
+-----------------------------------------------
+Crash
+Um dos tipos de erro mais comuns e por vezes mais perigosos que podem ocorrer, em que o aplicativo para de funcionar e é forçado a desligar. Isso pode ser causado por um bug de software ou às vezes por um dispositivo de hardware. Se os dados não estiverem protegidos ou armazenados, podem ser perdidos devido à falta de oportunidade de salvar as alterações.
+-----------------------------------------------
+Erro funcional
+Uma das qualidades mais básicas de um software é o fato de que tudo funciona como deveria e a aplicação é totalmente funcional. Mas se houver algo errado e o comportamento do software for diferente do esperado, chamamos isso de erro funcional.
+
+Por exemplo, a funcionalidade do botão “Cancelar” é que a janela deve ser fechada e nenhuma das alterações devem ser salvas. Se esta ação não for executada apropriadamente, temos um erro funcional.
+-----------------------------------------------
+Comando ausente
+Este tipo específico de bug ocorre quando há um comando faltando. Por exemplo, quando o usuário está realizando o processo de compra em uma loja online e muda de ideia, mas o sistema não permite que cancele o processo antes da finalização. Assim, o cliente espera ter a possibilidade de interromper o processo, mas o software não tem a opção de fazer isso.
+-----------------------------------------------
+Erro de uso de hardware
+Esse tipo de erro ocorre quando o software está sendo usado em um dispositivo errado ou em um ambiente não adequado. Uma solução específica deve se ajustar a tipos específicos de dispositivos, com a capacidade de lidar com todas as suas funções. É importante fornecer um hardware adaptado ao software. Erros de uso de hardware mais comuns são causados por:
+
+– Sistema operacional incorreto;
+– Potência de computação muito baixa;
+– Dispositivo incompatível.
+-----------------------------------------------
+
+PROBLEMAS QUE A ENGENHARIA DE SOFTWARE EVITA:
+- Acompanha a tecnologia para que o software não caia em desuso;
+- Produz sistemas de softwares mais sofisticados e eficientes;
+- Facilita a vida dos usuários na plataforma;
+
+
+UX vs UI
+
+UX = User Experience
+UI = User Interface
+
+UX TRATA DE PESSOAS:
+Está em muitas coisas além de plataformas.
+
+UX Se preocupa em como o usuário vai usar as funcionalidas de um site, por exemplo.
+UI Se preocupa em como o usuário vai ver essas funcionalidades.
