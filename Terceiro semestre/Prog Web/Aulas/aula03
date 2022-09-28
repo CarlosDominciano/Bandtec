@@ -1,0 +1,14 @@
+Aula 03 - 15/08/22
+
+As requisições HTTP são usadas para que um cliente inicie uma comunicação com uma RESTful API.
+Uma requisição HTTP é composta basicamente de Método, URL, Parâmetro, Cabeçalhos e Corpo.
+
+Parte -> Método (PUT, DELETE, PUSH, GET etc...). Desc -> Operação que será realizada.
+Parte -> URL. Desc -> Endereço completo do EndPoint.
+Parte -> Parâmetro (URI). Desc -> Informações adicionais à URL.
+Parte -> Cabeçalho. Desc -> Informações que não vão para a URL.
+Parte -> Corpo. Desc -> Conteúdo da Requisição.
+
+Ou seja, o mesmo URL com URI pode servir para chamar um POST, GET etc.
+
+URL nunca se deve indicar a ação da 'página', exemplo, "/atualizar/heroi", "/cadastrar/heroi".

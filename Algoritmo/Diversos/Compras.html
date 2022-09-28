@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compras</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #0D1317;
+            min-height: 100vh;
+        }
+        .cadastro{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            height: 3rem;
+            width: 95%;
+            margin: 1rem;
+            box-sizing: border-box;
+        }
+        .cadastro div {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+        .cadastro div:first-child {
+            font-weight: bold;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .valor, .cadastro div span {
+            color: white;
+        }
+        .cadastro div span {
+            width: 60%;
+        }
+        .valor {
+            box-sizing: border-box;
+            border: 2px outset #232ED1;
+            border-radius: 5px;
+            color: #0D1317;
+            height: 100%;
+            width: 45%;
+        }
+        .cadastro div button {
+            width: 30%;
+            background-color: #0D1317;
+            border: 2px solid #232ED1;
+            border-style: outset;
+            box-sizing: border-box;
+            color: white;
+            border-radius: 5px;
+        }
+        .resultado {
+            background-color: #071f69;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 95%;
+            color: white;
+            border-radius: 2px;
+        }
+        .resultado div:last-child {
+            background-color: #d4bb2a;
+            color: #0D1317;
+        }
+        .resultado div span:nth-child(2n){
+            background-color: #101D42;
+        }
+        .resultado div {
+            display: flex;
+            flex-direction: column;
+            max-height: 60vh;
+            overflow-y: scroll;
+        }
+    </style>
+</head>
+<body>
+    <div class="cadastro">
+        <div>
+            <span>
+                Valor a cadastrar: 
+            </span>
+            <input type="number" class="valor">
+        </div>
+        <div>
+            <button onclick="cadastrar(document.getElementsByClassName('valor')[0].value)">
+                Cadastrar
+            </button>
+            <button onclick="clearInput()">
+                Limpar campo
+            </button>
+            <button onclick="clearLastIten()">
+                Apagar último
+            </button>
+        </div>
+    </div>
+    <div class="resultado"></div>
+</body>
+</html>
+<script>
+
+    var buyList = [];
+    var totalPriceList;
+    var containerResult = document.querySelector('.resultado');
+    const listBuys = document.createElement("div");
+    const totalPriceBuys = document.createElement("div");
+
+    function cadastrar(iptVal) {
+        if (!(iptVal <= 0) && iptVal != null) {
+            buyList.push(iptVal);
+        }
+        
+        totalPriceList = 0;
+        listBuys.innerHTML = "";
+
+        for (let i = 0; i < buyList.length; i++) {
+            
+            listBuys.innerHTML += `<span>${i+1}º Item: R$${Number(buyList[i]).toFixed(2)}</span>`;
+            containerResult.appendChild(listBuys);
+            totalPriceList += Number(buyList[i]);
+        }
+
+        if (totalPriceList != 0) {
+            totalPriceBuys.innerHTML = `<span>Preço total da compra: R$${totalPriceList.toFixed(2)} </span>`;
+            containerResult.appendChild(totalPriceBuys);
+        }
+    }
+
+    function clearInput() {
+        document.querySelector('.valor').value = "";
+    }
+
+    function clearLastIten() {
+        listBuys.innerHTML = "";
+        for (let i = 0; i < buyList.length; i++) {
+            if (i == buyList.length - 1) {
+                containerResult.appendChild(listBuys);
+                totalPriceList -= Number(buyList[i]);
+                buyList.pop();
+                for (let j = 0; j < buyList.length; j++) {
+                    listBuys.innerHTML += `<span>${j+1}º Item: R$${Number(buyList[j]).toFixed(2)}</span>`;
+                    containerResult.appendChild(listBuys);
+                }
+            }
+        }
+        
+            totalPriceBuys.innerHTML = `<span>Preço total da compra: R$${totalPriceList.toFixed(2)} </span>`;
+            containerResult.appendChild(totalPriceBuys);
+        
+    }
+
+</script>

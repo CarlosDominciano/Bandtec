@@ -1,0 +1,22 @@
+Aula 03 - 23/08/22
+
+PADRÕES DE PROJETO:
+São padrões que seguimos que sabemos que vão dar certo (ou na maioria das vezes), é algo que está concretizado no mercado e é de fácil assimilação nas outras pessoas.
+O propósito do padrão descreve brevemente o problema e a solução que outras pessoas já pensaram muito antes de você.
+Exemplo1: "Fulano, tô pensando em usar o padrão XXX, o que você acha?".
+Exemplo2: "Mano, acho melhor ver o XXX, acho que para o que você quer fazer ele ajuda mais.".
+
+
+ARRAYS:
+Arrays são objetos;
+Podem ser primitivos os objetos;
+Nome do elemento:
+ - Nome do array, seguido de colchetes ({}), com o indice dentro.
+ - Exemplo: notas{2} = 10.0 (no indice 2 do array notas, será colocado o valor 10.0)
+Índice:
+ - Referencia um determinado elemento em um array.
+ - Deve ser um inteiro não negativo.
+ - Pode ser uma expressão (variavel/calculo).
+Declaração e expressão de criação de arrays de 12 elementos int 
+	int[] notas = new int[12] (Pode se usar variaveis e calculos também).
+

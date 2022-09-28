@@ -1,0 +1,25 @@
+Aula 05 - 12/09/22
+
+Códigos de status que indicam que a requisição foi processada com sucesso = 2XX
+
+200 OK
+201 Created
+204 No Content
+202 Accepted (foi aceito mas vai ser feito paralelamente)
+
+
+Indica que a requisição deu algo errado ou foi feita da maneira errada = 4XX
+
+400 Bad Request (mandou algo invalido, erro de validação, exemplo: mandou algo em branco/null.)
+401 Unauthorized	
+403 Forbidden
+404 Not Found (é uma coisa um coisinho um um um uma coisa)
+409 Conflict
+
+Códigos de status que indicam que a requisição não pode ser processada por problemas no serviço = 5XX
+
+500 Internal Server Error
+503 Service unavailable
+
+
+
