@@ -1,0 +1,7 @@
+00NOTA2022218/10/2022 20:07:2701
+02CCO  01212057Gabriel Damas                                     Cálculo Computacional                    8,50005
+02ADS  01212110Carlos Dominciano                                 Estrutura de Dados                       6,50000
+02REDES01212164Milena Fazolini                                   Segurança da Informação                  7,00000
+02ADS  01212321Donilo do Nilo                                    Arquitetura Computacional                7,50000
+02ADS  01212013Index PHP                                         Estrutura de Dados                       0,00050
+010000000005

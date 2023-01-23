@@ -1,0 +1,18 @@
+Aula 08 - 31/10/22
+
+
+TESTES AUTOMATIZADOS
+
+Tipos de testes:
+
+- Unitários (ou de unidade): 
+Testa uma peça apenas para ver o resultado.
+No código, seria testar um método de uma classe.
+
+- De integração:
+No código, seria testar uma funcionalidade que usou varias classes e/ou bibliotecas (porém não o sistema completo)
+
+- Funcionais (ou de sistema): 
+Aquele que inicia o sistema inteiro e testa apenas uma coisa.
+
+

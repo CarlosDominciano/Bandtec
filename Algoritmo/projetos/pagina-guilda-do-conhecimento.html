@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <title>Guilda do conhecimento</title>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <header>
+        <ul>
+            <li><a id="topo" href="#menu">Ir para o menu</a></li>
+            <li><a href="#conteudo-principal">Ir para o conteúdo principal</a></li>
+            <li><a href="#rodape">Ir para o rodapé</a></li>
+        </ul>
+        <nav>
+            <p id="menu">Menu principal</p>
+            <ul>
+                <li><a href="#listas">Listas</a></li>
+                <li><a href="#links">Links</a></li>
+                <li><a href="#formularios">Formulários</a></li>
+                <li><a href="#tabelas">Tabelas</a></li>
+            </ul>
+        </nav>
+        <img>
+        <h1>Treinamento de semântica do HTML</h1>
+        <p>O objetivo desta página é treinar a leitura das principais semânticas do HTML</p>
+    </header>
+    <main>
+        <p id="conteudo-principal">Conteúdo principal</p>
+        <h2 id="listas">Listas</h2>
+        <p>Listas são usadas para listar conteúdos de forma ordenada, não ordenada ou por definição.</p>
+        <h3>Listas ordenadas</h3>
+        <p>Listas ordenadas são feitas quando a sequência de cada item é relevante para o entendimento, como uma
+            sequências de passos para realizar alguma ação</p>
+        <p>O fluxo do teste de acessibilidade pode se encaixar em uma lista ordenada</p>
+        <ol>
+            <li>Realizar modelagem</li>
+            <li>Realizar teste e retestes</li>
+            <li>Gerar parecer</li>
+        </ol>
+        <h3>Listas não ordenadas</h3>
+        <p>Na lista não ordenada, temos as Rts que atendemos em investimentos</p>
+        <ul>
+            <li>rt canais atuais</li>
+            <li>RT novos canais</li>
+            <li>RT assessoria</li>
+        </ul>
+        <h3>Listas de definição</h3>
+        <p>Listas de definição são usadas para componentes onde existe um termo e em seguida sua definição, como se
+            fosse pergunta e resposta.</p>
+        <p>Podemos usar com os termos de WCAG e W3C.</p>
+        <dl>
+            <dt>WCAG</dt>
+            <dd>"Web Content Accessibility Guidelines", recomendações de acessibilidade para conteúdo da web</dd>
+            <dt>W3C</dt>
+            <dd>"World Wide Web Consortium", consórcio internacional com o objetivo de desenvolver padrões para web</dd>
+        </dl>
+        <h2 id="links">Links</h2>
+        <p>Links são usados para realizar conexão dentro da própria página, localmente e globalmente.</p>
+        <h3>Links internos</h3>
+        <p>Ao clicar em um link interno, você será direcionado para algum lugar dentro da própria página.</p>
+        <p>Links internos geralmente são usados para avançar blocos de conteúdos, os links âncoras, eles também podem
+            ser usados para voltar para o topo da tela.</p>
+        <a href="#topo">Ir para o início desta página</a>
+        <h3>Links locais</h3>
+        <p>Ao clicar em um link local, você será direcionado para uma página dentro do mesmo site.</p>
+        <a href="links.html">Explicação mais aprofundada de links</a>
+        <h3>Links externos</h3>
+        <p>Ao clicar em links externos, você vai ser direcionado para um outro site.</p>
+        <p>No exemplo, o google vai ser aberto em uma nova aba, por isso a orientação no rótulo do link.</p>
+        <a href="https://www.google.com.br" target="_blank">Site google (abrirá em uma nova aba)</a><br>
+        <h2 id="formularios">Formulários</h2>
+        <p>Componentes de formulários podem ser usado de diversas formas, como um formulário para a coleta de dados,
+            componentes para selecionar uma opção, aceitar algum termo ou condição ETC</p>
+        <p>Nesta página, existem dois formulários, um para coletar dados pessoais e um para coletar dados profissionais.
+        </p>
+        <h3>Dados pessoais</h3>
+        <form>
+            <fieldset>
+                <legend>Dados pessoais</legend>
+                <label for="nome">Digite seu nome completo sem abreviações:</label>
+                <input type="text" name="nome" id="nome"><br>
+                <label for="email-pessoal">Digite seu e-mail pessoal, aquele que você mais utiliza:</label>
+                <input type="email" name="email" id="email-pessoal" placeholder="Exemplo: joaodasilva@gmail.com"><br>
+                <label for="celular-pessoal">Digite o número do seu celular pessoal, com DDD sem o 0</label>
+                <input type="tel" name="celular" id="celular-pessoal"><br>
+                <label for="mensagem">Escreva sua mensagem</label>
+                <textarea name="mensagem" id="mensagem" aria-required="true"></textarea>
+            </fieldset>
+        </form>
+        <h3>Dados profissionais</h3>
+        <form>
+            <fieldset>
+                <legend>Dados profissionais</legend>
+                <label for="selecione-estado-empresa">Selecione o estado da sua empresa</label>
+                <select id="selecione-estado-empresa" name="estado">
+                    <option value="mg">Minas Gerais</option>
+                    <option value="rj">Rio de Janeiro</option>
+                    <option value="sc">Santa Catarina</option>
+                    <option value="sp">São Paulo</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend>Porte da empresa</legend>
+                <label for="micro">Minha organização é micro, conta com até 19 colaboradores</label>
+                <input type="radio" id="micro" name="porte"><br>
+                <label for="pequeno-porte">Minha organização é pequeno porte, tem entre 19 e 99 colaboradores</label>
+                <input type="radio" id="pequeno-porte" name="porte"><br>
+                <label for="medio-porte">Minha organização é de médio porte, tem entre 100 e 499 colaboradores</label>
+                <input type="radio" id="medio-porte" name="porte"><br>
+                <label for="grande-porte">Minha organização é de grande porte, tem mais de 500 colaboradores</label>
+                <input type="radio" id="grande-porte" name="porte">
+            </fieldset>
+            <label for="declaracao">Declaro ter informado todos os dados reais</label>
+            <input type="checkbox" id="declaracao" name="direito" value="declaracao">
+            <button type="submit">Enviar dados pessoais e profissionais</button>
+            </fieldset>
+        </form>
+        <h2 id="tabelas">Tabelas</h2>
+        <p>Tabelas são usadas para apresentação de dados tabulares, ou seja, linhas e colunas são usadas para uma
+            apresentação organizada de dados</p>
+        <h3>Exemplo de tabela sem mesclagem de célula</h3>
+        <table>
+            <caption>Líderes investimentos</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Nome</th>
+                    <th scope="col">E-mail</th>
+                    <th scope="col">Celular</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">Jessica Fernandes</th>
+                    <td>jessica@gmail.com</td>
+                    <td>(11) 98877-6655</td>
+                </tr>
+                <tr>
+                    <th scope="row">Jonathan Alves</th>
+                    <td>jonathan@gmail.com</td>
+                    <td>(11) 98765-4321</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+    <footer>
+        <h2 id="rodape">Me siga nas redes sociais</h2>
+        <ul>
+            <li><a href="http://www.linkedin.com/in/jonathan-alves-nogueira" target="_blank">Meu LinkedIn (Abrirá em uma
+                    nova aba)</a></li>
+        </ul>
+        <a href="#topo">Voltar para o início desta página</a>
+    </footer>
+</body>
+
+</html>

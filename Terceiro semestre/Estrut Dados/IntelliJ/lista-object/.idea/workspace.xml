@@ -5,141 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="67608356-0ccf-43cf-a500-807ed78010fe" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../carlos-ac1/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../carlos-ac1/src/main/java/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../carlos-ac1/src/main/java/ControlePremio.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../carlos-ac1/src/main/java/IPremio.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../carlos-ac1/src/main/java/Jogador.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../carlos-ac1/src/main/java/JogadorAtacante.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../carlos-ac1/src/main/java/JogadorGoleiro.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../carlos-ac1/src/main/java/Patrocinador.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../exemplo-vetor/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../exemplo-vetor/src/main/java/ExemploVetor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../exemplo-vetor/src/main/java/Exercicio1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../exemplo-vetor/src/main/java/Exercicio2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../exemplo-vetor/src/main/java/Exercicio3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../exemplo-vetor/src/main/java/Exercicio4.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../exemplo-vetor/src/main/java/Exercicio5.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../exemplo-vetor/src/main/java/Exercicio6.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../exemplo-vetor/src/main/java/Exercicio7.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../exemplo-vetor/src/main/java/SelectionSort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lista-estatica-generica/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lista-estatica-generica/src/main/java/ListaObj.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lista-estatica-generica/src/main/java/Teste.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../projeto-interface/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../projeto-professor/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../projeto-professor/src/main/java/Bonavel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../projeto-professor/src/main/java/ControleBonus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../projeto-professor/src/main/java/Coordenador.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../projeto-professor/src/main/java/Funcionario.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../projeto-professor/src/main/java/Professor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Prog Web/IntelliJ/c1-01212110-carlos-henrique-jose-dominciano/src/main/java/sptech/c101212110carloshenriquejosedominciano/Usuario.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Prog Web/IntelliJ/c1-01212110-carlos-henrique-jose-dominciano/src/main/java/sptech/c101212110carloshenriquejosedominciano/UsuarioController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Prog Web/IntelliJ/grife/src/main/java/sptech/grife/Grife.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Prog Web/IntelliJ/grife/src/main/java/sptech/grife/GrifeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Prog Web/IntelliJ/project-03/src/main/java/sptech/project03/Fruta.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Prog Web/IntelliJ/project-03/src/main/java/sptech/project03/FrutaController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Prog Web/IntelliJ/project02/src/main/java/sptech/project02/Cantores.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Prog Web/IntelliJ/project02/src/main/java/sptech/project02/CantoresController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Prog Web/IntelliJ/project02/src/main/java/sptech/project02/FrutasController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Prog Web/IntelliJ/project02/src/main/java/sptech/project02/Heroi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Prog Web/IntelliJ/project02/src/main/java/sptech/project02/HeroiController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Prog Web/IntelliJ/project02/src/main/java/sptech/project02/Investimento.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Prog Web/IntelliJ/project02/src/main/java/sptech/project02/InvestimentoController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Prog Web/IntelliJ/project02/src/main/java/sptech/project02/UtilsController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Prog Web/IntelliJ/projeto-jpa01/src/main/java/sptech/projetojpa01/controle/AnimeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Prog Web/IntelliJ/projeto-jpa01/src/main/java/sptech/projetojpa01/dominio/Anime.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Prog Web/IntelliJ/swagger/src/main/java/com/sptech/swagger/Produto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Prog Web/IntelliJ/swagger/src/main/java/com/sptech/swagger/ProdutoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ED/Aulas/aula01" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ED/Aulas/aula02" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ED/Aulas/aula02P" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ED/IntelliJ/TesteScanner/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ED/IntelliJ/TesteScanner/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ED/IntelliJ/TesteScanner/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ED/IntelliJ/TesteScanner/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ED/IntelliJ/TesteScanner/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ED/IntelliJ/TesteScanner/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ED/IntelliJ/TesteScanner/TesteScanner.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ED/IntelliJ/TesteScanner/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ED/IntelliJ/TesteScanner/src/main/java/ExemploMain.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ED/IntelliJ/TesteScanner/src/main/java/TesteScanner.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ED/IntelliJ/TesteScanner/target/classes/TesteScanner.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ED/IntelliJ/carrinho/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ED/IntelliJ/carrinho/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ED/IntelliJ/carrinho/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ED/IntelliJ/carrinho/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ED/IntelliJ/carrinho/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ED/IntelliJ/carrinho/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ED/IntelliJ/carrinho/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ED/IntelliJ/carrinho/src/main/java/DVD.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ED/IntelliJ/carrinho/src/main/java/Livro.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ED/IntelliJ/carrinho/src/main/java/Produto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ED/IntelliJ/carrinho/src/main/java/Servico.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ED/IntelliJ/carrinho/src/main/java/Vendavel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ED/IntelliJ/exemplo-funcionario/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ED/IntelliJ/exemplo-funcionario/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ED/IntelliJ/exemplo-funcionario/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ED/IntelliJ/exemplo-funcionario/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ED/IntelliJ/exemplo-funcionario/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ED/IntelliJ/exemplo-funcionario/exemplo-funcionario.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ED/IntelliJ/exemplo-funcionario/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ED/IntelliJ/exemplo-funcionario/src/main/java/App.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ED/IntelliJ/exemplo-funcionario/src/main/java/Empresa.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ED/IntelliJ/exemplo-funcionario/src/main/java/Engenheiro.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ED/IntelliJ/exemplo-funcionario/src/main/java/Funcionario.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ED/IntelliJ/exemplo-funcionario/src/main/java/Horista.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ED/IntelliJ/exemplo-funcionario/src/main/java/Vendedor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ED/IntelliJ/exemplo-funcionario/target/classes/App.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ED/IntelliJ/exemplo-funcionario/target/classes/Empresa.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ED/IntelliJ/exemplo-funcionario/target/classes/Engenheiro.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ED/IntelliJ/exemplo-funcionario/target/classes/Funcionario.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ED/IntelliJ/exemplo-funcionario/target/classes/Horista.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ED/IntelliJ/exemplo-funcionario/target/classes/Vendedor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ED/IntelliJ/exemplo-interface/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ED/IntelliJ/exemplo-interface/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ED/IntelliJ/exemplo-interface/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ED/IntelliJ/exemplo-interface/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ED/IntelliJ/exemplo-interface/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ED/IntelliJ/exemplo-interface/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ED/IntelliJ/exemplo-interface/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ED/IntelliJ/exemplo-interface/src/main/java/Alimento.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ED/IntelliJ/exemplo-interface/src/main/java/App.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ED/IntelliJ/exemplo-interface/src/main/java/Perfume.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ED/IntelliJ/exemplo-interface/src/main/java/Produto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ED/IntelliJ/exemplo-interface/src/main/java/Servico.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ED/IntelliJ/exemplo-interface/src/main/java/Tributavel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ED/IntelliJ/exemplo-interface/src/main/java/Tributo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ED/IntelliJ/exemplo-interface/target/classes/Alimento.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ED/IntelliJ/exemplo-interface/target/classes/App.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ED/IntelliJ/exemplo-interface/target/classes/Perfume.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ED/IntelliJ/exemplo-interface/target/classes/Produto.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ED/IntelliJ/exemplo-interface/target/classes/Servico.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ED/IntelliJ/exemplo-interface/target/classes/Tributavel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ED/IntelliJ/exemplo-interface/target/classes/Tributo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ED/IntelliJ/projeto-aluno/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ED/IntelliJ/projeto-aluno/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ED/IntelliJ/projeto-aluno/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ED/IntelliJ/projeto-aluno/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ED/IntelliJ/projeto-aluno/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ED/IntelliJ/projeto-aluno/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ED/IntelliJ/projeto-aluno/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ED/IntelliJ/projeto-aluno/src/main/java/Aluno.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ED/IntelliJ/projeto-aluno/src/main/java/AlunoFundamental.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ED/IntelliJ/projeto-aluno/src/main/java/AlunoGraduacao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ED/IntelliJ/projeto-aluno/src/main/java/AlunoPos.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ED/IntelliJ/projeto-aluno/src/main/java/Escola.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ED/IntelliJ/projeto-aluno/src/main/java/TesteAluno.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ED/IntelliJ/projeto-aluno/target/classes/Aluno.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ED/IntelliJ/projeto-aluno/target/classes/AlunoFundamental.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ED/IntelliJ/projeto-aluno/target/classes/AlunoGraduacao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ED/IntelliJ/projeto-aluno/target/classes/AlunoPos.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ED/IntelliJ/projeto-aluno/target/classes/Escola.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ED/IntelliJ/projeto-aluno/target/classes/TesteAluno.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ED/IntelliJ/projeto-interface/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ED/IntelliJ/projeto-interface/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ES/Aulas/aula01" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Prog Web/IntelliJ/carros/src/main/java/sptech/carros/controllers/CarroController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Prog Web/IntelliJ/carros/src/main/java/sptech/carros/models/CarroModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Prog Web/IntelliJ/carros/src/main/java/sptech/carros/repositories/CarroRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Algoritmo/projetos/1-contador-regressivo/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Algoritmo/projetos/1-contador-regressivo/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Algoritmo/projetos/1-contador-regressivo/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Algoritmo/projetos/1-contador-regressivo/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Algoritmo/projetos/1-contador-regressivo/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Algoritmo/projetos/1-contador-regressivo/js/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Tec Emerg/React/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Tec Emerg/React/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Tec Emerg/React/introducao.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -165,16 +40,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "/home/carlos.dominciano@VALEMOBI.CORP/Desktop/Bandtec/Terceiro semestre/Estrut Dados/IntelliJ/lista-estatica-generica-completo/carlos-atividade01",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/carlos.dominciano@VALEMOBI.CORP/Desktop/Bandtec/Terceiro semestre/Estrut Dados/IntelliJ/lista-estatica-generica-completo/carlos-atividade01&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">

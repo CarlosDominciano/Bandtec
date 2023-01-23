@@ -22,7 +22,7 @@ function startTimer(duration, display) {
             timer = duration;
         }
         
-    }, 100);
+    }, 1000);
 }
 
 window.onload = function() {
@@ -31,6 +31,5 @@ window.onload = function() {
     var display = document.querySelector("#timer");
 
     startTimer(duration, display);
-
 
 }
